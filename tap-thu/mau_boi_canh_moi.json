@@ -1,0 +1,216 @@
+{
+ "title": "もしも月まで歩いて行けたら（新しい背景のテスト）",
+ "beats": [
+  {
+   "characterAction": "idle_wave",
+   "vi_note": "Mặt Trăng – toàn cảnh",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "id": "m1",
+   "scene": "moon_surface",
+   "cameraPreset": "moon_wide",
+   "ja_narration": "ここは月の上。空は昼でも真っ黒だ。"
+  },
+  {
+   "characterAction": "point_explain",
+   "vi_note": "Nhìn lên Trái Đất",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "id": "m2",
+   "scene": "moon_surface",
+   "cameraPreset": "moon_earthrise",
+   "ja_narration": "見上げると、青い地球が浮かんでいる。"
+  },
+  {
+   "characterAction": "jump_low",
+   "vi_note": "Cận mặt Kai",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "id": "m3",
+   "scene": "moon_surface",
+   "cameraPreset": "moon_close",
+   "ja_narration": "重力は地球の6分の1。軽くジャンプするだけで…"
+  },
+  {
+   "characterAction": "idle",
+   "vi_note": "Đúng tỉ lệ",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0.35
+   },
+   "id": "e1",
+   "scene": "earth_moon_space",
+   "cameraPreset": "em_wide",
+   "ja_narration": "地球から月までは約38万km。実際の比率で並べるとこのくらい離れている。",
+   "route": {
+    "label": "歩いて 3年目"
+   }
+  },
+  {
+   "characterAction": "idle",
+   "vi_note": "Bám theo chấm",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0.35
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0.6
+   },
+   "id": "e2",
+   "scene": "earth_moon_space",
+   "cameraPreset": "em_follow",
+   "ja_narration": "休まず歩いても、到着まで約9年かかる。"
+  },
+  {
+   "characterAction": "idle",
+   "vi_note": "Cận Mặt Trăng",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0.95
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 1
+   },
+   "id": "e3",
+   "scene": "earth_moon_space",
+   "cameraPreset": "em_moon",
+   "ja_narration": "そしてついに、月に到着。"
+  },
+  {
+   "characterAction": "freefall_float",
+   "vi_note": "Nông – còn nắng",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.02,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.04,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "id": "s1",
+   "scene": "deep_sea",
+   "cameraPreset": "sea_wide",
+   "ja_narration": "水深30m。まだ太陽の光が届いている。"
+  },
+  {
+   "characterAction": "freefall_float",
+   "vi_note": "Cá voi xanh",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.12,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.15,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "id": "s2",
+   "scene": "deep_sea",
+   "cameraPreset": "sea_whale",
+   "ja_narration": "その横を、体長25mのシロナガスクジラが泳いでいく。",
+   "sea": {
+    "whale": true,
+    "whaleLabel": "シロナガスクジラ 約25m"
+   }
+  },
+  {
+   "characterAction": "freefall_float",
+   "vi_note": "Sâu – tối, sinh vật phát sáng",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.9,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 1.1,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "id": "s3",
+   "scene": "deep_sea",
+   "cameraPreset": "sea_close",
+   "ja_narration": "水深1000m。ここから先は光のない世界だ。"
+  },
+  {
+   "characterAction": "freefall_float",
+   "vi_note": "Đáy biển",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 10.9,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 10.92,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "id": "s4",
+   "scene": "deep_sea",
+   "cameraPreset": "sea_wide",
+   "ja_narration": "そして水深1万m、海の底に着いた。",
+   "sea": {
+    "floor": true
+   }
+  }
+ ],
+ "title_vi": "Test 3 bối cảnh mới: Mặt Trăng, Trái Đất–Mặt Trăng, Biển sâu"
+}
