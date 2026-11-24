@@ -170,6 +170,8 @@ export default function ScriptPanel({ episode, timeline, audios, busyBeat, onCha
                 </div>
                 <div className="mt-2 flex flex-wrap gap-4 text-xs text-gray-300">
                   <label className="flex items-center gap-1"><input type="checkbox" checked={!!b.spacesuit} onChange={e => setBeat(i, { spacesuit: e.target.checked })} /> Đồ phi hành gia</label>
+                  <label className="flex items-center gap-1" title="Tên chương bắt đầu từ beat này – app tự làm mục lục 目次 có mốc thời gian trong mô tả YouTube">📑 Chương
+                    <input className="input ja w-40 py-0.5 text-xs" placeholder="(không)" value={b.chapter ?? ""} onChange={e => setBeat(i, { chapter: e.target.value || undefined })} /></label>
                   <label className="flex items-center gap-1"><input type="checkbox" checked={!!b.platform} onChange={e => setBeat(i, { platform: e.target.checked })} /> Bệ thang máy</label>
                   <label className="flex items-center gap-1">Cảm xúc (Kai)
                     <select className="input w-auto py-0.5 text-xs" value={b.emotion ?? ""} onChange={e => setBeat(i, { emotion: (e.target.value || undefined) as Emotion | undefined })}>

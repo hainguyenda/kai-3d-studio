@@ -93,6 +93,8 @@ export interface Beat extends NewBeatFields {
   emotion?: Emotion;
   /** dòng chữ nhỏ dưới phụ đề (nguồn số liệu, chú thích) */
   note?: string;
+  /** tên chương bắt đầu từ beat này, dùng làm mục lục (目次) trong mô tả YouTube. Ví dụ "マントルを通過" */
+  chapter?: string;
   globe?: GlobeOptions;
   cutaway?: CutawayOptions;
   ocean?: OceanOptions;
@@ -129,6 +131,8 @@ export interface Episode {
   aspect?: AspectRatio;
   title_vi?: string;
   thumbnailText?: string;
+  /** cách đọc cho giọng đọc (phụ đề giữ nguyên): { "地殻": "ちかく" } */
+  readings?: Record<string, string>;
   beats: Beat[];
   youtube?: { titles: string[]; description: string; tags: string[] };
 }

@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef } from "react";
 import type { AspectRatio, Episode } from "@/lib/types";
+import { fmtTime } from "@/lib/chapters";
 
 interface Props {
   episode: Episode;
@@ -25,12 +26,26 @@ interface Props {
   thumbUrl: string | null;
   status: string;
   missingAudio: number;
+  /** tổng thời lượng (giây) */
+  total: number;
+  /** mục lục 目次 dựng từ beat có "chapter" ("" nếu chưa đủ 3 mốc) */
+  chapters: string;
+  /** credit giọng đọc bắt buộc, ví dụ "VOICEVOX:青山龍星" */
+  credit: string;
 }
 
 export default function ExportPanel(p: Props) {
   const y = p.episode.youtube;
   const copy = (t: string) => { navigator.clipboard?.writeText(t).catch(() => undefined); };
-  const items: [string, string][] = y ? [["Tiêu đề", y.titles.join("\n")], ["Mô tả", y.description], ["Tags", y.tags.join(", ")]] : [];
+  // mô tả = mô tả gốc + mục lục (目次) + credit giọng đọc
+  const description = [y?.description ?? "", p.chapters && `▼ もくじ\n${p.chapters}`, p.credit && `▼ 音声\n${p.credit}`].filter(Boolean).join("\n\n").trim();
+  const items: [string, string][] = y
+    ? [["Tiêu đề", y.titles.join("\n")], ["Mô tả", description], ["Tags", y.tags.join(", ")]]
+    : description ? [["Mô tả (mục lục + credit)", description]] : [];
+  const hasChapterField = p.episode.beats.some(b => b.chapter?.trim());
+  const lengthNote = p.aspect === "9:16"
+    ? (p.total > 180 ? { ok: false, text: "dài hơn 3 phút – YouTube không nhận là Short" } : { ok: true, text: "hợp lệ cho Shorts (≤ 3 phút)" })
+    : (p.total >= 480 ? { ok: true, text: "đủ 8:00 – khi đăng nhớ bật quảng cáo giữa video" } : { ok: true, text: `dưới 8:00 nên không chèn được quảng cáo giữa video (không bắt buộc – kể hay quan trọng hơn dài)` });
   // tên tab hiện % khi đang xuất; xuất xong thì tự tải file về
   const lastUrl = useRef<string | null>(null);
   useEffect(() => {
@@ -60,6 +75,7 @@ export default function ExportPanel(p: Props) {
         <label className="flex items-end gap-1 pb-2 text-sm"><input type="checkbox" checked={p.sfx} onChange={e => p.onSfx(e.target.checked)} /> Tiếng gió / rung nền</label>
       </div>
       {p.aspect === "9:16" && <p className="mt-2 text-xs text-studio-muted">Khung dọc: HUD thu nhỏ góc trên, thẻ biểu đồ lên nửa trên, phụ đề nằm trên vùng tên kênh / mô tả của Shorts. Shorts tối đa 3 phút, Reels / TikTok tuỳ nền tảng.</p>}
+      <p className={`mt-2 text-xs ${lengthNote.ok ? "text-studio-muted" : "text-yellow-300"}`}>⏱ Độ dài {fmtTime(p.total)} – {lengthNote.text}{p.missingAudio > 0 ? " (ước tính, còn beat chưa có giọng)" : ""}</p>
       {p.missingAudio > 0 && <p className="mt-2 text-xs text-yellow-300">⚠ Còn {p.missingAudio} beat chưa có giọng – các đoạn đó sẽ im lặng.</p>}
       <div className="mt-3 flex flex-wrap gap-2">
         {p.exporting ? <button className="btn" onClick={p.onCancel}>■ Huỷ xuất</button> : <button className="btn" disabled={!p.ready} onClick={p.onExport}>⏺ Xuất video MP4</button>}
@@ -78,6 +94,9 @@ export default function ExportPanel(p: Props) {
       {items.length > 0 && (
         <div className="mt-4 space-y-2 border-t border-studio-line pt-3">
           <h3 className="text-sm font-bold">Thông tin đăng YouTube</h3>
+          {p.aspect === "16:9" && !p.chapters && (
+            <p className="text-xs text-studio-muted">{hasChapterField ? "Mục lục cần ít nhất 3 chương, mỗi chương ≥ 10 giây." : "Gợi ý: ghi \"Chương\" ở vài beat (thẻ kịch bản) để app tự tạo mục lục もくじ có mốc thời gian."}</p>
+          )}
           {items.map(([k, v]) => (
             <div key={k}>
               <div className="flex items-center justify-between"><span className="text-xs text-studio-muted">{k}</span><button className="btn-ghost px-2 py-0.5 text-xs" onClick={() => copy(v)}>Copy</button></div>

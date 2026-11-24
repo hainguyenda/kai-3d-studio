@@ -8,7 +8,7 @@ export const FULL_TRACK_KEY = "__full_track__";
 
 export interface StoredAudio {
   data: ArrayBuffer;
-  source: "edge" | "eleven" | "upload";
+  source: "voicevox" | "edge" | "eleven" | "upload";
   /** lời đọc tiếng Nhật lúc tạo giọng (beat) hoặc chữ ký cả bài (file cả bài) */
   text: string;
   /** chỉ dùng cho file cả bài: các mốc ngắt câu */

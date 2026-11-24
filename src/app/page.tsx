@@ -13,6 +13,9 @@ import VoicePanel from "@/components/VoicePanel";
 import PreviewPanel from "@/components/PreviewPanel";
 import ExportPanel from "@/components/ExportPanel";
 import { DEFAULT_VOICE, type BeatAudio, type VoiceSettings } from "@/components/studioTypes";
+import { audioMime, localCredit, synthLocal } from "@/lib/localVoice";
+import { applyReadings } from "@/lib/readings";
+import { buildChapters } from "@/lib/chapters";
 
 const LS_EPISODE = "moshimo.episode.v1", LS_VOICE = "moshimo.voice.v1", LS_CHAR = "moshimo.character.v1";
 const load = <T,>(key: string, fallback: T): T => {
@@ -71,7 +74,7 @@ export default function StudioPage() {
         if (key === FULL_TRACK_KEY) continue;
         const beat = ep.beats.find(b => b.id === key);
         if (!beat || beat.ja_narration !== v.text) { stale.push(key); continue; }
-        try { restored[key] = { buffer: await decodeAudio(v.data), url: URL.createObjectURL(new Blob([v.data], { type: "audio/mpeg" })), source: v.source }; }
+        try { restored[key] = { buffer: await decodeAudio(v.data), url: URL.createObjectURL(new Blob([v.data], { type: audioMime(v.data) })), source: v.source }; }
         catch { stale.push(key); }
       }
       let full: { buffer: AudioBuffer; bounds: number[] } | null = null;
@@ -134,6 +137,7 @@ export default function StudioPage() {
 
   /* ---------- giọng đọc ---------- */
   const fetchVoice = useCallback(async (text: string): Promise<{ data: ArrayBuffer; source: BeatAudio["source"] }> => {
+    if (voice.mode === "local") return { data: await synthLocal(voice.localUrl, voice.localSpeaker, text, voice.speed), source: "voicevox" };
     const isEleven = voice.mode === "eleven";
     if (isEleven && !voice.elevenKey) throw new Error("Chưa nhập API key ElevenLabs.");
     const r = await fetch(isEleven ? "/api/elevenlabs" : "/api/tts", {
@@ -147,21 +151,22 @@ export default function StudioPage() {
   }, [voice]);
 
   const generateBeat = useCallback(async (beat: Beat): Promise<BeatAudio> => {
-    const { data, source } = await fetchVoice(beat.ja_narration);
+    // phụ đề giữ chữ Hán, giọng đọc dùng cách đọc trong từ điển 読み
+    const { data, source } = await fetchVoice(applyReadings(beat.ja_narration, episode.readings));
+    const url = URL.createObjectURL(new Blob([data], { type: audioMime(data) }));
     const buffer = await decodeAudio(data);
-    const url = URL.createObjectURL(new Blob([data], { type: "audio/mpeg" }));
     const au: BeatAudio = { buffer, url, source };
     setAudios(a => { if (a[beat.id]) URL.revokeObjectURL(a[beat.id].url); return { ...a, [beat.id]: au }; });
     setFullTrack(null);
     void putAudio(beat.id, { data, source, text: beat.ja_narration });
     void deleteAudio([FULL_TRACK_KEY]);
     return au;
-  }, [fetchVoice]);
+  }, [fetchVoice, episode.readings]);
 
   const playBuffer = (buf: AudioBuffer) => { const ac = getAudioContext(); void ac.resume(); const n = ac.createBufferSource(); n.buffer = buf; n.connect(ac.destination); n.start(); };
 
   const onGenerate = async (beat: Beat) => {
-    if (voice.mode === "upload") { setVoiceMsg({ text: "Đang ở chế độ Tải file lên – chọn Edge hoặc ElevenLabs để tạo giọng.", kind: "info" }); return; }
+    if (voice.mode === "upload") { setVoiceMsg({ text: "Đang ở chế độ Tải file lên – chọn VOICEVOX / Edge / ElevenLabs để tạo giọng.", kind: "info" }); return; }
     setBusyBeat(beat.id); setVoiceMsg(null);
     try { const au = await generateBeat(beat); playBuffer(au.buffer); setVoiceMsg({ text: `✓ Đã tạo giọng cho ${beat.id} (${au.buffer.duration.toFixed(1)}s)`, kind: "ok" }); }
     catch (e) { setVoiceMsg({ text: e instanceof Error ? e.message : String(e), kind: "err" }); }
@@ -298,6 +303,10 @@ export default function StudioPage() {
   };
 
   const missingAudio = fullTrack ? 0 : episode.beats.filter(b => !audios[b.id]).length;
+  const chapters = useMemo(() => buildChapters(episode, timeline), [episode, timeline]);
+  // VOICEVOX / AivisSpeech bắt buộc ghi credit trong mô tả video
+  const usesLocalVoice = Object.values(audios).some(a => a.source === "voicevox") || (voice.mode === "local" && !fullTrack);
+  const credit = usesLocalVoice ? localCredit(voice.localEngine, voice.localCharacter) : "";
 
   return (
     <main className="mx-auto max-w-[1500px] px-4 py-5">
@@ -316,10 +325,12 @@ export default function StudioPage() {
             character={character} onCharacter={setCharacter} aspect={aspect} onAspect={onAspect} disabled={exporting} />
           <div className="grid gap-4 lg:grid-cols-2">
             <VoicePanel voice={voice} onVoice={setVoice} progress={genProgress} message={voiceMsg} onGenerateAll={onGenerateAll} onUpload={onUpload}
-              onClear={onClear} onBgm={onBgm} bgmVolume={bgmVolume} onBgmVolume={setBgmVolume} hasFullTrack={!!fullTrack} />
+              onClear={onClear} onBgm={onBgm} bgmVolume={bgmVolume} onBgmVolume={setBgmVolume} hasFullTrack={!!fullTrack}
+              readings={episode.readings} onReadings={r => setEpisode(ep => ({ ...ep, readings: Object.keys(r).length ? r : undefined }))} />
             <ExportPanel episode={episode} ready={ready} exporting={exporting} progress={exportProgress} resolution={resolution} fps={fps} sfx={sfx} thumbBeat={thumbBeat}
               aspect={aspect} onAspect={onAspect} onResolution={setResolution} onFps={setFps} onSfx={setSfx} onThumbBeat={setThumbBeat} onExport={onExport} onCancel={onCancel} onThumbnail={onThumbnail}
-              videoUrl={video?.url ?? null} videoName={video?.name ?? ""} thumbUrl={thumbUrl} status={exportStatus} missingAudio={missingAudio} />
+              videoUrl={video?.url ?? null} videoName={video?.name ?? ""} thumbUrl={thumbUrl} status={exportStatus} missingAudio={missingAudio}
+              total={timeline.total} chapters={chapters} credit={credit} />
           </div>
         </div>
       </div>

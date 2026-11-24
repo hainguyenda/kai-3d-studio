@@ -23,6 +23,15 @@ npx vercel            # bản xem thử (preview URL)
 npx vercel --prod     # đưa lên kai-3d-studio.vercel.app
 ```
 
+## Giọng đọc miễn phí: VOICEVOX / AivisSpeech
+
+1. Cài và mở [VOICEVOX](https://voicevox.hiroshiba.jp/) (cổng 50021) hoặc [AivisSpeech](https://aivis-project.com/) (cổng 10101).
+2. Mở `http://127.0.0.1:50021/setting` (hoặc `:10101`) → CORS / 許可するオリジン thêm `https://kai-3d-studio.vercel.app` → 保存 → mở lại app.
+3. Trong studio: ô Giọng đọc → tab "VOICEVOX / AivisSpeech" → Kết nối → chọn giọng → Tạo toàn bộ giọng đọc.
+
+Mô tả video sẽ tự có dòng credit, ví dụ `VOICEVOX:青山龍星`. Dòng này bắt buộc.
+Cách viết lời đọc: xem `docs/phong-cach-ke-chuyen.md`.
+
 ## Bảo vệ API giọng đọc
 
 `/api/tts` và `/api/elevenlabs` chỉ nhận yêu cầu gửi từ chính trang app, và giới hạn khoảng 120 lượt / 10 phút cho mỗi IP.
@@ -34,7 +43,10 @@ rồi nhập mật khẩu đó ở mục "Mật khẩu studio" trong ô Giọng 
 | Thư mục | Nội dung |
 | --- | --- |
 | `src/app/page.tsx` | Trang chính, giữ state tập phim (lưu localStorage) |
-| `src/app/api/tts` | Giọng Edge miễn phí (msedge-tts) |
+| `src/lib/localVoice.ts` | Giọng VOICEVOX / AivisSpeech chạy trên máy (miễn phí, được kiếm tiền khi ghi credit) |
+| `src/lib/readings.ts` | Từ điển cách đọc 読み cho giọng đọc |
+| `src/lib/chapters.ts` | Tự làm mục lục もくじ cho mô tả YouTube |
+| `src/app/api/tts` | Giọng Edge miễn phí (msedge-tts) | – chỉ để thử, không có giấy phép kiếm tiền |
 | `src/app/api/elevenlabs` | Chuyển tiếp yêu cầu ElevenLabs bằng API key của người dùng |
 | `src/components/` | 4 panel: Kịch bản, Giọng, Xem trước, Xuất video |
 | `src/lib/engine.ts` | Engine three.js: dựng cảnh, camera, nhân vật |
