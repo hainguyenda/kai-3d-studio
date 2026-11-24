@@ -1,5 +1,6 @@
 import * as THREE from "three";
-import type { CharacterId, CharacterLike, Episode, SceneId, ScenePrefab, Timeline } from "./types";
+import type { AspectRatio, CharacterId, CharacterLike, Episode, SceneId, ScenePrefab, Timeline } from "./types";
+import { aspectOf } from "./types";
 import { CharacterPrefab } from "./scenes/CharacterPrefab";
 import { CharacterPrefab2 } from "./scenes/CharacterPrefab2";
 import { inferEmotion } from "./emotion";
@@ -19,6 +20,9 @@ import { applyExtraCharacterAction } from "./characterActions";
 import { earthAssets } from "./earthAssets";
 import { Compositor } from "./compositor";
 import { frameAt } from "./timeline";
+
+/** khung dọc: hệ số mở rộng tan(fov/2) so với góc máy gốc của khung ngang */
+const PORTRAIT_ZOOM_OUT = 1.75;
 
 const EXTRA = ["heavy_crouch", "blown_wind", "jump_low", "shiver", "point_explain"];
 
@@ -74,7 +78,11 @@ export class StudioEngine {
   /** ảnh beat tải lên (theo src) */
   private images = new Map<string, HTMLImageElement>();
 
-  constructor(public out: HTMLCanvasElement, width = 1920) {
+  /** tỉ lệ khung hình hiện tại của canvas xuất */
+  aspect: AspectRatio = "16:9";
+  get portrait(): boolean { return this.aspect === "9:16"; }
+
+  constructor(public out: HTMLCanvasElement, width = 1920, aspect: AspectRatio = "16:9") {
     this.renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, powerPreference: "high-performance" });
     this.renderer.setPixelRatio(1);
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -99,7 +107,7 @@ export class StudioEngine {
     Object.values(this.prefabs).forEach(p => this.scene.add(p.root));
     Object.values(this.characters).forEach(c => this.scene.add(c.root));
     this.env = new WeatherEnvController(this.scene);
-    this.setResolution(width);
+    this.setResolution(width, aspect);
   }
 
   /** ảnh của beat: tải 1 lần, tải xong thì vẽ lại khung hình */
@@ -126,16 +134,22 @@ export class StudioEngine {
   /** đổi nhân vật (nv1 = cũ, nv2 = mới) */
   setCharacter(id: CharacterId): void { if (this.characters[id]) this.characterId = id; }
 
-  setResolution(width: number): void {
-    const h = Math.round((width * 9) / 16);
-    this.out.width = width; this.out.height = h;
-    this.renderer.setSize(width, h, false);
-    this.camera.aspect = 16 / 9; this.camera.updateProjectionMatrix();
+  /** long = cạnh dài (1920 → 1920x1080 hoặc 1080x1920) */
+  setResolution(long: number, aspect: AspectRatio = this.aspect): void {
+    const short = Math.round((long * 9) / 16);
+    const [w, h] = aspect === "9:16" ? [short, long] : [long, short];
+    this.aspect = aspect; this.compositor.portrait = aspect === "9:16";
+    this.out.width = w; this.out.height = h;
+    this.renderer.setSize(w, h, false);
+    this.camera.aspect = w / h; this.camera.updateProjectionMatrix();
   }
 
   /** vẽ khung hình tại giây t */
   renderAt(ep: Episode, tl: Timeline, t: number, opts: RenderOptions): void {
     if (!ep.beats.length) return;
+    // tập đổi tỉ lệ (JSON "aspect") → đổi khung canvas, giữ nguyên cạnh dài
+    const want = aspectOf(ep);
+    if (want !== this.aspect) this.setResolution(Math.max(this.out.width, this.out.height), want);
     this.last = [ep, tl, t, opts];
     const { ctx, fade } = frameAt(ep, tl, t), beat = ctx.beat, active = this.prefabs[beat.scene] ?? this.prefabs.japanese_street;
     for (const p of Object.values(this.prefabs)) p.root.visible = p === active;
@@ -178,13 +192,24 @@ export class StudioEngine {
     // có thẻ biểu đồ / ảnh nhỏ bên phải → dời khung hình để nhân vật nằm 1/3 bên trái
     const W = this.out.width, H = this.out.height, img = this.image(beat.imageOverlay?.src);
     const sideCard = !!beat.brandOverlay || (beat.visual && beat.visual.position !== "full") || (img && beat.imageOverlay?.mode === "pip_right");
-    if (sideCard) this.camera.setViewOffset(W, H, W * 0.17, 0, W, H); else if (this.camera.view) this.camera.clearViewOffset();
+    // khung dọc: thẻ nằm nửa trên → dời hình xuống để nhân vật nằm nửa dưới
+    if (sideCard) this.camera.setViewOffset(W, H, this.portrait ? 0 : W * 0.17, this.portrait ? -H * 0.22 : 0, W, H);
+    else if (this.camera.view) this.camera.clearViewOffset();
+    // khung dọc: các góc máy được đặt cho khung ngang → mở rộng góc nhìn dọc để không chỉ là cắt giữa
+    // (giữ ~55% bề ngang của khung ngang, lộ thêm trời / mặt đất phía trên và dưới nhân vật)
+    const baseFov = this.camera.fov;
+    if (this.portrait) {
+      const half = Math.atan(Math.tan((baseFov * Math.PI) / 360) * PORTRAIT_ZOOM_OUT);
+      this.camera.fov = Math.min(88, (half * 360) / Math.PI);
+    }
+    this.camera.aspect = W / H; this.camera.updateProjectionMatrix();
     this.scene.updateMatrixWorld(); this.camera.updateMatrixWorld();
     const labels = (active.labels?.(this.camera) ?? []).flatMap(l => {
       const v = l.pos.clone().project(this.camera);
       return v.z < 1 && Math.abs(v.x) < 1.1 && Math.abs(v.y) < 1.1 ? [{ x: (v.x + 1) / 2, y: (1 - v.y) / 2, text: l.text }] : [];
     });
     this.renderer.render(this.scene, this.camera);
+    if (this.camera.fov !== baseFov) { this.camera.fov = baseFov; this.camera.updateProjectionMatrix(); }
     const showLayer = beat.scene === "underground_tunnel" || (beat.scene === "earth_cutaway" && ctx.hud.depthKm > 0.5);
     this.compositor.draw(this.renderer.domElement, ctx, {
       showHud: opts.showHud, showSubs: opts.showSubs, fade, labels,

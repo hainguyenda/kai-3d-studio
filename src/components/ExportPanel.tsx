@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import type { Episode } from "@/lib/types";
+import type { AspectRatio, Episode } from "@/lib/types";
 
 interface Props {
   episode: Episode;
@@ -8,6 +8,8 @@ interface Props {
   exporting: boolean;
   progress: number;
   resolution: number;
+  aspect: AspectRatio;
+  onAspect(a: AspectRatio): void;
   fps: 30 | 60;
   sfx: boolean;
   thumbBeat: number;
@@ -40,32 +42,37 @@ export default function ExportPanel(p: Props) {
     lastUrl.current = p.videoUrl;
     const a = document.createElement("a"); a.href = p.videoUrl; a.download = p.videoName; a.click();
   }, [p.videoUrl, p.videoName]);
+  const dims = (long: number) => { const short = Math.round((long * 9) / 16); return p.aspect === "9:16" ? `${short}x${long}` : `${long}x${short}`; };
   const status = p.status.replace(/\s*[–-]?\s*giữ tab này mở\.?/, " – có thể chuyển sang tab khác, đừng đóng tab này.");
   return (
     <section className="panel">
       <h2 className="panel-title">4. Xuất video MP4</h2>
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-2 gap-2 sm:grid-cols-4">
+        <label><span className="label">Tỉ lệ</span>
+          <select className="input" value={p.aspect} disabled={p.exporting} onChange={e => p.onAspect(e.target.value === "9:16" ? "9:16" : "16:9")}>
+            <option value="16:9">16:9 ngang – YouTube</option><option value="9:16">9:16 dọc – Shorts / Reels / TikTok</option></select></label>
         <label><span className="label">Độ phân giải</span>
           <select className="input" value={p.resolution} disabled={p.exporting} onChange={e => p.onResolution(Number(e.target.value))}>
-            <option value={1920}>1080p</option><option value={1280}>720p (máy yếu)</option></select></label>
+            <option value={1920}>1080p ({dims(1920)})</option><option value={1280}>720p ({dims(1280)}, máy yếu)</option></select></label>
         <label><span className="label">Khung hình</span>
           <select className="input" value={p.fps} disabled={p.exporting} onChange={e => p.onFps(Number(e.target.value) === 60 ? 60 : 30)}>
             <option value={30}>30 fps</option><option value={60}>60 fps</option></select></label>
         <label className="flex items-end gap-1 pb-2 text-sm"><input type="checkbox" checked={p.sfx} onChange={e => p.onSfx(e.target.checked)} /> Tiếng gió / rung nền</label>
       </div>
+      {p.aspect === "9:16" && <p className="mt-2 text-xs text-studio-muted">Khung dọc: HUD thu nhỏ góc trên, thẻ biểu đồ lên nửa trên, phụ đề nằm trên vùng tên kênh / mô tả của Shorts. Shorts tối đa 3 phút, Reels / TikTok tuỳ nền tảng.</p>}
       {p.missingAudio > 0 && <p className="mt-2 text-xs text-yellow-300">⚠ Còn {p.missingAudio} beat chưa có giọng – các đoạn đó sẽ im lặng.</p>}
       <div className="mt-3 flex flex-wrap gap-2">
         {p.exporting ? <button className="btn" onClick={p.onCancel}>■ Huỷ xuất</button> : <button className="btn" disabled={!p.ready} onClick={p.onExport}>⏺ Xuất video MP4</button>}
         <select className="input w-auto" value={p.thumbBeat} onChange={e => p.onThumbBeat(Number(e.target.value))}>
           {p.episode.beats.map((b, i) => <option key={b.id + i} value={i}>Thumbnail từ beat {i + 1}</option>)}
         </select>
-        <button className="btn-ghost" disabled={!p.ready || p.exporting} onClick={p.onThumbnail}>🖼 Tải Thumbnail 1080p</button>
+        <button className="btn-ghost" disabled={!p.ready || p.exporting} onClick={p.onThumbnail}>🖼 Tải Thumbnail {p.aspect === "9:16" ? "dọc 1080x1920" : "1080p"}</button>
       </div>
       {p.exporting && <div className="mt-3 h-2 overflow-hidden rounded bg-studio-line"><div className="h-full bg-studio-accent" style={{ width: `${Math.round(p.progress * 100)}%` }} /></div>}
       {status && <p className="mt-2 text-xs text-studio-muted">{status}</p>}
       <div className="mt-2 flex flex-wrap gap-4 text-sm font-bold">
         {p.videoUrl && <a className="text-studio-accent underline" href={p.videoUrl} download={p.videoName}>⬇ Tải video ({p.videoName})</a>}
-        {p.thumbUrl && <a className="text-studio-accent underline" href={p.thumbUrl} download="thumbnail-1080p.png">⬇ Tải thumbnail</a>}
+        {p.thumbUrl && <a className="text-studio-accent underline" href={p.thumbUrl} download={p.aspect === "9:16" ? "thumbnail-9x16.png" : "thumbnail-1080p.png"}>⬇ Tải thumbnail</a>}
       </div>
       <p className="mt-2 text-xs text-studio-muted">Bấm xuất xong có thể chuyển sang tab khác – app tự dựng từng khung hình, xong sẽ tự tải file MP4 về (tên tab hiện % tiến độ). Đừng đóng tab hoặc tắt máy. Cần Chrome/Edge bản mới.</p>
       {items.length > 0 && (

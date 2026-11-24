@@ -1,6 +1,7 @@
 "use client";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import type { Beat, CharacterId, Episode } from "@/lib/types";
+import type { AspectRatio, Beat, CharacterId, Episode } from "@/lib/types";
+import { aspectOf } from "@/lib/types";
 import { DEMO_EPISODE } from "@/lib/demoEpisode";
 import { buildTimeline, frameAt } from "@/lib/timeline";
 import { decodeAudio, getAudioContext, snapBounds } from "@/lib/audio";
@@ -92,6 +93,10 @@ export default function StudioPage() {
   useEffect(() => { try { const c = localStorage.getItem(LS_CHAR); if (c === "nv1" || c === "nv2") setCharacter(c); } catch { /* bỏ qua */ } }, []);
   useEffect(() => { try { localStorage.setItem(LS_CHAR, character); } catch { /* bỏ qua */ } engineRef.current?.setCharacter(character); }, [character]);
 
+  // tỉ lệ khung hình nằm trong kịch bản (JSON "aspect") để lưu / mở file giữ nguyên
+  const aspect = aspectOf(episode);
+  const onAspect = (a: AspectRatio) => setEpisode(ep => ({ ...ep, aspect: a }));
+
   const timeline = useMemo(
     () => buildTimeline(episode, episode.beats.map(b => audios[b.id]?.buffer.duration), fullTrack ? { duration: fullTrack.buffer.duration, bounds: fullTrack.bounds } : undefined),
     [episode, audios, fullTrack],
@@ -107,7 +112,7 @@ export default function StudioPage() {
         await new Promise(r => setTimeout(r, 30));
         const { StudioEngine } = await import("@/lib/engine");
         if (disposed || !canvasRef.current) return;
-        engineRef.current = new StudioEngine(canvasRef.current, 1920);
+        engineRef.current = new StudioEngine(canvasRef.current, 1920, aspectOf(load(LS_EPISODE, DEMO_EPISODE)));
         setReady(true);
       } catch (e) { setLoadingText("Không khởi tạo được WebGL: " + (e instanceof Error ? e.message : String(e))); }
     })();
@@ -231,7 +236,7 @@ export default function StudioPage() {
   const seekTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const onPlay = async (fromOverride?: number) => {
     const eng = engineRef.current; if (!eng) return;
-    if (eng.out.width !== 1920) eng.setResolution(1920);
+    if (Math.max(eng.out.width, eng.out.height) !== 1920 || eng.aspect !== aspect) eng.setResolution(1920, aspect);
     const session = ++playSession.current;
     playRef.current?.stop();
     setPlaying(true);
@@ -266,7 +271,7 @@ export default function StudioPage() {
     playRef.current?.stop();
     setExporting(true); setExportProgress(0); setExportStatus("Đang xuất… giữ tab này mở."); if (video) URL.revokeObjectURL(video.url); setVideo(null);
     try {
-      eng.setResolution(resolution);
+      eng.setResolution(resolution, aspect);
       const h = await startPlayback(eng, episode, timeline, audioPayload(), {
         record: true, fps, showHud, showSubs,
         onTime: t => { const now = performance.now(); if (now - lastTimeUpdate.current > 250) { lastTimeUpdate.current = now; setExportProgress(Math.min(1, t / timeline.total)); setExportStatus(`Đang xuất ${t.toFixed(0)}s / ${timeline.total.toFixed(0)}s – giữ tab này mở.`); } },
@@ -275,18 +280,18 @@ export default function StudioPage() {
       const blob = await h.done; playRef.current = null;
       if (blob && blob.size > 0) {
         const ext = h.mime.includes("mp4") ? "mp4" : "webm";
-        setVideo({ url: URL.createObjectURL(blob), name: `${episode.title.replace(/[\\/:*?"<>|]/g, "").slice(0, 40)}.${ext}` });
+        setVideo({ url: URL.createObjectURL(blob), name: `${episode.title.replace(/[\\/:*?"<>|]/g, "").slice(0, 40)}${aspect === "9:16" ? "-shorts-9x16" : ""}.${ext}` });
         setExportStatus(`✓ Xuất xong (${(blob.size / 1e6).toFixed(1)} MB, ${ext.toUpperCase()}).`);
       } else setExportStatus("Đã huỷ.");
     } catch (e) { setExportStatus("Lỗi xuất video: " + (e instanceof Error ? e.message : String(e))); }
-    eng.setResolution(1920); setExporting(false); setExportProgress(1);
+    eng.setResolution(1920, aspect); setExporting(false); setExportProgress(1);
   };
   const onCancel = () => playRef.current?.stop();
 
   const onThumbnail = () => {
     const eng = engineRef.current; if (!eng) return;
     const i = Math.min(thumbBeat, episode.beats.length - 1);
-    eng.setResolution(1920);
+    eng.setResolution(1920, aspect);
     eng.renderAt(episode, timeline, timeline.starts[i] + Math.min(2, timeline.durs[i] * 0.6), { showHud: true, showSubs: false });
     eng.compositor.thumbnailText(episode.thumbnailText || episode.title);
     eng.out.toBlob(b => { if (!b) return; if (thumbUrl) URL.revokeObjectURL(thumbUrl); setThumbUrl(URL.createObjectURL(b)); eng.renderAt(episode, timeline, time, { showHud, showSubs }); }, "image/png");
@@ -298,7 +303,7 @@ export default function StudioPage() {
     <main className="mx-auto max-w-[1500px] px-4 py-5">
       <header className="mb-4 flex flex-wrap items-end gap-3">
         <h1 className="text-2xl font-black">🎬 Kai 3D Studio</h1>
-        <p className="text-sm text-studio-muted">Kịch bản song ngữ → giọng Nhật tự động → hình 3D + HUD + phụ đề → MP4 1080p</p>
+        <p className="text-sm text-studio-muted">Kịch bản song ngữ → giọng Nhật tự động → hình 3D + HUD + phụ đề → MP4 1080p ngang 16:9 hoặc dọc 9:16 (Shorts / Reels / TikTok)</p>
         <button className="btn-ghost ml-auto text-xs" onClick={() => { onClear(); setEpisode(DEMO_EPISODE); setTime(1.2); }}>Nạp lại tập mẫu</button>
       </header>
       <div className="grid gap-4 xl:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
@@ -308,12 +313,12 @@ export default function StudioPage() {
         <div className="space-y-4">
           <PreviewPanel canvasRef={canvasRef} ready={ready} loadingText={loadingText} playing={playing} time={time} total={timeline.total}
             showHud={showHud} showSubs={showSubs} onPlay={() => void onPlay()} onPause={onPause} onSeek={seekTo} onHud={setShowHud} onSubs={setShowSubs} beatLabel={beatLabel}
-            character={character} onCharacter={setCharacter} />
+            character={character} onCharacter={setCharacter} aspect={aspect} onAspect={onAspect} disabled={exporting} />
           <div className="grid gap-4 lg:grid-cols-2">
             <VoicePanel voice={voice} onVoice={setVoice} progress={genProgress} message={voiceMsg} onGenerateAll={onGenerateAll} onUpload={onUpload}
               onClear={onClear} onBgm={onBgm} bgmVolume={bgmVolume} onBgmVolume={setBgmVolume} hasFullTrack={!!fullTrack} />
             <ExportPanel episode={episode} ready={ready} exporting={exporting} progress={exportProgress} resolution={resolution} fps={fps} sfx={sfx} thumbBeat={thumbBeat}
-              onResolution={setResolution} onFps={setFps} onSfx={setSfx} onThumbBeat={setThumbBeat} onExport={onExport} onCancel={onCancel} onThumbnail={onThumbnail}
+              aspect={aspect} onAspect={onAspect} onResolution={setResolution} onFps={setFps} onSfx={setSfx} onThumbBeat={setThumbBeat} onExport={onExport} onCancel={onCancel} onThumbnail={onThumbnail}
               videoUrl={video?.url ?? null} videoName={video?.name ?? ""} thumbUrl={thumbUrl} status={exportStatus} missingAudio={missingAudio} />
           </div>
         </div>
