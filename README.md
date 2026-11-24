@@ -53,3 +53,7 @@ node scripts/pull-from-vercel.mjs <deploymentId>
 ```
 
 Script ghi đè file khác bản deploy và kiểm tra SHA1 từng file.
+
+## Deploy
+
+Mỗi lần đẩy lên nhánh `main` của repo này, Vercel tự build và cập nhật https://kai-3d-studio.vercel.app.
