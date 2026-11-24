@@ -29,6 +29,34 @@
       }
     },
     {
+      "id": "beat_intro",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "idle_wave",
+      "emotion": "excited",
+      "hideHud": true,
+      "brandOverlay": {
+        "type": "intro_banner",
+        "channelName": "もしも検証ラボ",
+        "headline": "もしも東京の地面が透明になったら？",
+        "subline": "水道管・地下鉄・温泉・プレートまで3Dで検証"
+      },
+      "vi_note": "Chào mừng đến もしも検証ラボ, mình là Kai! Hôm nay ta dùng 3D nhìn xuyên mặt đất Tokyo, từ vài mét tới hàng chục km.",
+      "ja_narration": "もしも検証ラボへようこそ、案内役のカイです！今回は、東京の地面をすけすけにして、足の下を3Dで本気検証します！",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
       "id": "beat_02",
       "scene": "tokyo_glass_street",
       "cameraPreset": "glass_wide",
@@ -832,52 +860,58 @@
       }
     },
     {
-      "id": "beat_34",
-      "scene": "japanese_street",
-      "cameraPreset": "front_close",
+      "id": "beat_outro_recap",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
       "characterAction": "point_explain",
-      "vi_note": "Nhà bạn ở trên tuyến tàu ngầm nào? Viết vào bình luận nhé.",
-      "ja_narration": "あなたの家の下には、どんなトンネルが通っていると思いますか？ぜひコメントで教えてください。",
       "emotion": "curious",
-      "env": {
-        "timeOfDay": "sunset",
-        "showHole": false
+      "hideHud": true,
+      "brandOverlay": {
+        "type": "outro_recap",
+        "channelName": "もしも検証ラボ",
+        "headline": "水道管・地下鉄42.3m・地下調節池・温泉1500m・岩盤3km・3つのプレート",
+        "subline": "次の検証テーマをコメントで募集中！"
       },
+      "vi_note": "Tổng kết: ống nước vài mét, ga tàu sâu 42,3 m, hồ điều tiết ngầm, suối nóng 1.500 m, nền đá 3 km và 3 mảng kiến tạo. Dưới nhà bạn có đường hầm nào? Comment kèm chủ đề muốn xem tiếp nhé!",
+      "ja_narration": "今回のまとめ！数メートル下の水道管、深さ42.3メートルの六本木駅、巨大な地下調節池、1500メートルの温泉、3キロの岩盤、そして3つのプレートでした。あなたの家の下には、どんなトンネルが通っていると思いますか？次に検証してほしいテーマと一緒に、ぜひコメントで教えてください！",
       "hudStart": {
         "time": "12:00:00",
-        "depthKm": 0.0,
+        "depthKm": 0,
         "speedKmh": 0,
-        "progress": 0.0
+        "progress": 0
       },
       "hudEnd": {
         "time": "12:00:00",
-        "depthKm": 0.0,
+        "depthKm": 0,
         "speedKmh": 0,
-        "progress": 0.0
+        "progress": 0
       }
     },
     {
-      "id": "beat_35",
-      "scene": "japanese_street",
-      "cameraPreset": "front_medium",
+      "id": "beat_outro_cta",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
       "characterAction": "idle_wave",
-      "vi_note": "Đăng ký kênh để xem tập sau.",
-      "ja_narration": "チャンネル登録をして、次の「もしも」も一緒に見ていきましょう。それでは、また！",
-      "env": {
-        "timeOfDay": "night",
-        "showHole": false
+      "emotion": "excited",
+      "hideHud": true,
+      "brandOverlay": {
+        "type": "outro_cta",
+        "channelName": "もしも検証ラボ",
+        "subline": "高評価・チャンネル登録・通知オンが励みになります！"
       },
+      "vi_note": "Thấy hay hãy bấm Like, Đăng ký kênh và bật chuông thông báo nhé! Sự ủng hộ của mọi người là động lực lớn nhất cho Kai. Hẹn gặp lại tập sau!",
+      "ja_narration": "少しでも面白いと思ったら、高評価・チャンネル登録・通知オンをお願いします！皆さんの応援が動画作りの一番の励みになります。また次回の検証でお会いしましょう、案内役のカイでした！",
       "hudStart": {
         "time": "12:00:00",
-        "depthKm": 0.0,
+        "depthKm": 0,
         "speedKmh": 0,
-        "progress": 0.0
+        "progress": 0
       },
       "hudEnd": {
         "time": "12:00:00",
-        "depthKm": 0.0,
+        "depthKm": 0,
         "speedKmh": 0,
-        "progress": 0.0
+        "progress": 0
       }
     }
   ],
@@ -885,13 +919,15 @@
     "titles": [
       "もしも東京の地面が透明になったら、足の下に何が見える？",
       "東京の地下42.3m、その下には何がある？【3Dシミュレーション】",
-      "東京の足の下を3キロまでのぞいてみた"
+      "東京の足の下を3キロまでのぞいてみた【もしも検証】"
     ],
-    "description": "東京の地面がガラスのように透明になったら？水道管、地下鉄、巨大な地下調節池、大深度地下、温泉、そして地震基盤とプレートまで、3Dで足の下をのぞいていきます。\n\n出典：東京都交通局、東京メトロ、東京都水道局、東京都建設局、JR東海、防災科学技術研究所（NIED）",
+    "description": "もしも東京の地面が、ガラスのように透明になったら？\n水道管・ガス管がびっしり並ぶ数メートル下、深さ42.3mの六本木駅、台風から街を守る巨大な地下調節池、大深度地下を走るリニア、地下1500mの温泉、そして3キロ下の岩盤と、東京の真下で重なる3つのプレートまで。ふだん歩いている地面の下を、3Dで徹底検証しました！\n\n【目次】\n0:00 もしも東京の地面が透明になったら\n0:24 アスファルトのすぐ下：水道管・ガス管\n0:54 地下鉄のトンネルと深い駅\n1:40 巨大な地下調節池\n2:07 大深度地下とリニア\n2:23 🎁 サプライズ\n2:36 関東ローム層と地下水\n2:49 地下1500mの温泉\n3:11 地震基盤とやわらかい地層\n3:33 3つのプレートが重なる東京\n4:02 まとめ\n\n📌 この動画は公開されているデータをもとにした3Dシミュレーションです。\n出典：東京都交通局、東京メトロ、東京都水道局、東京都建設局、JR東海、防災科学技術研究所（NIED）\n🔔 チャンネル登録・通知オンで、新しい「もしも検証」を続々とお届けします！\n\n#もしも検証ラボ #もしも #3Dアニメ #雑学 #東京 #地下",
     "tags": [
       "もしも",
+      "もしも検証ラボ",
       "東京",
       "地下",
+      "地面が透明",
       "地下鉄",
       "六本木駅",
       "大江戸線",
@@ -899,7 +935,9 @@
       "大深度地下",
       "温泉",
       "プレート",
-      "3Dシミュレーション"
+      "3Dアニメ",
+      "雑学",
+      "シミュレーション"
     ]
   }
 }
