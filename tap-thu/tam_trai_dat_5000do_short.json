@@ -1,0 +1,241 @@
+{
+  "title": "地球の中心は、太陽の表面と同じくらい熱い #shorts",
+  "aspect": "9:16",
+  "title_vi": "Tâm Trái Đất nóng ngang bề mặt Mặt Trời (~5.000°C)",
+  "thumbnailText": "地球の中心 約5000℃以上",
+  "beats": [
+    {
+      "id": "beat_01",
+      "scene": "japanese_street",
+      "cameraPreset": "front_medium",
+      "characterAction": "look_down",
+      "emotion": "shocked",
+      "caption": "地球の中心＝太陽の表面！？",
+      "env": {
+        "timeOfDay": "day",
+        "showHole": true
+      },
+      "vi_note": "Ngay dưới chân bạn, cách 6.371 km, tâm Trái Đất nóng ngang bề mặt Mặt Trời.",
+      "ja_narration": "この足の下、6371キロ先。地球の中心は、太陽の表面と同じくらい熱いんです。",
+      "hudMarks": [
+        "地表",
+        "外核",
+        "中心"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_02",
+      "scene": "underground_tunnel",
+      "cameraPreset": "tunnel_follow",
+      "characterAction": "idle",
+      "platform": true,
+      "spacesuit": true,
+      "emotion": "sweating",
+      "vi_note": "Đi thang máy xuống. Qua lớp vỏ và lớp phủ, tới độ sâu 2.900 km là lõi ngoài: sắt nóng chảy.",
+      "ja_narration": "エレベーターで下りてみましょう。地殻とマントルをぬけて、深さ2900キロ。そこは、どろどろに溶けた鉄の「外核」です。",
+      "hudMarks": [
+        "地表",
+        "外核",
+        "中心"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 30,
+        "speedKmh": 0,
+        "progress": 0.002
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 3000,
+        "speedKmh": 0,
+        "progress": 0.235
+      }
+    },
+    {
+      "id": "beat_03",
+      "scene": "underground_tunnel",
+      "cameraPreset": "core_orbit",
+      "characterAction": "idle",
+      "platform": true,
+      "spacesuit": true,
+      "emotion": "shocked",
+      "vi_note": "Đến tâm Trái Đất, nhiệt độ khoảng 5.000 đến 6.000°C.",
+      "ja_narration": "そして、地球の中心へ。温度は、およそ5000度から6000度にもなります。",
+      "hudMarks": [
+        "地表",
+        "外核",
+        "中心"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 6371,
+        "speedKmh": 0,
+        "progress": 0.5
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 6371,
+        "speedKmh": 0,
+        "progress": 0.5
+      }
+    },
+    {
+      "id": "beat_04",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "bar_compare",
+        "title": "どれくらい熱い？",
+        "items": [
+          {
+            "label": "鉄が溶ける温度",
+            "value": 1538,
+            "unit": "℃",
+            "color": "#3b7a75"
+          },
+          {
+            "label": "太陽の表面",
+            "value": 5500,
+            "unit": "℃",
+            "color": "#e67e22"
+          },
+          {
+            "label": "地球の中心",
+            "value": 5200,
+            "unit": "℃",
+            "color": "#e74c3c"
+          }
+        ]
+      },
+      "vi_note": "So sánh: bề mặt Mặt Trời khoảng 5.500°C. Gần như bằng nhau.",
+      "ja_narration": "太陽の表面は、およそ5500度。地球の中心と、ほとんど同じなんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_05",
+      "scene": "earth_cutaway",
+      "cameraPreset": "cut_side",
+      "characterAction": "idle",
+      "hideHud": true,
+      "cutaway": {
+        "label": "内核 かたい鉄",
+        "labelAt": "center",
+        "hideMarker": true
+      },
+      "vi_note": "Lạ ở chỗ: lõi trong nóng như vậy mà vẫn là quả cầu sắt rắn.",
+      "ja_narration": "ふしぎなのは、こんなに熱いのに、中心の「内核」は、かたい鉄のボールだということ。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 6371,
+        "speedKmh": 0,
+        "progress": 0.5
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 6371,
+        "speedKmh": 0,
+        "progress": 0.5
+      }
+    },
+    {
+      "id": "beat_06",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "fact_card",
+        "title": "地球の中心の圧力",
+        "highlightText": "約360万気圧",
+        "subText": "熱くても 鉄が溶けられない"
+      },
+      "vi_note": "Vì áp suất ở đó khoảng 3,6 triệu lần khí quyển, ép sắt không thể tan chảy.",
+      "ja_narration": "まわりからの圧力が、地上のおよそ360万倍。あまりに強くおされて、鉄が溶けられないんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_outro_full",
+      "scene": "underground_tunnel",
+      "cameraPreset": "core_orbit",
+      "characterAction": "freefall_float",
+      "spacesuit": true,
+      "hideHud": true,
+      "promo": {
+        "type": "full_video",
+        "text": "続きはフル動画で！",
+        "sub": "地球の反対側まで行けるエレベーター…本編で3D検証",
+        "at": 0.2
+      },
+      "vi_note": "Nếu đi thang máy tới tâm, cơ thể bạn sẽ ra sao? Xem bản đầy đủ ở link bên dưới.",
+      "ja_narration": "では、エレベーターで中心まで行ったら、体はどうなる…？続きはフル動画で！下のリンクからどうぞ。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 6371,
+        "speedKmh": 0,
+        "progress": 0.5
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 6371,
+        "speedKmh": 0,
+        "progress": 0.5
+      }
+    }
+  ],
+  "youtube": {
+    "titles": [
+      "地球の中心は、太陽の表面と同じくらい熱い #shorts",
+      "足の下6371km、地球の中心は約5000℃以上 #shorts",
+      "太陽と同じくらい熱いのに溶けない？地球の中心の秘密 #shorts"
+    ],
+    "description": "地球の中心は、温度およそ5000〜6000℃。太陽の表面（約5500℃）とほとんど同じ熱さです。それなのに中心の内核は、ものすごい圧力でおしかためられた、かたい鉄のボールでした。\n\n▶ フル動画はこちら：（本編のURLを入れてください）\n\n📌 公開データをもとにした3Dシミュレーションです。数値には研究により幅があります。\n🔔 チャンネル登録で、新しい「もしも検証」をお届けします！\n\n#shorts #もしも検証ラボ #地球の中心 #雑学 #3Dアニメ",
+    "tags": [
+      "shorts",
+      "もしも検証ラボ",
+      "地球の中心",
+      "内核",
+      "外核",
+      "太陽",
+      "地球",
+      "雑学",
+      "3Dアニメ",
+      "エレベーター"
+    ]
+  }
+}
