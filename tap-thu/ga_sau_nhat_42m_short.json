@@ -1,0 +1,252 @@
+{
+  "title": "日本一深い地下鉄駅は、地下42.3m #shorts",
+  "aspect": "9:16",
+  "title_vi": "Ga tàu điện ngầm sâu nhất Nhật Bản: 42,3 m",
+  "thumbnailText": "地下42.3m 日本一深い駅",
+  "beats": [
+    {
+      "id": "beat_01",
+      "scene": "tokyo_glass_street",
+      "cameraPreset": "glass_wide",
+      "characterAction": "look_down",
+      "emotion": "curious",
+      "hideHud": true,
+      "caption": "日本一深い駅は？",
+      "vi_note": "Nếu mặt đất Tokyo trong suốt, ga tàu điện ngầm sâu nhất Nhật Bản sẽ nằm ở đâu?",
+      "ja_narration": "もしも東京の地面が透明になったら。日本一深い地下鉄の駅は、どこにあるでしょう？",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_02",
+      "scene": "tokyo_glass_street",
+      "cameraPreset": "glass_wide",
+      "characterAction": "look_down",
+      "vi_note": "Xuống khoảng 10 m, đường hầm tàu điện ngầm hiện ra.",
+      "ja_narration": "深さ10メートルほどで、地下鉄のトンネルがあらわれます。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0.003,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0.01,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudMarks": [
+        "地上",
+        "",
+        "地下"
+      ]
+    },
+    {
+      "id": "beat_03",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "fact_card",
+        "title": "銀座線",
+        "highlightText": "1927年開業",
+        "subText": "アジア最初の地下鉄"
+      },
+      "note": "出典：東京メトロ",
+      "vi_note": "Tuyến Ginza mở năm 1927, tàu điện ngầm đầu tiên ở châu Á, chạy ngay dưới mặt đường.",
+      "ja_narration": "1927年に開業した銀座線は、アジアで最初の地下鉄。道路のすぐ下を走っています。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_04",
+      "scene": "tokyo_deep_infra",
+      "cameraPreset": "infra_follow",
+      "characterAction": "freefall_float",
+      "vi_note": "Tuyến mới hơn phải chui sâu hơn. Ga Kokkai-gijidomae sâu khoảng 37,9 m.",
+      "ja_narration": "あとからできた路線ほど深くなります。千代田線の国会議事堂前駅は、深さ約37.9メートル。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0.02,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0.038,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudMarks": [
+        "地上",
+        "",
+        "地下"
+      ]
+    },
+    {
+      "id": "beat_05",
+      "scene": "tokyo_deep_infra",
+      "cameraPreset": "infra_follow",
+      "characterAction": "freefall_float",
+      "emotion": "shocked",
+      "caption": "地下42.3m",
+      "note": "出典：東京都交通局",
+      "vi_note": "Và ga sâu nhất: Roppongi tuyến Oedo, 42,3 m, đủ chứa tòa nhà 14 tầng.",
+      "ja_narration": "そして日本一深いのは、大江戸線の六本木駅。地下42.3メートル、14階建てのビルがすっぽり入ります。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0.038,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0.0423,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudMarks": [
+        "地上",
+        "",
+        "地下"
+      ]
+    },
+    {
+      "id": "beat_06",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "depth_scale",
+        "title": "駅の深さ",
+        "items": [
+          {
+            "label": "銀座線（浅い区間）",
+            "value": 8,
+            "unit": "m"
+          },
+          {
+            "label": "千代田線 国会議事堂前",
+            "value": 38,
+            "unit": "m"
+          },
+          {
+            "label": "大江戸線 六本木",
+            "value": 42,
+            "unit": "m"
+          }
+        ]
+      },
+      "vi_note": "So sánh độ sâu các ga.",
+      "ja_narration": "地面からホームまで、比べるとこのとおり。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_07",
+      "scene": "tokyo_deep_infra",
+      "cameraPreset": "infra_kai",
+      "characterAction": "idle",
+      "emotion": "sweating",
+      "vi_note": "Từ mặt đất xuống sân ga phải đi nhiều thang cuốn, mất vài phút.",
+      "ja_narration": "地上からホームまでは、長いエスカレーターを乗りついで数分かかります。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0.0423,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0.0423,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudMarks": [
+        "地上",
+        "",
+        "地下"
+      ]
+    },
+    {
+      "id": "beat_outro_full",
+      "scene": "tokyo_deep_infra",
+      "cameraPreset": "infra_wide",
+      "characterAction": "look_down",
+      "hideHud": true,
+      "promo": {
+        "type": "full_video",
+        "text": "続きはフル動画で！",
+        "sub": "地下の調節池、温泉、プレートまで…本編で3D検証",
+        "at": 0.2
+      },
+      "vi_note": "Dưới đó còn hồ chứa nước khổng lồ và cả suối nước nóng. Xem bản đầy đủ ở link bên dưới.",
+      "ja_narration": "でも、その下にはまだ、巨大な地下の池や温泉が…！続きはフル動画で！下のリンクからどうぞ。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0.0423,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0.0423,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    }
+  ],
+  "youtube": {
+    "titles": [
+      "日本一深い地下鉄駅は、地下42.3m #shorts",
+      "14階建てのビルがすっぽり入る駅！？六本木駅の深さ #shorts",
+      "東京の地面が透明になったら見える、日本一深い駅 #shorts"
+    ],
+    "description": "日本一深い地下鉄の駅は、大江戸線の六本木駅。地下42.3m、14階建てのビルがすっぽり入る深さです。あとからできた路線ほど深くなる理由も3Dで解説！\n\n▶ フル動画はこちら：（本編のURLを入れてください）\n\n出典：東京都交通局、東京メトロ\n🔔 チャンネル登録で、新しい「もしも検証」をお届けします！\n\n#もしも検証ラボ #もしも #Shorts #東京 #地下鉄 #六本木駅 #雑学",
+    "tags": [
+      "もしも",
+      "もしも検証ラボ",
+      "Shorts",
+      "東京",
+      "地下鉄",
+      "六本木駅",
+      "大江戸線",
+      "日本一深い駅",
+      "雑学",
+      "3Dアニメ"
+    ]
+  }
+}

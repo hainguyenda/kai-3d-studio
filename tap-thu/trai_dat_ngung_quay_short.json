@@ -1,0 +1,273 @@
+{
+  "title": "地球が急に止まったら、東京では時速1360kmで全部が吹き飛ぶ #shorts",
+  "aspect": "9:16",
+  "title_vi": "Trái Đất ngừng quay: Tokyo văng đi 1.360 km/h",
+  "thumbnailText": "東京が時速1360kmで吹き飛ぶ！？",
+  "beats": [
+    {
+      "id": "beat_01",
+      "scene": "japanese_street",
+      "cameraPreset": "front_close",
+      "characterAction": "idle_wave",
+      "emotion": "shocked",
+      "env": {
+        "timeOfDay": "day",
+        "weather": "clear",
+        "showHole": false
+      },
+      "hideHud": true,
+      "caption": "時速1,360km！？",
+      "vi_note": "Nếu Trái Đất đột ngột ngừng quay ngay bây giờ, mọi thứ ở Tokyo sẽ bị hất văng với 1.360 km/h.",
+      "ja_narration": "もしも今、地球が急に止まったら。東京では、すべてが時速1360キロで吹き飛びます。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_02",
+      "scene": "earth_globe",
+      "cameraPreset": "globe_focus",
+      "characterAction": "idle",
+      "hideHud": true,
+      "globe": {
+        "focus": "home",
+        "arrows": true,
+        "path": false,
+        "marker": {
+          "at": "home",
+          "label": "時速1,360km"
+        }
+      },
+      "note": "東京（北緯35.7°）の自転速度",
+      "vi_note": "Trái Đất quay mỗi ngày một vòng, mặt đất Tokyo lúc này đang lao về phía đông 1.360 km/h.",
+      "ja_narration": "地球は1日に1回転。東京の地面は今も、時速1360キロで東へ動いています。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_03",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "emotion": "curious",
+      "hideHud": true,
+      "visual": {
+        "type": "bar_compare",
+        "position": "right",
+        "title": "地球の自転スピード",
+        "items": [
+          {
+            "label": "ジェット旅客機",
+            "value": 900,
+            "unit": "km/h",
+            "color": "#3b7a75"
+          },
+          {
+            "label": "東京の地面",
+            "value": 1360,
+            "unit": "km/h",
+            "color": "#4ea8de"
+          },
+          {
+            "label": "赤道の地面",
+            "value": 1670,
+            "unit": "km/h",
+            "color": "#e67e22"
+          }
+        ]
+      },
+      "vi_note": "Nhanh hơn máy bay mà ta không cảm thấy, vì không khí và nhà cửa cùng chuyển động.",
+      "ja_narration": "ジェット機より速いのに感じないのは、空気も建物も、みんな一緒に動いているからです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_04",
+      "scene": "japanese_street",
+      "cameraPreset": "side_low",
+      "characterAction": "blown_wind",
+      "emotion": "shocked",
+      "hideHud": true,
+      "caption": "東へ時速1,360km！",
+      "env": {
+        "timeOfDay": "sunset",
+        "weather": "wind_storm",
+        "windSpeed": 2,
+        "cameraShake": 0.65,
+        "showHole": false
+      },
+      "vi_note": "Nếu chỉ mặt đất dừng phắt, người và xe sẽ bị hất về phía đông với nguyên đà đó.",
+      "ja_narration": "でも地面だけが急に止まると、人も車も、そのままの勢いで東へ投げ出されます。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_05",
+      "scene": "wind_storm_street",
+      "cameraPreset": "storm_wide",
+      "characterAction": "blown_wind",
+      "emotion": "shocked",
+      "hideHud": true,
+      "env": {
+        "windStrength": 1.8,
+        "cameraShake": 0.55
+      },
+      "vi_note": "Không khí cũng không dừng: bão mạnh gấp 5 lần siêu bão quét khắp thế giới.",
+      "ja_narration": "空気も止まりません。最強の台風の5倍以上の暴風が、世界中で吹き荒れます。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_06",
+      "scene": "mega_tsunami_coast",
+      "cameraPreset": "tsunami_wide",
+      "characterAction": "blown_wind",
+      "emotion": "shocked",
+      "hideHud": true,
+      "caption": "超巨大津波",
+      "env": {
+        "cameraShake": 0.3
+      },
+      "vi_note": "Nước biển dồn về phía đông thành siêu sóng thần.",
+      "ja_narration": "海の水も東へ押し寄せ、超巨大な津波になります。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_07",
+      "scene": "arctic_pole",
+      "cameraPreset": "pole_axis",
+      "characterAction": "idle",
+      "emotion": "curious",
+      "hideHud": true,
+      "env": {
+        "showAxis": true
+      },
+      "note": "回転の軸の上 ほとんど動いていない",
+      "vi_note": "Nơi an toàn duy nhất là Bắc Cực và Nam Cực, nằm ngay trên trục quay.",
+      "ja_narration": "助かるのは、回転の軸の上にある北極と南極だけ。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_outro_full",
+      "scene": "earth_globe",
+      "cameraPreset": "globe_wide",
+      "characterAction": "idle",
+      "hideHud": true,
+      "globe": {
+        "arrows": true,
+        "path": false
+      },
+      "promo": {
+        "type": "full_video",
+        "text": "続きはフル動画で！",
+        "sub": "半年続く昼と夜、赤道の巨大大陸…本編で検証",
+        "at": 0.2
+      },
+      "vi_note": "Sau khi dừng, ngày và đêm kéo dài nửa năm... Xem bản đầy đủ ở link bên dưới.",
+      "ja_narration": "止まったあとの地球は、昼と夜が半年ずつ…？続きはフル動画で！下のリンクからどうぞ。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    }
+  ],
+  "youtube": {
+    "titles": [
+      "地球が急に止まったら、東京では時速1360kmで全部が吹き飛ぶ #shorts",
+      "地球が止まると時速1360kmの暴風！？ #shorts",
+      "地球の自転が急停止したら？安全なのは北極と南極だけ #shorts"
+    ],
+    "description": "もしも地球が急に回るのをやめたら？\n東京の地面は今も時速1360kmで動いています。地面だけが止まると、人も車も空気も海も、その勢いのまま東へ。台風の5倍以上の暴風と超巨大津波が世界をおそいます。\n\n▶ フル動画はこちら：（本編のURLを入れてください）\n\n🔔 チャンネル登録で、新しい「もしも検証」をお届けします！\n\n#もしも検証ラボ #もしも #Shorts #地球 #自転 #科学 #雑学",
+    "tags": [
+      "もしも",
+      "もしも検証ラボ",
+      "Shorts",
+      "地球が止まったら",
+      "自転",
+      "暴風",
+      "津波",
+      "科学",
+      "雑学",
+      "3Dアニメ"
+    ]
+  }
+}
