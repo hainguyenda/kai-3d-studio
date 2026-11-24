@@ -108,8 +108,17 @@ export interface Beat extends NewBeatFields {
   hudEnd: HudState;
 }
 
+/** tỉ lệ khung hình: "16:9" = YouTube ngang (mặc định), "9:16" = Shorts / Reels / TikTok dọc */
+export type AspectRatio = "16:9" | "9:16";
+
+/** đọc tỉ lệ từ JSON (chấp nhận "9:16" hoặc "9/16"); thiếu / sai thì là 16:9 */
+export const aspectOf = (ep: { aspect?: string }): AspectRatio =>
+  String(ep.aspect ?? "").replace(/\s/g, "").replace("/", ":") === "9:16" ? "9:16" : "16:9";
+
 export interface Episode {
   title: string;
+  /** "16:9" (mặc định) hoặc "9:16" cho video dọc */
+  aspect?: AspectRatio;
   title_vi?: string;
   thumbnailText?: string;
   beats: Beat[];
