@@ -1,0 +1,1109 @@
+{
+  "title": "もしも人類が掘った一番深い穴に入ったら",
+  "title_vi": "Chui vào hố sâu nhất loài người từng khoan (Kola)",
+  "thumbnailText": "深さ12km 人類最深の穴",
+  "beats": [
+    {
+      "id": "beat_01",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_cap",
+      "characterAction": "look_down",
+      "emotion": "curious",
+      "caption": "人類最深の穴の入り口",
+      "kola": {
+        "capped": true,
+        "label": "深さ12,262m"
+      },
+      "vi_note": "Đây là lối vào cái hố sâu nhất loài người từng khoan. Nhìn như một cái nắp sắt gỉ thôi, nhưng bên dưới sâu tới 12 km.",
+      "ja_narration": "人類が掘った、いちばん深い穴。その入り口が、じつはこれです。ただのさびた鉄のフタに見えますが、この下は深さ12キロ。もしもこの穴に入ったら、何が待っているのでしょうか？",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_intro",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "idle_wave",
+      "emotion": "excited",
+      "hideHud": true,
+      "brandOverlay": {
+        "type": "intro_banner",
+        "channelName": "もしも検証ラボ",
+        "headline": "もしも人類が掘った一番深い穴に入ったら？",
+        "subline": "深さ12,262m・コラ超深度掘削坑を3Dで検証"
+      },
+      "vi_note": "Chào mừng đến もしも検証ラボ, mình là Kai! Hôm nay ta chui vào hố khoan Kola, đi tới tận đáy 12 km bằng 3D.",
+      "ja_narration": "もしも検証ラボへようこそ、案内役のカイです！今回は、人類が掘ったいちばん深い穴「コラ超深度掘削坑」に、3Dで入ってみます！",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_02",
+      "scene": "earth_globe",
+      "cameraPreset": "globe_focus",
+      "characterAction": "idle",
+      "globe": {
+        "focus": [
+          69.4,
+          30.6
+        ],
+        "focusFrom": [
+          35.7,
+          139.7
+        ],
+        "path": false,
+        "marker": {
+          "at": [
+            69.4,
+            30.6
+          ],
+          "label": "コラ半島（ロシア）"
+        }
+      },
+      "hideHud": true,
+      "vi_note": "Hố nằm ở bán đảo Kola, cực tây bắc nước Nga, gần biên giới Na Uy, phía trên vòng Bắc Cực.",
+      "ja_narration": "場所は、ロシアの北のはし、コラ半島。ノルウェーとの国境に近く、北極圏の中にある、とても寒い土地です。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_03",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_site",
+      "characterAction": "point_explain",
+      "kola": {
+        "capped": false
+      },
+      "vi_note": "Năm 1970, các nhà khoa học Liên Xô dựng tháp khoan ở đây với mục tiêu: khoan sâu nhất có thể vào vỏ Trái Đất.",
+      "ja_narration": "1970年、当時のソビエト連邦の科学者たちが、ここに掘削やぐらを建てました。目標は、地球の皮である「地殻」を、できるだけ深くまで掘ることでした。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_04",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "fact_card",
+        "title": "コラ超深度掘削坑 SG-3",
+        "highlightText": "1970年 スタート",
+        "subText": "目的は石油ではなく 地球の中を調べること"
+      },
+      "hideHud": true,
+      "vi_note": "Đây không phải giếng dầu. Mục đích là khoa học: tận mắt xem bên trong vỏ Trái Đất thật sự ra sao.",
+      "ja_narration": "石油を探すための穴ではありません。地球の中が本当はどうなっているのか、自分の目で確かめる、科学のための穴だったんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_05",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_cap",
+      "characterAction": "look_down",
+      "kola": {
+        "capped": true,
+        "label": "直径 約23cm"
+      },
+      "emotion": "shocked",
+      "vi_note": "Nhưng cái hố này rất hẹp: đường kính chỉ khoảng 23 cm, vừa một đĩa ăn. Người không chui vào được.",
+      "ja_narration": "でも、この穴はとても細いんです。直径はおよそ23センチ、お皿くらいの大きさ。人が入ることはできません。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_06",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_section",
+      "characterAction": "idle",
+      "kola": {
+        "label": "ここからスタート"
+      },
+      "vi_note": "Vì vậy hôm nay ta dùng 3D để đi theo mũi khoan, từ mặt đất xuống đáy. Chấm cam là vị trí của chúng ta.",
+      "ja_narration": "そこで今回は、3Dでドリルの先についていきます。オレンジの点が、わたしたちのいる場所。地表から、いちばん下まで行ってみましょう！",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0.5,
+        "speedKmh": 0,
+        "progress": 0.041
+      }
+    },
+    {
+      "id": "beat_07",
+      "scene": "underground_tunnel",
+      "cameraPreset": "tunnel_follow",
+      "characterAction": "jump_in",
+      "emotion": "excited",
+      "vi_note": "Bắt đầu đi xuống! Cả cái hố được khoan xuyên qua đá cứng, gần như không có đất mềm.",
+      "ja_narration": "それでは出発！この穴は、やわらかい土ではなく、ほとんどがかたい岩の中を、まっすぐ下へ掘り進められています。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 1.0,
+        "speedKmh": 0,
+        "progress": 0.082
+      }
+    },
+    {
+      "id": "beat_08",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_deep",
+      "characterAction": "idle",
+      "kola": {
+        "label": "25億年以上前の岩"
+      },
+      "vi_note": "Ở đây có những phiến đá rất cổ, hơn 2,5 tỉ năm tuổi, thuộc loại già nhất châu Âu.",
+      "ja_narration": "このあたりの岩は、とても古く、なんと25億年以上前のもの。ヨーロッパでも、もっとも古い岩のひとつです。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 1.0,
+        "speedKmh": 0,
+        "progress": 0.082
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 2.0,
+        "speedKmh": 0,
+        "progress": 0.163
+      }
+    },
+    {
+      "id": "beat_09",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "split_compare",
+        "leftTitle": "ふつうの掘り方",
+        "leftSub": "管ぜんぶを回す",
+        "rightTitle": "コラの掘り方",
+        "rightSub": "先のドリルだけを泥水で回す"
+      },
+      "hideHud": true,
+      "vi_note": "Khoan cách nào? Không xoay cả cần khoan dài hàng km, mà dùng động cơ ở đáy chỉ xoay mũi khoan, đẩy bằng dung dịch bùn.",
+      "ja_narration": "どうやって掘ったのか？何キロもある長い管を全部回すのではなく、先っぽのドリルだけを、下に送りこんだ泥水の力で回したんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_10",
+      "scene": "underground_tunnel",
+      "cameraPreset": "tunnel_follow",
+      "characterAction": "freefall_float",
+      "vi_note": "Xuống 3 km, rồi 5 km. Mỗi lần thay mũi khoan, phải kéo cả chục km ống lên rồi thả xuống lại, mất cả ngày.",
+      "ja_narration": "3キロ、5キロと下りていきます。ドリルの刃をかえるたびに、何キロもの管を全部引き上げて、また下ろす。それだけで、まる一日かかりました。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 2.0,
+        "speedKmh": 0,
+        "progress": 0.163
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 5.0,
+        "speedKmh": 0,
+        "progress": 0.408
+      }
+    },
+    {
+      "id": "beat_11",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "fact_card",
+        "title": "1979年",
+        "highlightText": "世界一の深さに",
+        "subText": "アメリカの記録 9,583m をこえた"
+      },
+      "hideHud": true,
+      "vi_note": "Năm 1979, hố Kola vượt 9.583 m, phá kỷ lục thế giới của một giếng ở Mỹ. Nhưng họ vẫn tiếp tục.",
+      "ja_narration": "1979年、コラの穴は深さ9583メートルをこえて、アメリカの井戸がもっていた世界記録をぬきました。でも、まだまだ掘り続けます。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_12",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_deep",
+      "characterAction": "shocked",
+      "kola": {
+        "label": "微化石を発見"
+      },
+      "emotion": "shocked",
+      "vi_note": "Ở độ sâu khoảng 6 km, trong mẫu đá, người ta tìm thấy vi hóa thạch của sinh vật phù du siêu nhỏ, khoảng 24 loài.",
+      "ja_narration": "深さおよそ6キロ。取り出した岩の中から、とても小さな生き物の化石が見つかりました。プランクトンのなかまの「微化石」で、24種類もあったといいます。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 5.0,
+        "speedKmh": 0,
+        "progress": 0.408
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 6.0,
+        "speedKmh": 0,
+        "progress": 0.489
+      }
+    },
+    {
+      "id": "beat_13",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "fact_card",
+        "title": "深さ 約6km",
+        "highlightText": "微化石 24種類",
+        "subText": "小さなプランクトンのなかまの化石"
+      },
+      "hideHud": true,
+      "vi_note": "Chúng được bảo tồn bằng hợp chất hữu cơ, không phải đá vôi hay silic thông thường, nên mới chịu được áp suất và nhiệt dưới sâu.",
+      "ja_narration": "ふつうの化石とちがって、これらは炭素などの有機物でできていたため、地下深くの重さと熱にも、こわれずに残っていたんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_14",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_section",
+      "characterAction": "idle",
+      "kola": {
+        "label": "いまここ"
+      },
+      "vi_note": "Giới khoa học từng đoán ở khoảng 7 km sẽ gặp lớp đá bazan. Nhìn lại cả cột đá, ta đã đi được hơn nửa đường.",
+      "ja_narration": "科学者たちは、深さ7キロあたりで、岩の種類がかわる「玄武岩の層」に出会うと考えていました。ここで全体を見てみましょう。もう半分をこえています。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 6.0,
+        "speedKmh": 0,
+        "progress": 0.489
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 7.0,
+        "speedKmh": 0,
+        "progress": 0.571
+      }
+    },
+    {
+      "id": "beat_15",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "split_compare",
+        "leftTitle": "予想",
+        "leftSub": "7kmで玄武岩の層",
+        "rightTitle": "実際",
+        "rightSub": "ひびだらけの岩と水"
+      },
+      "hideHud": true,
+      "vi_note": "Nhưng lớp bazan không hề xuất hiện. Thay vào đó là đá granit nứt vỡ, và bên trong đầy nước.",
+      "ja_narration": "ところが、玄武岩の層は見つかりませんでした。かわりにあったのは、ひびだらけの花こう岩。しかも、その中は水でいっぱいだったんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_16",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_deep",
+      "characterAction": "look_down",
+      "kola": {
+        "label": "岩のすき間に水"
+      },
+      "emotion": "curious",
+      "vi_note": "Nước ở độ sâu này bị áp suất ép ra từ chính khoáng vật trong đá, rồi bị lớp đá kín phía trên giữ lại.",
+      "ja_narration": "この水は、岩の中の鉱物から、強い圧力でしぼり出されたもの。上にある、すきまのない岩にふたをされて、地下深くに閉じこめられていました。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 7.0,
+        "speedKmh": 0,
+        "progress": 0.571
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 9.0,
+        "speedKmh": 0,
+        "progress": 0.734
+      }
+    },
+    {
+      "id": "beat_17",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_section",
+      "characterAction": "shocked",
+      "kola": {
+        "label": "1983年 12km"
+      },
+      "emotion": "shocked",
+      "vi_note": "Năm 1983 hố đã sâu 12 km. Nhưng rồi một đoạn ống khoan dài khoảng 5 km bị đứt kẹt lại trong lòng đất.",
+      "ja_narration": "1983年には、ついに深さ12キロに。ところがその後、長さ5キロほどの管が地下でちぎれて、穴の中に取り残されてしまいました。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 9.0,
+        "speedKmh": 0,
+        "progress": 0.734
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 12.0,
+        "speedKmh": 0,
+        "progress": 0.979
+      }
+    },
+    {
+      "id": "beat_18",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "fact_card",
+        "title": "1984年ごろ",
+        "highlightText": "管が5km ちぎれた",
+        "subText": "7kmから 掘り直し"
+      },
+      "hideHud": true,
+      "vi_note": "Họ phải quay lại từ độ sâu khoảng 7 km và khoan một nhánh mới. Mất thêm nhiều năm mới tới được kỷ lục cuối cùng.",
+      "ja_narration": "しかたなく、深さ7キロあたりから、もう一度ななめにわき道を掘り直すことに。最後の記録にたどりつくまで、さらに何年もかかりました。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_19_like",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "idle_wave",
+      "emotion": "excited",
+      "hideHud": true,
+      "promo": {
+        "type": "like_surprise",
+        "sub": "このあと… 地下12kmの温度が明らかに🔥",
+        "at": 0.3
+      },
+      "vi_note": "Thấy thú vị thì bấm Like ủng hộ Kai nhé! Tiếp theo: dưới đáy hố, nhiệt độ cao tới mức nào?",
+      "ja_narration": "ここまで面白いと思ったら、高評価で応援してもらえるとうれしいです！このあとは、いよいよ穴の底へ。そこは、何度だったと思いますか？",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_20",
+      "scene": "underground_tunnel",
+      "cameraPreset": "tunnel_follow",
+      "characterAction": "sweating",
+      "emotion": "sweating",
+      "vi_note": "Càng xuống càng nóng. Bùn khoan trào lên sủi bọt vì khí hydro, như đang sôi.",
+      "ja_narration": "下へ行くほど、どんどん暑くなっていきます。地上にもどってきた泥水は、水素のガスでぶくぶくと泡だち、まるでわいているようでした。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 9.0,
+        "speedKmh": 0,
+        "progress": 0.734
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 11.0,
+        "speedKmh": 0,
+        "progress": 0.897
+      }
+    },
+    {
+      "id": "beat_21",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "gauge",
+        "title": "穴の底の温度",
+        "fromValue": 100,
+        "toValue": 180,
+        "unit": "℃"
+      },
+      "hideHud": true,
+      "vi_note": "Các nhà khoa học dự đoán ở đáy chỉ khoảng 100°C. Thực tế đo được lên tới khoảng 180°C.",
+      "ja_narration": "科学者たちは、いちばん下の温度を、およそ100度と予想していました。ところが、実際にはかってみると、なんと180度もあったんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_22",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_deep",
+      "characterAction": "shocked",
+      "kola": {
+        "label": "12,262m 到達！"
+      },
+      "emotion": "shocked",
+      "vi_note": "Năm 1989, mũi khoan chạm 12.262 m. Đây là điểm sâu nhất con người từng đạt được trong lòng đất.",
+      "ja_narration": "そして1989年、ドリルはついに深さ1万2262メートルに到達。人類が地面の中にたどりついた、いちばん深い場所です。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 11.0,
+        "speedKmh": 0,
+        "progress": 0.897
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 1.0
+      }
+    },
+    {
+      "id": "beat_23",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "fact_card",
+        "title": "なぜ止まった？",
+        "highlightText": "約180℃",
+        "subText": "岩がやわらかくなり 穴がすぐふさがる"
+      },
+      "hideHud": true,
+      "vi_note": "Tại sao dừng lại? Ở 180°C, đá không còn giòn mà mềm, dẻo như nhựa. Lỗ khoan vừa khoan xong đã bị bóp lại.",
+      "ja_narration": "なぜ、ここで止まったのか？180度にもなると、岩はかたいままではなく、プラスチックのようにやわらかくなります。掘ったそばから、穴がふさがってしまうんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_24",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_section",
+      "characterAction": "idle",
+      "kola": {
+        "label": "目標は15kmだった"
+      },
+      "vi_note": "Kế hoạch ban đầu là 15 km, nhưng không thể khoan sâu hơn. Đến những năm 1990, thiếu kinh phí, dự án dừng hẳn.",
+      "ja_narration": "もともとの目標は、15キロでした。でも、これ以上は掘れず、1990年代にはお金も足りなくなって、計画は終わりをむかえました。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 1.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 1.0
+      }
+    },
+    {
+      "id": "beat_25",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "depth_scale",
+        "title": "高さ・深さくらべ",
+        "items": [
+          {
+            "label": "エベレスト（高さ）",
+            "value": 8849,
+            "unit": "m"
+          },
+          {
+            "label": "マリアナ海溝",
+            "value": 10920,
+            "unit": "m"
+          },
+          {
+            "label": "コラの穴",
+            "value": 12262,
+            "unit": "m"
+          }
+        ]
+      },
+      "hideHud": true,
+      "vi_note": "So sánh: Everest cao 8.849 m, rãnh Mariana sâu khoảng 10.920 m. Hố Kola còn sâu hơn cả hai.",
+      "ja_narration": "くらべてみましょう。エベレストの高さは8849メートル。海でいちばん深いマリアナ海溝は、およそ1万920メートル。コラの穴は、そのどちらよりも深いんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_26",
+      "scene": "sky_mountain",
+      "cameraPreset": "mt_wide",
+      "characterAction": "idle",
+      "sky": {
+        "mountain": "everest",
+        "clouds": true
+      },
+      "hideHud": true,
+      "vi_note": "Lật ngược Everest cắm xuống hố, đỉnh núi vẫn còn cách đáy hơn 3 km.",
+      "ja_narration": "エベレストを逆さまにして、この穴に入れても、山のてっぺんから穴の底まで、まだ3キロ以上もあまります。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_27",
+      "scene": "deep_sea",
+      "cameraPreset": "sea_wide",
+      "characterAction": "freefall_float",
+      "sea": {
+        "depthM": 10920,
+        "trench": true
+      },
+      "hideHud": true,
+      "vi_note": "Còn nếu đặt hố ở đáy biển? Không cần. Riêng hố Kola đã sâu hơn đáy rãnh Mariana khoảng 1,3 km.",
+      "ja_narration": "海のいちばん深い場所、マリアナ海溝の底よりも、コラの穴はさらに1.3キロほど深いところまで届いています。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_28",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_section",
+      "characterAction": "point_explain",
+      "kola": {
+        "compare": true,
+        "milestones": false
+      },
+      "vi_note": "Đặt cạnh nhau trên cùng một thước đo, ta thấy rõ hố Kola sâu thế nào.",
+      "ja_narration": "同じものさしの上にならべてみると、コラの穴の深さがよくわかります。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 1.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 1.0
+      }
+    },
+    {
+      "id": "beat_29",
+      "scene": "earth_cutaway",
+      "cameraPreset": "cut_side",
+      "characterAction": "idle",
+      "cutaway": {
+        "label": "ここまで12km",
+        "labelAt": "marker"
+      },
+      "hideHud": true,
+      "vi_note": "Nhưng đặt vào cả Trái Đất thì sao? Bán kính Trái Đất là 6.371 km. 12 km chỉ là khoảng 0,2%, như một vết xước trên vỏ táo.",
+      "ja_narration": "でも、地球全体で見るとどうでしょう。地球の半径は6371キロ。12キロは、そのわずか0.2パーセント。リンゴでいえば、皮にちょっと傷をつけたくらいなんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 0.001
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 0.001
+      }
+    },
+    {
+      "id": "beat_30",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "fact_card",
+        "title": "地球の半径 6,371km",
+        "highlightText": "わずか0.2%",
+        "subText": "地殻すら まだ掘りぬけていない"
+      },
+      "hideHud": true,
+      "vi_note": "Nghĩa là con người còn chưa khoan xuyên qua được lớp vỏ Trái Đất. Vỏ lục địa ở đây dày khoảng 35 đến 40 km.",
+      "ja_narration": "つまり人類は、地球の皮である地殻すら、まだ掘りぬけていません。このあたりの地殻の厚さは、およそ35キロから40キロもあるんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_31",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_cap",
+      "characterAction": "shiver",
+      "kola": {
+        "capped": true
+      },
+      "emotion": "sweating",
+      "vi_note": "Hố này còn nổi tiếng vì tin đồn 'giếng xuống địa ngục': nghe được tiếng la hét từ dưới sâu.",
+      "ja_narration": "この穴には、こわいうわさもあります。「地獄への井戸」。地下深くにマイクを下ろしたら、人の叫び声が聞こえた…という話です。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_32",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "split_compare",
+        "leftTitle": "うわさ",
+        "leftSub": "地下から叫び声が聞こえた",
+        "rightTitle": "事実",
+        "rightSub": "つくり話・録音はない"
+      },
+      "hideHud": true,
+      "vi_note": "Thực ra đó là chuyện bịa lan truyền từ thập niên 1990, âm thanh được lấy từ phim kinh dị. Không có micro nào thả xuống cả.",
+      "ja_narration": "でも、これはつくり話。1990年代に広まったうわさで、声はホラー映画の音を使ったものだとわかっています。実際の穴は細すぎて、そんな録音はされていません。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_33",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "fact_card",
+        "title": "いまも世界一",
+        "highlightText": "まっすぐ下へ 12,262m",
+        "subText": "ななめの井戸は長くても ここまで深くない"
+      },
+      "hideHud": true,
+      "vi_note": "Có những giếng dầu khoan xiên còn dài hơn, nhưng xét độ sâu thẳng đứng, Kola vẫn là hố sâu nhất thế giới.",
+      "ja_narration": "その後、ななめに掘った石油の井戸で、もっと長いものも作られました。でも、まっすぐ下への深さでは、今もコラの穴が世界一です。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_34",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_site",
+      "characterAction": "look_down",
+      "kola": {
+        "capped": true,
+        "label": "溶接されたフタ"
+      },
+      "vi_note": "Ngày nay trạm khoan đã bỏ hoang, miệng hố được hàn kín bằng nắp sắt. Kỷ lục vẫn nằm dưới chân ta.",
+      "ja_narration": "いま、この場所は廃墟になり、穴の入り口は鉄のフタで溶接されています。でも、世界記録は今も、この足の下にねむっています。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_35",
+      "scene": "japanese_street",
+      "cameraPreset": "front_medium",
+      "characterAction": "look_down",
+      "env": {
+        "timeOfDay": "sunset",
+        "showHole": false
+      },
+      "vi_note": "Dưới chân bạn lúc này, quá 12 km là thế giới chưa ai từng nhìn thấy tận mắt.",
+      "ja_narration": "あなたの足の下も、12キロより先は、まだだれも自分の目で見たことのない世界。地球の中は、まだまだなぞだらけです。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_outro_recap",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "emotion": "curious",
+      "hideHud": true,
+      "brandOverlay": {
+        "type": "outro_recap",
+        "channelName": "もしも検証ラボ",
+        "headline": "深さ12,262m・直径23cm・6kmの微化石・岩の中の水・底は180℃・地球の0.2%",
+        "subline": "次の検証テーマをコメントで募集中！"
+      },
+      "vi_note": "Tổng kết: hố Kola sâu 12.262 m, đường kính 23 cm, vi hóa thạch ở 6 km, nước trong đá, đáy 180°C, và chỉ bằng 0,2% bán kính Trái Đất. Bạn muốn khoan tới đâu tiếp? Comment nhé!",
+      "ja_narration": "今回のまとめ！コラの穴は深さ1万2262メートル、直径は23センチ。6キロの微化石、岩の中の水、180度の熱い底。それでも地球の半径のたった0.2パーセントでした。あなたなら、どこまで掘ってみたいですか？次に検証してほしいテーマと一緒に、ぜひコメントで教えてください！",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_outro_cta",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "idle_wave",
+      "emotion": "excited",
+      "hideHud": true,
+      "brandOverlay": {
+        "type": "outro_cta",
+        "channelName": "もしも検証ラボ",
+        "subline": "高評価・チャンネル登録・通知オンが励みになります！"
+      },
+      "vi_note": "Thấy hay hãy bấm Like, Đăng ký kênh và bật chuông thông báo nhé! Hẹn gặp lại tập sau!",
+      "ja_narration": "少しでも面白いと思ったら、高評価・チャンネル登録・通知オンをお願いします！皆さんの応援が動画作りの一番の励みになります。また次回の検証でお会いしましょう、案内役のカイでした！",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    }
+  ],
+  "youtube": {
+    "titles": [
+      "もしも人類が掘った一番深い穴に入ったら【深さ12,262m】",
+      "人類最深の穴・地下12kmには何があった？【3Dシミュレーション】",
+      "直径23cm・深さ12km「コラ超深度掘削坑」を3Dで下りてみた【もしも検証】"
+    ],
+    "description": "もしも、人類が掘ったいちばん深い穴に入ったら？\nロシア・コラ半島にある「コラ超深度掘削坑」は、深さ12,262m。直径わずか23cmの穴を、20年近くかけて掘り進めました。深さ6kmで見つかった微化石、予想外の岩の中の水、水素で泡立つ泥、そして予想の100℃を大きくこえる180℃の底。なぜ12kmで止まったのか、「地獄の井戸」のうわさは本当なのか、3Dで徹底検証しました！\n\n【目次】\n0:00 もしも人類最深の穴に入ったら\n0:23 コラ半島とソビエトの挑戦\n0:53 直径23cmの穴を3Dで下りる\n1:50 1979年 世界一の深さへ\n2:00 深さ6kmの微化石\n2:22 7kmの予想外：岩の中の水\n2:54 1983年 12km到達、そして事故\n3:15 🎁 サプライズ\n3:25 水素の泡と180℃の底\n3:56 なぜ12kmで止まったのか\n4:18 エベレスト・マリアナ海溝とくらべる\n4:53 地球のたった0.2%\n5:16 「地獄の井戸」のうわさ\n5:48 いまのコラの穴\n6:07 まとめ\n\n📌 この動画は公開されているデータをもとにした3Dシミュレーションです。数値には資料により幅があります。\n出典：ロシア科学アカデミー資料、ICDP（国際陸上科学掘削計画）、USGS ほか\n🔔 チャンネル登録・通知オンで、新しい「もしも検証」を続々とお届けします！\n\n#もしも検証ラボ #もしも #3Dアニメ #雑学 #コラ超深度掘削坑 #地球",
+    "tags": [
+      "もしも",
+      "もしも検証ラボ",
+      "コラ超深度掘削坑",
+      "人類最深の穴",
+      "世界一深い穴",
+      "地下12km",
+      "掘削",
+      "地殻",
+      "微化石",
+      "地獄の井戸",
+      "エベレスト",
+      "マリアナ海溝",
+      "3Dアニメ",
+      "雑学",
+      "シミュレーション"
+    ]
+  }
+}

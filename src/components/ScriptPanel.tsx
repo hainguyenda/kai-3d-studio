@@ -22,6 +22,7 @@ const SCENES: { id: SceneId; vi: string }[] = [
   { id: "ocean_world", vi: "Địa cầu rút cạn nước biển (mới)" }, { id: "sea_level_city", vi: "Thành phố + nước biển dâng (mới)" },
   { id: "whale_inside", vi: "Bên trong cá voi xanh (mới)" }, { id: "space_stairs", vi: "Cầu thang lên vũ trụ (mới)" },
   { id: "gravity_train", vi: "Tàu trọng lực xuyên lòng đất (mới)" },
+  { id: "kola_borehole", vi: "Giếng khoan siêu sâu Kola 12 km (mới)" },
 ];
 const ACTIONS: { id: CharacterAction; vi: string }[] = [
   { id: "idle", vi: "Đứng yên" }, { id: "idle_wave", vi: "Vẫy tay" }, { id: "look_down", vi: "Nhìn xuống" },

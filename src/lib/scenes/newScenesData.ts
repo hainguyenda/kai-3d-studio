@@ -1,4 +1,5 @@
 import type { GravityTrainOptions } from "./GravityTrain";
+import type { KolaOptions } from "./KolaBorehole";
 /* Dữ liệu 3 bối cảnh mới (NewScenes.ts): tên cảnh, góc máy, tuỳ chọn trong beat JSON.
    Tách riêng file này để cameraPresets.ts import được mà không bị vòng lặp import. */
 
@@ -6,7 +7,7 @@ export type NewSceneId = "moon_surface" | "earth_moon_space" | "deep_sea"
   | "tokyo_glass_street" | "tokyo_deep_infra" | "tokyo_strata_onsen"
   | "space_elevator" | "solar_system" | "sky_mountain" | "typhoon_eye"
   | "ocean_world" | "sea_level_city" | "whale_inside" | "space_stairs"
-  | "gravity_train";
+  | "gravity_train" | "kola_borehole";
 
 export type NewCameraPreset =
   | "moon_wide" | "moon_close" | "moon_earthrise"
@@ -23,7 +24,8 @@ export type NewCameraPreset =
   | "flood_wide" | "flood_street" | "flood_tower"
   | "wi_wide" | "wi_heart" | "wi_kai"
   | "st_kai" | "st_wide" | "st_down" | "st_up"
-  | "gt_wide" | "gt_tunnel" | "gt_follow";
+  | "gt_wide" | "gt_tunnel" | "gt_follow"
+  | "kola_site" | "kola_cap" | "kola_section" | "kola_deep";
 
 /** tuỳ chọn trong beat JSON (thêm vào interface Beat) */
 export interface NewBeatFields {
@@ -84,6 +86,8 @@ export interface NewBeatFields {
   stairs?: { altKm?: number; altKmFrom?: number; altKmTo?: number; label?: string; showSteps?: boolean };
   /** gravity_train: đường hầm thẳng xuyên lòng đất; vị trí tàu = hud.progress (0 điểm đi → 1 điểm đến) */
   gtrain?: GravityTrainOptions;
+  /** kola_borehole: giếng khoan Kola; chấm vị trí ở độ sâu hud.depthKm (0 → 12,262) */
+  kola?: KolaOptions;
 }
 
 type V3 = [number, number, number];
@@ -155,5 +159,10 @@ export const NEW_SHOTS: Record<NewCameraPreset, Shot> = {
   gt_wide: { from: [0, 0.2, 10.4], to: [0, 0.2, 9.5], look: [0, 0.2, 0], fov: 38 },
   gt_tunnel: { from: [0, -0.6, 9.2], to: [0, -0.6, 8.6], look: [0, -0.6, 0], fov: 38 },
   gt_follow: { from: [0.35, 0.25, 3.4], to: [0.2, 0.15, 2.6], look: [0, 0, 0], fov: 40 },
+  // giếng Kola (KolaBorehole.ts): site = hiện trường + Kai, cap = cận nắp hàn, section = cả cột đá 12 km, deep = bám chấm độ sâu
+  kola_site: { from: [3.2, 2.4, 8.5], to: [2.6, 2.0, 7.2], look: [-0.5, 2.2, -2], fov: 42 },
+  kola_cap: { from: [3.4, 1.9, 4.4], to: [2.9, 1.6, 3.7], look: [0.6, 0.55, 0.1], fov: 40 },
+  kola_section: { from: [0, 0.6, 21], to: [0, 0.3, 19.5], look: [0, 0, 0], fov: 40 },
+  kola_deep: { from: [0.6, 0.6, 6.5], to: [0.3, 0.2, 5.2], look: [0, 0, 0], fov: 40 },
   st_up: { from: [0.9, 0.4, 1.3], to: [0.8, 0.5, 1.1], look: [-0.7, 30, 0], fov: 65 },
 };

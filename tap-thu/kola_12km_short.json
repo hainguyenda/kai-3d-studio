@@ -1,0 +1,237 @@
+{
+  "title": "人類が掘った一番深い穴は12km、地球の半径のわずか0.2% #shorts",
+  "aspect": "9:16",
+  "title_vi": "Hố sâu nhất loài người khoan: 12 km, chỉ 0,2% bán kính Trái Đất",
+  "thumbnailText": "人類最深の穴 たった0.2%",
+  "beats": [
+    {
+      "id": "beat_01",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_cap",
+      "characterAction": "look_down",
+      "kola": {
+        "capped": true,
+        "label": "人類最深の穴"
+      },
+      "emotion": "curious",
+      "caption": "人類最深の穴の入り口",
+      "vi_note": "Đây là lối vào hố sâu nhất loài người từng khoan.",
+      "ja_narration": "人類が掘った、いちばん深い穴。その入り口が、これです。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_02",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_section",
+      "characterAction": "idle",
+      "kola": {
+        "label": "12,262m"
+      },
+      "vi_note": "Hố Kola ở Nga, sâu 12.262 m, đường kính chỉ 23 cm, khoan gần 20 năm.",
+      "ja_narration": "ロシアのコラ半島。深さは1万2262メートル。直径たった23センチの穴を、20年近くかけて掘りました。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 1.0
+      }
+    },
+    {
+      "id": "beat_03",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "depth_scale",
+        "title": "高さ・深さくらべ",
+        "items": [
+          {
+            "label": "エベレスト",
+            "value": 8849,
+            "unit": "m"
+          },
+          {
+            "label": "マリアナ海溝",
+            "value": 10920,
+            "unit": "m"
+          },
+          {
+            "label": "コラの穴",
+            "value": 12262,
+            "unit": "m"
+          }
+        ]
+      },
+      "hideHud": true,
+      "vi_note": "Sâu hơn cả Everest lẫn rãnh Mariana.",
+      "ja_narration": "エベレストの高さより、マリアナ海溝の深さより、もっと深いんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_04",
+      "scene": "earth_cutaway",
+      "cameraPreset": "cut_side",
+      "characterAction": "idle",
+      "cutaway": {
+        "label": "ここまで12km",
+        "labelAt": "marker"
+      },
+      "hideHud": true,
+      "vi_note": "Nhưng bán kính Trái Đất là 6.371 km. 12 km chỉ là 0,2%.",
+      "ja_narration": "でも、地球の半径は6371キロ。12キロは、そのわずか0.2パーセントです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 0.001
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 0.001
+      }
+    },
+    {
+      "id": "beat_05",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "fact_card",
+        "title": "地球の半径 6,371km",
+        "highlightText": "わずか0.2%",
+        "subText": "リンゴの皮のキズくらい"
+      },
+      "hideHud": true,
+      "vi_note": "Như một vết xước trên vỏ quả táo.",
+      "ja_narration": "リンゴでいえば、皮にちょっと傷をつけただけ。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_06",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_deep",
+      "characterAction": "sweating",
+      "kola": {
+        "label": "約180℃"
+      },
+      "emotion": "sweating",
+      "vi_note": "Đáy hố nóng 180°C, đá mềm như nhựa, không thể khoan tiếp.",
+      "ja_narration": "穴の底は180度。岩がプラスチックのようにやわらかくなり、それ以上は掘れませんでした。",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 1.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 1.0
+      }
+    },
+    {
+      "id": "beat_outro_full",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_section",
+      "characterAction": "idle",
+      "kola": {},
+      "hideHud": true,
+      "promo": {
+        "type": "full_video",
+        "text": "続きはフル動画で！",
+        "sub": "微化石・岩の中の水・地獄の井戸のうわさ…本編で3D検証",
+        "at": 0.2
+      },
+      "vi_note": "Dưới đó còn hóa thạch 2 tỉ năm và nước bị giam trong đá... Xem bản đầy đủ ở link bên dưới.",
+      "ja_narration": "その途中では、大昔の化石や、岩に閉じこめられた水も…！続きはフル動画で！下のリンクからどうぞ。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 1.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 12.262,
+        "speedKmh": 0,
+        "progress": 1.0
+      }
+    }
+  ],
+  "youtube": {
+    "titles": [
+      "人類が掘った一番深い穴は12km、地球の半径のわずか0.2% #shorts",
+      "深さ12,262m 人類最深の穴でも地球の0.2%だけ #shorts",
+      "エベレストより深い穴、でも地球にはキズ程度 #shorts"
+    ],
+    "description": "人類が掘ったいちばん深い穴「コラ超深度掘削坑」は深さ12,262m。エベレストよりもマリアナ海溝よりも深いのに、地球の半径のわずか0.2%でした。\n\n▶ フル動画はこちら：（本編のURLを入れてください）\n\n📌 公開データをもとにした3Dシミュレーションです。\n🔔 チャンネル登録で、新しい「もしも検証」をお届けします！\n\n#shorts #もしも検証ラボ #コラ超深度掘削坑 #雑学 #3Dアニメ",
+    "tags": [
+      "shorts",
+      "もしも検証ラボ",
+      "コラ超深度掘削坑",
+      "人類最深の穴",
+      "世界一深い穴",
+      "地下12km",
+      "地球",
+      "雑学",
+      "3Dアニメ"
+    ]
+  }
+}
