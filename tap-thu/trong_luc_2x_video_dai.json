@@ -5,17 +5,24 @@
   "beats": [
     {
       "id": "beat_01",
-      "scene": "gravity_room",
-      "cameraPreset": "grav_kai",
-      "characterAction": "idle",
+      "scene": "japanese_street",
+      "cameraPreset": "front_medium",
+      "characterAction": "slam_land",
       "hideHud": true,
-      "emotion": "curious",
+      "emotion": "shocked",
       "caption": "重力が2倍に！？",
-      "grav": {
-        "g": 1
+      "env": {
+        "timeOfDay": "day",
+        "showHole": false
       },
-      "vi_note": "Nếu sáng mai thức dậy, trọng lực Trái Đất đã tăng gấp đôi thì sao? Cơ thể, thành phố, bầu trời, cả vũ trụ sẽ thay đổi thế nào?",
-      "ja_narration": "もしも明日の朝、目がさめたら、地球の重力が2倍になっていたら？体は、町は、空は、そして宇宙はどうなるのでしょうか。",
+      "sfx": [
+        {
+          "text": "ドーン!!",
+          "at": 0.9
+        }
+      ],
+      "vi_note": "Á á á! ĐÙNG! ...Ui da. Sáng nay thức dậy, trọng lực Trái Đất đã tăng gấp đôi. Cơ thể, thành phố, bầu trời, vũ trụ sẽ ra sao?",
+      "ja_narration": "うわあああっ！…ドーン！！…いててて。けさ起きたら、地球の重力が2倍になっていました。体は、町は、空は、そして宇宙はどうなるのでしょうか。",
       "hudStart": {
         "time": "07:00:00",
         "depthKm": 0,
@@ -43,7 +50,7 @@
         "subline": "体重・ジャンプ・気圧・ロケットまで3Dで検証"
       },
       "vi_note": "Chào mừng đến もしも検証ラボ, mình là Kai! Hôm nay ta kiểm chứng thế giới trọng lực gấp đôi bằng 3D.",
-      "ja_narration": "もしも検証ラボへようこそ、案内役のカイです！今回は、重力が2倍になった世界を、体・町・空・宇宙の順に3Dで検証します！",
+      "ja_narration": "…いてて。もしも検証ラボへようこそ、案内役のカイです！今回は、重力が2倍になった世界を、体・町・空・宇宙の順に3Dで検証します！",
       "hudStart": {
         "time": "07:00:00",
         "depthKm": 0,
@@ -93,10 +100,18 @@
       "emotion": "shocked",
       "grav": {
         "gFrom": 1,
-        "g": 2
+        "g": 2,
+        "breakScale": true
       },
+      "sfx": [
+        {
+          "text": "バキッ!",
+          "at": 6.1,
+          "color": "#ff5a3a"
+        }
+      ],
       "vi_note": "Bước lên cân: 120 kg. Khối lượng không đổi, nhưng lực Trái Đất kéo ta mạnh gấp đôi.",
-      "ja_narration": "体重計にのってみると…120キロ！体そのものは変わっていないのに、地球に引っぱられる力が2倍になったんです。",
+      "ja_narration": "体重計にのってみると…120キロ！…あ、こわれた。体そのものは変わっていないのに、地球に引っぱられる力が2倍になったんです。",
       "hudStart": {
         "time": "07:00:00",
         "depthKm": 0,
@@ -160,14 +175,22 @@
       "id": "beat_05",
       "scene": "gravity_room",
       "cameraPreset": "grav_kai",
-      "characterAction": "heavy_crouch",
+      "characterAction": "struggle_up",
       "hideHud": true,
       "emotion": "sweating",
       "grav": {
         "g": 2
       },
+      "sfx": [
+        {
+          "text": "ぐぬぬ…",
+          "at": 0.4,
+          "color": "#ffffff",
+          "size": 130
+        }
+      ],
       "vi_note": "Ngồi dậy khỏi giường, leo cầu thang... như lúc nào cũng cõng thêm 60 kg trên lưng.",
-      "ja_narration": "ベッドから起き上がるのも、階段をのぼるのも、いつも60キロの荷物をせおっているような感じです。",
+      "ja_narration": "ぐぬぬ…ベッドから起き上がるのも、階段をのぼるのも、いつも60キロの荷物をせおっているような感じです。",
       "hudStart": {
         "time": "07:00:00",
         "depthKm": 0,
@@ -185,12 +208,19 @@
       "id": "beat_06",
       "scene": "gravity_room",
       "cameraPreset": "grav_wide",
-      "characterAction": "heavy_crouch",
+      "characterAction": "faceplant",
       "hideHud": true,
       "grav": {
         "g": 2
       },
       "emotion": "sweating",
+      "sfx": [
+        {
+          "text": "ズーン…",
+          "at": 0.85,
+          "color": "#b9c7ff"
+        }
+      ],
       "vi_note": "Kể cả lúc ngủ: cơ thể lún sâu vào nệm, trở mình cũng mệt, nằm lâu dễ đau lưng.",
       "ja_narration": "ねているときも大変です。体はふとんにぐっとしずみこみ、寝返りを打つのもひと苦労。朝起きると、背中や腰が痛くなりそうです。",
       "hudStart": {
@@ -217,6 +247,14 @@
         "showHole": false
       },
       "emotion": "sweating",
+      "sfx": [
+        {
+          "text": "ズシッ…ズシッ…",
+          "at": 0.5,
+          "color": "#ffffff",
+          "size": 120
+        }
+      ],
       "vi_note": "Ra ngoài đường, con dốc quen thuộc bỗng thành như leo núi.",
       "ja_narration": "外に出ると、いつもの通学路の坂道が、まるで山のぼりのよう。歩くだけで、すぐに息が切れてしまいます。",
       "hudStart": {
@@ -242,8 +280,16 @@
         "g": 2
       },
       "emotion": "sweating",
+      "sfx": [
+        {
+          "text": "ぴょ…",
+          "at": 0.6,
+          "color": "#ffffff",
+          "size": 130
+        }
+      ],
       "vi_note": "Nhảy hết sức, cũng chỉ cao được một nửa.",
-      "ja_narration": "思いきりジャンプしても、とべる高さは、いつもの半分だけ。",
+      "ja_narration": "思いきりジャンプ！…ひくっ！とべる高さは、いつもの半分だけ。",
       "hudStart": {
         "time": "07:00:00",
         "depthKm": 0,
@@ -299,16 +345,22 @@
     {
       "id": "beat_10",
       "scene": "japanese_street",
-      "cameraPreset": "side_low",
-      "characterAction": "look_down",
+      "cameraPreset": "front_medium",
+      "characterAction": "faceplant",
       "hideHud": true,
       "env": {
         "timeOfDay": "day",
         "showHole": false
       },
       "emotion": "shocked",
+      "sfx": [
+        {
+          "text": "ベチャッ!",
+          "at": 0.85
+        }
+      ],
       "vi_note": "Té ngã cũng nguy hiểm hơn: rơi từ cùng độ cao, tốc độ chạm đất nhanh gấp 1,4 lần, lực va đập gấp đôi.",
-      "ja_narration": "転ぶのも危険です。同じ高さから落ちても、地面にぶつかる速さは約1.4倍、ぶつかる勢いは2倍になってしまいます。",
+      "ja_narration": "うわっ！…転ぶのも危険です。同じ高さから落ちても、地面にぶつかる速さは約1.4倍、ぶつかる勢いは2倍になってしまいます。",
       "hudStart": {
         "time": "07:00:00",
         "depthKm": 0,
@@ -366,7 +418,7 @@
       "id": "beat_12",
       "scene": "gravity_room",
       "cameraPreset": "grav_kai",
-      "characterAction": "idle",
+      "characterAction": "struggle_up",
       "hideHud": true,
       "emotion": "sweating",
       "grav": {
@@ -773,6 +825,14 @@
         "g": 2
       },
       "emotion": "excited",
+      "sfx": [
+        {
+          "text": "グツグツ♨",
+          "at": 0.5,
+          "color": "#ffb36b",
+          "size": 130
+        }
+      ],
       "vi_note": "Nấu ăn giống như dùng nồi áp suất: rau củ, cơm chín nhanh hơn.",
       "ja_narration": "台所は、まるで家じゅうが圧力なべ。煮物やごはんは、いまより早く、やわらかく仕上がります。",
       "hudStart": {
@@ -800,6 +860,14 @@
         "altitudeM": 8849
       },
       "emotion": "sweating",
+      "sfx": [
+        {
+          "text": "ゼェ…ゼェ…",
+          "at": 0.6,
+          "color": "#ffffff",
+          "size": 120
+        }
+      ],
       "vi_note": "Nhưng không khí mỏng đi nhanh hơn khi lên cao. Trên đỉnh Everest còn khó thở hơn bây giờ.",
       "ja_narration": "でも、空気は高いところほど、急にうすくなります。エベレストの頂上は、いまよりもさらに息苦しい場所になります。",
       "hudStart": {
@@ -891,6 +959,13 @@
         "showHole": false
       },
       "emotion": "shocked",
+      "sfx": [
+        {
+          "text": "バチバチッ!",
+          "at": 0.6,
+          "color": "#9fd8ff"
+        }
+      ],
       "vi_note": "Hạt mưa cũng rơi nhanh hơn khoảng 1,4 lần. Mưa rào sẽ đau rát hơn.",
       "ja_narration": "雨つぶも、約1.4倍の速さで落ちてきます。夕立は、いまより強く、肌に当たるようになります。",
       "hudStart": {
@@ -963,6 +1038,39 @@
     },
     {
       "id": "beat_34",
+      "scene": "japanese_street",
+      "cameraPreset": "front_medium",
+      "characterAction": "jump_low",
+      "hideHud": true,
+      "env": {
+        "timeOfDay": "day",
+        "showHole": false
+      },
+      "emotion": "sweating",
+      "sfx": [
+        {
+          "text": "むりー!",
+          "at": 1.2,
+          "color": "#ff8a8a"
+        }
+      ],
+      "vi_note": "Muốn lên vũ trụ thì... nhảy thử xem? ...Không đời nào!",
+      "ja_narration": "宇宙へ行くなら…ジャンプで？えいっ！…むりむり、ぜんぜんとどきません。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_35",
       "scene": "space_iss_orbit",
       "cameraPreset": "orbit_wide",
       "characterAction": "freefall_float",
@@ -983,7 +1091,7 @@
       }
     },
     {
-      "id": "beat_35",
+      "id": "beat_36",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -1023,7 +1131,7 @@
       }
     },
     {
-      "id": "beat_36",
+      "id": "beat_37",
       "scene": "space_iss_orbit",
       "cameraPreset": "orbit_iss",
       "characterAction": "idle",
@@ -1044,7 +1152,7 @@
       }
     },
     {
-      "id": "beat_37",
+      "id": "beat_38",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -1071,7 +1179,7 @@
       }
     },
     {
-      "id": "beat_38",
+      "id": "beat_39",
       "scene": "earth_moon_space",
       "cameraPreset": "em_wide",
       "characterAction": "idle",
@@ -1095,7 +1203,7 @@
       }
     },
     {
-      "id": "beat_39",
+      "id": "beat_40",
       "scene": "earth_globe",
       "cameraPreset": "globe_wide",
       "characterAction": "idle",
@@ -1119,7 +1227,7 @@
       }
     },
     {
-      "id": "beat_40",
+      "id": "beat_41",
       "scene": "japanese_street",
       "cameraPreset": "front_medium",
       "characterAction": "jump_low",
@@ -1129,6 +1237,13 @@
         "showHole": false
       },
       "emotion": "excited",
+      "sfx": [
+        {
+          "text": "ぴょーん!",
+          "at": 0.8,
+          "color": "#7dffb0"
+        }
+      ],
       "vi_note": "Nhảy thử một cái... trọng lực bình thường thật nhẹ nhàng!",
       "ja_narration": "ためしに、ジャンプ！…いつもの重力って、こんなに体が軽かったんですね。",
       "hudStart": {
@@ -1206,7 +1321,7 @@
       "重力が2倍になると、体重60kgが120kgに。体と町はどうなる？【3Dシミュレーション】",
       "重力2倍の世界では、お湯が120℃でわく"
     ],
-    "description": "もしも明日の朝、地球の重力が2倍になっていたら？\n体重は2倍、ジャンプは半分、転ぶと危険。気圧も2倍になり、お湯は約120℃でわきます。\n大きな動物ほど苦しく、ロケットで宇宙へ行くのも難しく…。重力2倍の世界を、体・町・空・宇宙の順に3Dで検証しました。\n\n【目次】\n0:00 もしも重力が2倍になったら\n0:29 体重は120kgに\n1:11 ジャンプは半分・転ぶと危険\n1:45 心臓と骨はどうなる？\n2:15 町と建物\n2:34 植物・ふん水・ふり子時計\n3:07 波と海の中\n3:24 山の高さの限界\n3:36 🎁 サプライズ\n3:47 気圧2倍・お湯は120℃\n4:10 山の上と雨つぶ\n4:43 動物と飛行機\n5:03 宇宙へ行くのは大変\n6:06 まとめ\n\n📌 この動画は公開されている科学データをもとにした3Dシミュレーションです。\n出典：NASA、水の蒸気表、二乗三乗の法則 ほか\n🔔 チャンネル登録・通知オンで、新しい「もしも検証」を続々とお届けします！\n\n#もしも検証ラボ #もしも #3Dアニメ #雑学 #重力 #物理",
+    "description": "もしも明日の朝、地球の重力が2倍になっていたら？\n体重は2倍、ジャンプは半分、転ぶと危険。気圧も2倍になり、お湯は約120℃でわきます。\n大きな動物ほど苦しく、ロケットで宇宙へ行くのも難しく…。重力2倍の世界を、体・町・空・宇宙の順に3Dで検証しました。\n\n【目次】\n0:00 もしも重力が2倍になったら\n0:31 体重は120kgに\n1:16 ジャンプは半分・転ぶと危険\n1:51 心臓と骨はどうなる？\n2:21 町と建物\n2:40 植物・ふん水・ふり子時計\n3:13 波と海の中\n3:30 山の高さの限界\n3:42 🎁 サプライズ\n3:52 気圧2倍・お湯は120℃\n4:15 山の上と雨つぶ\n4:49 動物と飛行機\n5:14 宇宙へ行くのは大変\n6:17 まとめ\n\n📌 この動画は公開されている科学データをもとにした3Dシミュレーションです。\n出典：NASA、水の蒸気表、二乗三乗の法則 ほか\n🔔 チャンネル登録・通知オンで、新しい「もしも検証」を続々とお届けします！\n\n#もしも検証ラボ #もしも #3Dアニメ #雑学 #重力 #物理",
     "tags": [
       "もしも",
       "もしも検証ラボ",

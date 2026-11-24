@@ -6,17 +6,24 @@
   "beats": [
     {
       "id": "beat_01",
-      "scene": "gravity_room",
-      "cameraPreset": "grav_kai",
-      "characterAction": "idle",
+      "scene": "japanese_street",
+      "cameraPreset": "front_medium",
+      "characterAction": "slam_land",
       "hideHud": true,
-      "emotion": "curious",
+      "emotion": "shocked",
       "caption": "重力が2倍に！？",
-      "grav": {
-        "g": 1
+      "env": {
+        "timeOfDay": "day",
+        "showHole": false
       },
-      "vi_note": "Kai nặng 60 kg. Nếu sáng mai trọng lực Trái Đất bỗng tăng gấp đôi thì sao?",
-      "ja_narration": "体重60キロのカイ。もしも明日の朝、地球の重力が2倍になっていたら？",
+      "sfx": [
+        {
+          "text": "ドーン!!",
+          "at": 0.9
+        }
+      ],
+      "vi_note": "Á á á! ĐÙNG! ...Ui da. Nếu trọng lực Trái Đất bỗng tăng gấp đôi thì sao?",
+      "ja_narration": "うわあああっ！…ドーン！…いてて。もしも地球の重力が、いきなり2倍になったら？",
       "hudStart": {
         "time": "07:00:00",
         "depthKm": 0,
@@ -39,10 +46,18 @@
       "emotion": "shocked",
       "grav": {
         "gFrom": 1,
-        "g": 2
+        "g": 2,
+        "breakScale": true
       },
-      "vi_note": "Kim cân vọt lên 120 kg. Cơ thể nặng gấp đôi.",
-      "ja_narration": "体重計の数字は、一気に120キロへ。体の重さが、そっくり2倍になります。",
+      "sfx": [
+        {
+          "text": "バキッ!",
+          "at": 2.6,
+          "color": "#ff5a3a"
+        }
+      ],
+      "vi_note": "Thử bước lên cân... 120 kg! Á, cân vỡ luôn rồi.",
+      "ja_narration": "体重計にのってみると…120キロ！…あ、こわれた。",
       "hudStart": {
         "time": "07:00:00",
         "depthKm": 0,
@@ -80,8 +95,8 @@
           }
         ]
       },
-      "vi_note": "Cặp sách, chăn đệm, mọi thứ đều nặng gấp đôi. Chỉ đứng dậy thôi cũng mệt.",
-      "ja_narration": "ランドセルも布団も、みんな2倍の重さ。ベッドから起き上がるだけで、ひと苦労です。",
+      "vi_note": "Cặp sách, chăn đệm, mọi thứ đều nặng gấp đôi. Như lúc nào cũng cõng thêm 60 kg.",
+      "ja_narration": "ランドセルも布団も、みんな2倍の重さ。いつも60キロの荷物をせおっているのと同じです。",
       "hudStart": {
         "time": "07:00:00",
         "depthKm": 0,
@@ -105,8 +120,16 @@
       "grav": {
         "g": 2
       },
-      "vi_note": "Nhảy hết sức cũng chỉ cao được một nửa so với bình thường.",
-      "ja_narration": "思いきりジャンプしても、とべる高さは、いつもの半分だけ。",
+      "sfx": [
+        {
+          "text": "ぴょ…",
+          "at": 0.6,
+          "color": "#ffffff",
+          "size": 120
+        }
+      ],
+      "vi_note": "Nhảy hết sức nào! ...Thấp tè! Chỉ được một nửa bình thường.",
+      "ja_narration": "思いきりジャンプ！…ひくっ！いつもの半分しか、とべません。",
       "hudStart": {
         "time": "07:00:00",
         "depthKm": 0,
@@ -144,7 +167,7 @@
           }
         ]
       },
-      "vi_note": "Cùng một lực bật, trọng lực gấp đôi thì độ cao nhảy chỉ còn một nửa.",
+      "vi_note": "Cùng một lực bật, trọng lực gấp đôi thì độ cao chỉ còn một nửa.",
       "ja_narration": "同じ力でけっても、重力が2倍だと、高さは半分になってしまうんです。",
       "hudStart": {
         "time": "07:00:00",
@@ -163,15 +186,23 @@
       "id": "beat_06",
       "scene": "gravity_room",
       "cameraPreset": "grav_kai",
-      "characterAction": "heavy_crouch",
+      "characterAction": "struggle_up",
       "hideHud": true,
       "emotion": "sweating",
       "grav": {
         "g": 2,
         "label": "体重120kg"
       },
-      "vi_note": "Tim cũng phải bơm mạnh gấp đôi để đẩy máu lên đầu, dễ bị choáng khi đứng lên.",
-      "ja_narration": "心臓も、血を頭まで送るのに2倍の力が必要。立ち上がると、くらっとしやすくなります。",
+      "sfx": [
+        {
+          "text": "ぐぬぬ…",
+          "at": 0.4,
+          "color": "#ffffff",
+          "size": 120
+        }
+      ],
+      "vi_note": "Đứng dậy thôi mà cũng không nổi. Tim phải bơm máu lên đầu mạnh gấp đôi, đứng lên là choáng.",
+      "ja_narration": "ぐぬぬ…立ち上がるだけで、ひと苦労。心臓も2倍の力で血を送るので、くらっとしやすくなります。",
       "hudStart": {
         "time": "07:00:00",
         "depthKm": 0,
@@ -189,19 +220,25 @@
       "id": "beat_outro_full",
       "scene": "gravity_room",
       "cameraPreset": "grav_wide",
-      "characterAction": "heavy_crouch",
+      "characterAction": "faceplant",
       "hideHud": true,
       "grav": {
         "g": 2
       },
+      "sfx": [
+        {
+          "text": "ベチャッ!",
+          "at": 0.85
+        }
+      ],
       "promo": {
         "type": "full_video",
         "text": "続きはフル動画で！",
         "sub": "町・建物・鳥・飛行機まで…重力2倍の世界を本編で検証",
-        "at": 0.2
+        "at": 1.6
       },
-      "vi_note": "Còn nhà cửa, cây cối, chim bay sẽ ra sao? Xem bản đầy đủ ở link bên dưới.",
-      "ja_narration": "では、家や木、空を飛ぶ鳥はどうなる…？続きはフル動画で！下のリンクからどうぞ。",
+      "vi_note": "Còn nhà cửa, chim bay, máy bay thì sao... Ối! Xem bản đầy đủ ở link bên dưới.",
+      "ja_narration": "では、町や鳥や飛行機は…うわっ！…続きはフル動画で！下のリンクからどうぞ。",
       "hudStart": {
         "time": "07:00:00",
         "depthKm": 0,

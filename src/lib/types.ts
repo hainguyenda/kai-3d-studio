@@ -4,6 +4,7 @@ export type { BeatEnv, BeatImageOverlay, BeatVisual } from "./visualTypes";
 import type { BrandOverlayData } from "./introOutro";
 import type { ExtraCameraPreset, ExtraSceneId } from "./scenes/extraScenesData";
 import type { BeatPromo } from "./promo";
+import type { BeatSfx } from "./gag";
 import type { NewBeatFields, NewCameraPreset, NewSceneId } from "./scenes/newScenesData";
 
 export type SceneId = "japanese_street" | "underground_tunnel" | "earth_globe" | "earth_cutaway" | "ocean_surface" | "stage_studio" | "city_ny"
@@ -21,7 +22,7 @@ export type CameraPreset =
 
 export type CharacterAction =
   | "idle" | "idle_wave" | "look_down" | "jump_in" | "freefall_float" | "flip_upside_down"
-  | ExtraCharacterAction;
+  | ExtraCharacterAction | "slam_land" | "faceplant" | "struggle_up";
 
 /** cảm xúc khuôn mặt (chỉ nhân vật 2). Bỏ trống thì app tự đoán từ lời đọc */
 export type Emotion = "neutral" | "curious" | "excited" | "shocked" | "sweating";
@@ -109,6 +110,8 @@ export interface Beat extends NewBeatFields {
   hudMarks?: [string, string, string];
   /** lớp kêu gọi: "like_surprise" (giữa video dài) hoặc "full_video" (cuối Short dẫn sang video dài) */
   promo?: BeatPromo;
+  /** chữ hiệu ứng kiểu manga (gag.ts): [{ text: "ドーン!!", at: 0.9 }] */
+  sfx?: BeatSfx[];
   hudStart: HudState;
   hudEnd: HudState;
 }

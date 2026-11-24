@@ -30,6 +30,7 @@ const ACTIONS: { id: CharacterAction; vi: string }[] = [
   { id: "jump_in", vi: "Nhảy xuống hố" }, { id: "freefall_float", vi: "Lơ lửng" }, { id: "flip_upside_down", vi: "Lộn ngược" },
   { id: "heavy_crouch", vi: "Khom người (trọng lực nặng)" }, { id: "blown_wind", vi: "Chống gió bão" }, { id: "jump_low", vi: "Nhảy thấp" },
   { id: "shiver", vi: "Run rét" }, { id: "point_explain", vi: "Chỉ tay giải thích" },
+  { id: "slam_land", vi: "Rơi từ trên cao xuống – ĐÙNG (gag)" }, { id: "faceplant", vi: "Ngã sấp mặt (gag)" }, { id: "struggle_up", vi: "Cố đứng dậy không nổi (gag)" },
 ];
 
 interface Props {

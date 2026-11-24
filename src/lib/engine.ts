@@ -14,6 +14,7 @@ import { CityNYPrefab } from "./scenes/CityNYPrefab";
 import { ExtraScenePrefab } from "./scenes/ExtraScenePrefab";
 import { createNewScenes } from "./scenes/NewScenes";
 import { WeatherEnvController } from "./envController";
+import { ImpactFx, applyGagAction, isGag } from "./gag";
 import type { TimeOfDay } from "./visualTypes";
 import { createSkyTexture } from "./textures";
 import { applyExtraCharacterAction } from "./characterActions";
@@ -73,6 +74,7 @@ export class StudioEngine {
   private last?: [Episode, Timeline, number, RenderOptions];
   private street: StreetHooks;
   private env: WeatherEnvController;
+  private impact = new ImpactFx();
   private envT = 0;
   private skies = new Map<TimeOfDay, THREE.Texture>();
   /** ảnh beat tải lên (theo src) */
@@ -106,6 +108,7 @@ export class StudioEngine {
       ...createNewScenes() };
     Object.values(this.prefabs).forEach(p => this.scene.add(p.root));
     Object.values(this.characters).forEach(c => this.scene.add(c.root));
+    this.scene.add(this.impact.group);
     this.env = new WeatherEnvController(this.scene);
     this.setResolution(width, aspect);
   }
@@ -158,8 +161,10 @@ export class StudioEngine {
     ch.setSpacesuit(!!beat.spacesuit);
     // 5 động tác mới (characterActions.ts): về tư thế gốc rồi đặt tư thế mới; không khớp thì dùng động tác cũ
     const rig = ch as unknown as Record<"body" | "head" | "armL" | "armR" | "legL" | "legR", THREE.Object3D>;
-    const extra = (EXTRA as string[]).includes(beat.characterAction);
-    ch.setAction(extra ? "idle" : beat.characterAction, ctx.lt, ctx.lp, ctx.t);
+    const extra = (EXTRA as string[]).includes(beat.characterAction), gag = isGag(beat.characterAction);
+    rig.body.scale.set(1, 1, 1);
+    ch.setAction(extra || gag ? "idle" : beat.characterAction, ctx.lt, ctx.lp, ctx.t);
+    if (gag) applyGagAction(rig, beat.characterAction as Parameters<typeof applyGagAction>[1], ctx.lt, ctx.t);
     if (extra) applyExtraCharacterAction({ root: rig.body, head: rig.head, leftArm: rig.armL, rightArm: rig.armR, leftLeg: rig.legL, rightLeg: rig.legR }, beat.characterAction, ctx.t);
     ch.setFace?.({
       t: ctx.t, lt: ctx.lt, lp: ctx.lp, emotion: inferEmotion(beat, ctx.hud.depthKm),
@@ -189,6 +194,7 @@ export class StudioEngine {
     // rung camera (env.cameraShake) dùng được ở mọi cảnh, kể cả đường hầm
     const shakeOnly = !envOn && beat.env?.cameraShake ? { cameraShake: beat.env.cameraShake } : undefined;
     this.env.update(dt, ctx.t, envOn ? env : shakeOnly, this.camera, beat.scene === "japanese_street" ? this.street.trees : undefined);
+    this.impact.update(ch.root.visible ? beat.characterAction : "", ctx.lt, ch.root, this.camera);
     // có thẻ biểu đồ / ảnh nhỏ bên phải → dời khung hình để nhân vật nằm 1/3 bên trái
     const W = this.out.width, H = this.out.height, img = this.image(beat.imageOverlay?.src);
     const sideCard = !!beat.brandOverlay || (beat.visual && beat.visual.position !== "full") || (img && beat.imageOverlay?.mode === "pip_right");

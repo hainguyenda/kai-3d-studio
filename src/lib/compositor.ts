@@ -4,6 +4,7 @@ import { drawBeatImageOverlay, drawVisualDiagram } from "./DiagramOverlay";
 import type { ImageOverlayMode } from "./visualTypes";
 import { drawIntroOutroOverlay } from "./introOutro";
 import { drawPromo } from "./promo";
+import { drawSfx } from "./gag";
 
 const FONT = '"Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif';
 
@@ -87,6 +88,7 @@ export class Compositor {
       else { g.save(); g.scale(s, s); drawIntroOutroOverlay(g, brand, ctx.lt); g.restore(); }
     }
     // lớp kêu gọi: like_surprise (video dài) / full_video (cuối Short)
+    if (ctx.beat.sfx?.length) drawSfx(g, ctx.beat.sfx, ctx.lt, W, H);
     if (ctx.beat.promo) drawPromo(g, ctx.beat.promo, ctx.lt, W, H, s, P9);
     const note = ctx.beat.note?.trim();
     if (o.showSubs) this.subtitle(ctx.beat.ja_narration, ctx.lp, note ? 44 : 0);

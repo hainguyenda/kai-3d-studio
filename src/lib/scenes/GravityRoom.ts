@@ -18,6 +18,8 @@ export interface GravityRoomOptions {
   weightKg?: number;
   /** nhãn chữ trên đầu Kai */
   label?: string;
+  /** cân vỡ khi số ≥ 115 kg (gag "バキッ") */
+  breakScale?: boolean;
   /** ẩn số trên cân */
   hideScale?: boolean;
 }
@@ -117,12 +119,17 @@ export class GravityRoom implements ScenePrefab {
     this.root.add(sun, hemi);
   }
 
-  private drawDial(kg: number): void {
+  private drawDial(kg: number, broken = false): void {
     const g = this.dialCanvas.getContext("2d")!; const W = 512, H = 256;
     g.fillStyle = "#1d2a33"; g.fillRect(0, 0, W, H);
     g.fillStyle = kg > 90 ? "#ff6b4a" : "#7dffb0"; g.font = "bold 150px sans-serif"; g.textAlign = "center"; g.textBaseline = "middle";
     g.fillText(`${kg}`, W / 2 - 40, H / 2 + 8);
     g.font = "bold 70px sans-serif"; g.fillStyle = "#e8eef2"; g.fillText("kg", W - 70, H / 2 + 30);
+    if (broken) {
+      g.strokeStyle = "rgba(255,255,255,0.9)"; g.lineWidth = 4;
+      const cx = 330, cy = 90; for (let i = 0; i < 9; i++) { let a = i * 0.7, x = cx, y = cy; g.beginPath(); g.moveTo(x, y); for (let j = 0; j < 5; j++) { a += Math.sin(i * 7 + j) * 0.5; x += Math.cos(a) * 34; y += Math.sin(a) * 34; g.lineTo(x, y); } g.stroke(); }
+      g.fillStyle = "#ff3b3b"; g.font = "bold 46px sans-serif"; g.fillText("ERROR", 120, 40);
+    }
     this.dialTex.needsUpdate = true;
   }
 
@@ -132,7 +139,8 @@ export class GravityRoom implements ScenePrefab {
     const o: GravityRoomOptions = ctx.beat.grav ?? {};
     const g1 = o.g ?? 1, g0 = o.gFrom ?? g1, g = g0 + (g1 - g0) * ease(clamp(ctx.lp * 1.6 - 0.1));
     const kg = Math.round((o.weightKg ?? 60) * g);
-    if (kg !== this.shown) { this.drawDial(kg); this.shown = kg; }
+    const broken = !!o.breakScale && kg >= 115, key = kg + (broken ? 10000 : 0);
+    if (key !== this.shown) { this.drawDial(kg, broken); this.shown = key; }
     // đèn: dây dài ra & đung đưa nhẹ; cây: lá rủ
     const k = clamp(g - 1, 0, 2);
     (this.lamp.children[0] as THREE.Mesh).scale.y = 1 + k * 0.25; (this.lamp.children[0] as THREE.Mesh).position.y = -0.5 - k * 0.125;
