@@ -1,0 +1,369 @@
+{
+  "title": "もしも東京からニューヨークまで地球を貫くトンネルがあったら",
+  "aspect": "9:16",
+  "title_vi": "Trượt xuyên lòng đất Tokyo → New York chỉ 42 phút",
+  "thumbnailText": "東京→NY たった42分",
+  "beats": [
+    {
+      "id": "beat_01",
+      "scene": "japanese_street",
+      "cameraPreset": "front_close",
+      "characterAction": "idle_wave",
+      "vi_note": "Nếu có một đường hầm thẳng xuyên lòng đất từ Tokyo tới New York thì sao?",
+      "ja_narration": "もしも東京からニューヨークまで、地球の中をまっすぐ貫くトンネルがあったら？",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudMarks": [
+        "東京",
+        "最深部",
+        "NY"
+      ],
+      "caption": "東京→NY 42分？",
+      "emotion": "excited",
+      "hideHud": true
+    },
+    {
+      "id": "beat_02",
+      "scene": "earth_globe",
+      "cameraPreset": "globe_focus",
+      "characterAction": "idle",
+      "vi_note": "Đi máy bay mất khoảng 13 tiếng. Nhưng đi đường hầm này chỉ 42 phút.",
+      "ja_narration": "飛行機なら約13時間。でもこのトンネルなら、たった42分で着きます。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudMarks": [
+        "東京",
+        "最深部",
+        "NY"
+      ],
+      "hideHud": true,
+      "globe": {
+        "focusFrom": "home",
+        "focus": [
+          40.71,
+          -74.01
+        ],
+        "path": false,
+        "labels": [
+          {
+            "at": "home",
+            "text": "東京"
+          },
+          {
+            "at": [
+              40.71,
+              -74.01
+            ],
+            "text": "ニューヨーク"
+          }
+        ]
+      }
+    },
+    {
+      "id": "beat_03",
+      "scene": "gravity_train",
+      "cameraPreset": "gt_wide",
+      "characterAction": "idle",
+      "vi_note": "Đường hầm dài khoảng 9.600 km, điểm sâu nhất cách mặt đất 2.170 km.",
+      "ja_narration": "トンネルの長さは約9,600km。いちばん深いところは、地下2,170kmです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudMarks": [
+        "東京",
+        "最深部",
+        "NY"
+      ],
+      "gtrain": {
+        "deepLabel": "最深 約2,170km"
+      }
+    },
+    {
+      "id": "beat_04",
+      "scene": "japanese_street",
+      "cameraPreset": "hole_topdown",
+      "characterAction": "jump_in",
+      "vi_note": "Không cần động cơ. Chỉ cần nhảy vào và rơi.",
+      "ja_narration": "エンジンはいりません。乗りこんで、ただ落ちるだけ。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudMarks": [
+        "東京",
+        "最深部",
+        "NY"
+      ],
+      "spacesuit": true,
+      "emotion": "excited"
+    },
+    {
+      "id": "beat_05",
+      "scene": "gravity_train",
+      "cameraPreset": "gt_follow",
+      "characterAction": "idle",
+      "vi_note": "Trọng lực kéo khoang tàu, tốc độ tăng liên tục.",
+      "ja_narration": "重力に引っぱられて、どんどん加速していきます。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:10:33",
+        "depthKm": 976,
+        "speedKmh": 15136,
+        "progress": 0.25
+      },
+      "hudMarks": [
+        "東京",
+        "最深部",
+        "NY"
+      ],
+      "gtrain": {
+        "gravity": true,
+        "label": "加速中"
+      }
+    },
+    {
+      "id": "beat_06",
+      "scene": "underground_tunnel",
+      "cameraPreset": "tunnel_follow",
+      "characterAction": "freefall_float",
+      "vi_note": "21 phút sau, ở giữa đường hầm, tốc độ đạt 21.000 km/h, gấp 17 lần tốc độ âm thanh.",
+      "ja_narration": "出発から21分。トンネルの真ん中で、時速およそ2万1千キロ。音の17倍の速さです！",
+      "hudStart": {
+        "time": "12:10:33",
+        "depthKm": 976,
+        "speedKmh": 15136,
+        "progress": 0.25
+      },
+      "hudEnd": {
+        "time": "12:21:06",
+        "depthKm": 2172,
+        "speedKmh": 21406,
+        "progress": 0.5
+      },
+      "hudMarks": [
+        "東京",
+        "最深部",
+        "NY"
+      ],
+      "spacesuit": true,
+      "platform": true,
+      "emotion": "shocked"
+    },
+    {
+      "id": "beat_07",
+      "scene": "gravity_train",
+      "cameraPreset": "gt_tunnel",
+      "characterAction": "idle",
+      "vi_note": "Qua điểm giữa, trọng lực đổi thành phanh, tàu chậm dần.",
+      "ja_narration": "真ん中を過ぎると、今度は重力がブレーキに。だんだん遅くなります。",
+      "hudStart": {
+        "time": "12:21:06",
+        "depthKm": 2172,
+        "speedKmh": 21406,
+        "progress": 0.5
+      },
+      "hudEnd": {
+        "time": "12:31:39",
+        "depthKm": 976,
+        "speedKmh": 15136,
+        "progress": 0.75
+      },
+      "hudMarks": [
+        "東京",
+        "最深部",
+        "NY"
+      ],
+      "gtrain": {
+        "gravity": true,
+        "label": "減速中"
+      }
+    },
+    {
+      "id": "beat_08",
+      "scene": "gravity_train",
+      "cameraPreset": "gt_wide",
+      "characterAction": "idle",
+      "vi_note": "42 phút sau, tàu dừng đúng lúc tới New York.",
+      "ja_narration": "そして42分後。速さがちょうどゼロになって、ニューヨークに到着！",
+      "hudStart": {
+        "time": "12:31:39",
+        "depthKm": 976,
+        "speedKmh": 15136,
+        "progress": 0.75
+      },
+      "hudEnd": {
+        "time": "12:42:12",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 1
+      },
+      "hudMarks": [
+        "東京",
+        "最深部",
+        "NY"
+      ],
+      "gtrain": {
+        "label": "到着！"
+      }
+    },
+    {
+      "id": "beat_09",
+      "scene": "city_ny",
+      "cameraPreset": "ny_close",
+      "characterAction": "idle_wave",
+      "vi_note": "Không phanh, không nhiên liệu, hoàn toàn nhờ trọng lực.",
+      "ja_narration": "ブレーキも燃料も、いっさい使っていません。",
+      "hudStart": {
+        "time": "12:42:12",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 1
+      },
+      "hudEnd": {
+        "time": "12:42:12",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 1
+      },
+      "hudMarks": [
+        "東京",
+        "最深部",
+        "NY"
+      ],
+      "emotion": "excited",
+      "note": "※空気抵抗や摩擦がないと考えた場合"
+    },
+    {
+      "id": "beat_10",
+      "scene": "gravity_train",
+      "cameraPreset": "gt_wide",
+      "characterAction": "point_explain",
+      "vi_note": "Điều kỳ lạ: đào đường hầm thẳng giữa bất kỳ hai điểm nào cũng mất đúng 42 phút.",
+      "ja_narration": "しかも不思議なことに、地球のどこにトンネルを掘っても、かかる時間は同じ42分なんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:42:12",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 1
+      },
+      "hudMarks": [
+        "東京",
+        "最深部",
+        "NY"
+      ],
+      "hideHud": true,
+      "caption": "どこでも42分",
+      "gtrain": {
+        "compare": true,
+        "showNames": false
+      }
+    },
+    {
+      "id": "beat_11",
+      "scene": "city_ny",
+      "cameraPreset": "ny_wide",
+      "characterAction": "idle_wave",
+      "vi_note": "Máy bay 13 tiếng, đường hầm trọng lực 42 phút. Bạn muốn đi đâu?",
+      "ja_narration": "飛行機13時間と、重力トンネル42分。あなたなら、どこへ行きますか？",
+      "hudStart": {
+        "time": "12:42:12",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 1
+      },
+      "hudEnd": {
+        "time": "12:42:12",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 1
+      },
+      "hudMarks": [
+        "東京",
+        "最深部",
+        "NY"
+      ],
+      "hideHud": true,
+      "visual": {
+        "type": "bar_compare",
+        "title": "東京→ニューヨーク",
+        "items": [
+          {
+            "label": "飛行機",
+            "value": 780,
+            "unit": "分",
+            "color": "#7f8c99"
+          },
+          {
+            "label": "重力トンネル",
+            "value": 42,
+            "unit": "分",
+            "color": "#ff7a3d"
+          }
+        ]
+      }
+    }
+  ],
+  "youtube": {
+    "titles": [
+      "東京からNYまで42分！地球を貫くトンネル #Shorts",
+      "もしも地球の中を落ちてニューヨークへ行けたら？ #Shorts"
+    ],
+    "description": "東京からニューヨークまで、地球の中をまっすぐ通るトンネルを掘ったら？エンジンなしで重力だけで42分。しかもどこに掘っても42分！\n※空気抵抗や摩擦がないと考えた場合の計算です。\n#もしも #地球 #科学 #Shorts",
+    "tags": [
+      "もしも",
+      "地球",
+      "重力トンネル",
+      "ニューヨーク",
+      "科学",
+      "Shorts"
+    ]
+  }
+}

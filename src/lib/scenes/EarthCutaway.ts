@@ -15,7 +15,7 @@ const ANTI = HOME.clone().negate();
 const LAYERS = { crust: 0.972, upperMantle: 0.896, outerCore: 0.546, innerCore: 0.192 };
 
 /** vẽ mặt cắt các lớp: vỏ → manti → lõi ngoài → lõi trong */
-function createCrossSectionTexture(size = 2048): THREE.CanvasTexture {
+export function createCrossSectionTexture(size = 2048): THREE.CanvasTexture {
   const c = document.createElement("canvas"); c.width = c.height = size;
   const g = c.getContext("2d"); if (!g) throw new Error("Canvas 2D không khả dụng");
   const m = size / 2, rr = (f: number) => f * m;

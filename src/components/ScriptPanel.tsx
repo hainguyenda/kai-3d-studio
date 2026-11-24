@@ -21,6 +21,7 @@ const SCENES: { id: SceneId; vi: string }[] = [
   { id: "sky_mountain", vi: "Núi Phú Sĩ / Everest + biển mây (mới)" }, { id: "typhoon_eye", vi: "Mắt bão (mới)" },
   { id: "ocean_world", vi: "Địa cầu rút cạn nước biển (mới)" }, { id: "sea_level_city", vi: "Thành phố + nước biển dâng (mới)" },
   { id: "whale_inside", vi: "Bên trong cá voi xanh (mới)" }, { id: "space_stairs", vi: "Cầu thang lên vũ trụ (mới)" },
+  { id: "gravity_train", vi: "Tàu trọng lực xuyên lòng đất (mới)" },
 ];
 const ACTIONS: { id: CharacterAction; vi: string }[] = [
   { id: "idle", vi: "Đứng yên" }, { id: "idle_wave", vi: "Vẫy tay" }, { id: "look_down", vi: "Nhìn xuống" },

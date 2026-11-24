@@ -104,6 +104,8 @@ export interface Beat extends NewBeatFields {
   brandOverlay?: BrandOverlayData;
   /** true = ẩn HUD góc trên-trái trong beat này (đồng hồ hành trình) */
   hideHud?: boolean;
+  /** chữ dưới thanh tiến trình HUD (đầu / giữa / cuối). Mặc định ["家","中心","反対側"] */
+  hudMarks?: [string, string, string];
   hudStart: HudState;
   hudEnd: HudState;
 }

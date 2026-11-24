@@ -8,6 +8,7 @@ import { PulseMarker } from "./markers";
 import { createTokyoScenes } from "./TokyoScenes";
 import { createSkyScenes } from "./SkyScenes";
 import { createPlanScenes } from "./PlanScenes";
+import { GravityTrain } from "./GravityTrain";
 
 /* =====================================================================
    3 BỐI CẢNH MỚI (bản ví dụ – chưa gắn vào app)
@@ -586,6 +587,7 @@ export const createNewScenes = (): Record<NewSceneId, ScenePrefab> => ({
   ...createTokyoScenes(),
   ...createSkyScenes(),
   ...createPlanScenes(),
+  gravity_train: new GravityTrain(),
   moon_surface: new MoonSurface(),
   earth_moon_space: new EarthMoonSpace(),
   deep_sea: new DeepSea(),

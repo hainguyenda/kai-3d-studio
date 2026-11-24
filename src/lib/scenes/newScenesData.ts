@@ -1,10 +1,12 @@
+import type { GravityTrainOptions } from "./GravityTrain";
 /* Dữ liệu 3 bối cảnh mới (NewScenes.ts): tên cảnh, góc máy, tuỳ chọn trong beat JSON.
    Tách riêng file này để cameraPresets.ts import được mà không bị vòng lặp import. */
 
 export type NewSceneId = "moon_surface" | "earth_moon_space" | "deep_sea"
   | "tokyo_glass_street" | "tokyo_deep_infra" | "tokyo_strata_onsen"
   | "space_elevator" | "solar_system" | "sky_mountain" | "typhoon_eye"
-  | "ocean_world" | "sea_level_city" | "whale_inside" | "space_stairs";
+  | "ocean_world" | "sea_level_city" | "whale_inside" | "space_stairs"
+  | "gravity_train";
 
 export type NewCameraPreset =
   | "moon_wide" | "moon_close" | "moon_earthrise"
@@ -20,7 +22,8 @@ export type NewCameraPreset =
   | "ow_wide" | "ow_pacific" | "ow_close"
   | "flood_wide" | "flood_street" | "flood_tower"
   | "wi_wide" | "wi_heart" | "wi_kai"
-  | "st_kai" | "st_wide" | "st_down" | "st_up";
+  | "st_kai" | "st_wide" | "st_down" | "st_up"
+  | "gt_wide" | "gt_tunnel" | "gt_follow";
 
 /** tuỳ chọn trong beat JSON (thêm vào interface Beat) */
 export interface NewBeatFields {
@@ -79,6 +82,8 @@ export interface NewBeatFields {
   whaleIn?: { heart?: boolean; bpm?: number; label?: string; showNames?: boolean };
   /** space_stairs: cầu thang lên vũ trụ; độ cao (km) chạy altKmFrom → altKmTo; showSteps = hiện số bậc */
   stairs?: { altKm?: number; altKmFrom?: number; altKmTo?: number; label?: string; showSteps?: boolean };
+  /** gravity_train: đường hầm thẳng xuyên lòng đất; vị trí tàu = hud.progress (0 điểm đi → 1 điểm đến) */
+  gtrain?: GravityTrainOptions;
 }
 
 type V3 = [number, number, number];
@@ -146,5 +151,9 @@ export const NEW_SHOTS: Record<NewCameraPreset, Shot> = {
   st_kai: { from: [2.4, 1.5, -1.3], to: [2.1, 1.45, -1.1], look: [0, 1.0, 0], fov: 42 },
   st_wide: { from: [5.5, 3.5, 8.5], to: [4.6, 3, 7.4], look: [-0.7, 0.5, 0], fov: 50 },
   st_down: { from: [0.9, 2.4, 1.0], to: [0.8, 2.2, 0.9], look: [-0.7, -30, 0], fov: 60 },
+  // tàu trọng lực (GravityTrain.ts): gt_wide = cả Trái Đất, gt_tunnel = cận đường hầm, gt_follow = bám theo tàu
+  gt_wide: { from: [0, 0.2, 10.4], to: [0, 0.2, 9.5], look: [0, 0.2, 0], fov: 38 },
+  gt_tunnel: { from: [0, -0.6, 9.2], to: [0, -0.6, 8.6], look: [0, -0.6, 0], fov: 38 },
+  gt_follow: { from: [0.35, 0.25, 3.4], to: [0.2, 0.15, 2.6], look: [0, 0, 0], fov: 40 },
   st_up: { from: [0.9, 0.4, 1.3], to: [0.8, 0.5, 1.1], look: [-0.7, 30, 0], fov: 65 },
 };

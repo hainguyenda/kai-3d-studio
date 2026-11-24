@@ -127,7 +127,8 @@ export class Compositor {
       g.beginPath(); g.moveTo(tx, by - (big ? 11 : 7) * s); g.lineTo(tx, by + (big ? 11 : 7) * s); g.stroke();
     }
     g.font = F(700, 22); g.fillStyle = "#d6dbe1"; g.textAlign = "center";
-    [["家", 0], ["中心", 0.5], ["反対側", 1]].forEach(([t, f]) => g.fillText(String(t), bx0 + (bx1 - bx0) * Number(f), by + 34 * s));
+    const mk = ctx.beat.hudMarks ?? ["家", "中心", "反対側"];
+    [[mk[0], 0], [mk[1], 0.5], [mk[2], 1]].forEach(([t, f]) => g.fillText(String(t), bx0 + (bx1 - bx0) * Number(f), by + 34 * s));
     const ix = bx0 + (bx1 - bx0) * p;
     g.shadowColor = "#ff9a3c"; g.shadowBlur = 18 * s;
     g.fillStyle = "#1a1f27"; g.strokeStyle = "#ff9a3c"; g.lineWidth = 4 * s;
