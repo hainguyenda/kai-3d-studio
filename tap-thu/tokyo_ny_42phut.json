@@ -349,6 +349,42 @@
           }
         ]
       }
+    },
+    {
+      "id": "beat_12",
+      "scene": "gravity_train",
+      "cameraPreset": "gt_wide",
+      "characterAction": "idle",
+      "vi_note": "Muốn xem trọn hành trình xuyên lòng đất? Bản đầy đủ ở link bên dưới.",
+      "ja_narration": "地球の中には、まだまだ驚きがいっぱい。続きはフル動画で！下のリンクからどうぞ。",
+      "gtrain": {
+        "compare": true,
+        "showNames": false
+      },
+      "hideHud": true,
+      "promo": {
+        "type": "full_video",
+        "text": "続きはフル動画で！",
+        "sub": "地球の中を旅する本編、公開中",
+        "at": 0.2
+      },
+      "hudStart": {
+        "time": "12:42:12",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 1
+      },
+      "hudEnd": {
+        "time": "12:42:12",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 1
+      },
+      "hudMarks": [
+        "東京",
+        "最深部",
+        "NY"
+      ]
     }
   ],
   "youtube": {

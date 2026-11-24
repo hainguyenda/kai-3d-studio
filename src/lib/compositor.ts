@@ -3,6 +3,7 @@ import { clamp, easeOut, formatDepth, formatHudTime, formatSpeed } from "./math"
 import { drawBeatImageOverlay, drawVisualDiagram } from "./DiagramOverlay";
 import type { ImageOverlayMode } from "./visualTypes";
 import { drawIntroOutroOverlay } from "./introOutro";
+import { drawPromo } from "./promo";
 
 const FONT = '"Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif';
 
@@ -85,6 +86,8 @@ export class Compositor {
       if (P9) this.portraitCard(1920 - 940 - 95, 215, 940, 520, () => drawIntroOutroOverlay(g, brand, ctx.lt));
       else { g.save(); g.scale(s, s); drawIntroOutroOverlay(g, brand, ctx.lt); g.restore(); }
     }
+    // lớp kêu gọi: like_surprise (video dài) / full_video (cuối Short)
+    if (ctx.beat.promo) drawPromo(g, ctx.beat.promo, ctx.lt, W, H, s, P9);
     const note = ctx.beat.note?.trim();
     if (o.showSubs) this.subtitle(ctx.beat.ja_narration, ctx.lp, note ? 44 : 0);
     if (o.showSubs && note) this.note(note);
