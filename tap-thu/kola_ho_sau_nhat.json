@@ -216,12 +216,42 @@
     },
     {
       "id": "beat_07",
+      "scene": "kola_borehole",
+      "cameraPreset": "kola_cap",
+      "characterAction": "jump_in",
+      "kola": {
+        "capped": true,
+        "open": true
+      },
+      "emotion": "excited",
+      "vi_note": "Xuất phát thôi! Mở nắp hố ra, rồi nhảy xuống!",
+      "ja_narration": "それでは出発！フタを開けて…いざ、穴の中へ！",
+      "hudMarks": [
+        "地表",
+        "6km",
+        "12.262km"
+      ],
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0.0
+      }
+    },
+    {
+      "id": "beat_08",
       "scene": "underground_tunnel",
       "cameraPreset": "tunnel_follow",
       "characterAction": "freefall_float",
       "emotion": "excited",
-      "vi_note": "Bắt đầu đi xuống! Cả cái hố được khoan xuyên qua đá cứng, gần như không có đất mềm.",
-      "ja_narration": "それでは出発！この穴は、やわらかい土ではなく、ほとんどがかたい岩の中を、まっすぐ下へ掘り進められています。",
+      "vi_note": "Cả cái hố được khoan xuyên qua đá cứng, gần như không có đất mềm.",
+      "ja_narration": "この穴は、やわらかい土ではなく、ほとんどがかたい岩の中を、まっすぐ下へ掘り進められています。",
       "hudMarks": [
         "地表",
         "6km",
@@ -241,7 +271,7 @@
       }
     },
     {
-      "id": "beat_08",
+      "id": "beat_09",
       "scene": "kola_borehole",
       "cameraPreset": "kola_deep",
       "characterAction": "idle",
@@ -269,7 +299,7 @@
       }
     },
     {
-      "id": "beat_09",
+      "id": "beat_10",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -297,7 +327,7 @@
       }
     },
     {
-      "id": "beat_10",
+      "id": "beat_11",
       "scene": "underground_tunnel",
       "cameraPreset": "tunnel_follow",
       "characterAction": "freefall_float",
@@ -322,7 +352,7 @@
       }
     },
     {
-      "id": "beat_11",
+      "id": "beat_12",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -349,7 +379,7 @@
       }
     },
     {
-      "id": "beat_12",
+      "id": "beat_13",
       "scene": "kola_borehole",
       "cameraPreset": "kola_deep",
       "characterAction": "idle",
@@ -378,7 +408,7 @@
       }
     },
     {
-      "id": "beat_13",
+      "id": "beat_14",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -405,7 +435,7 @@
       }
     },
     {
-      "id": "beat_14",
+      "id": "beat_15",
       "scene": "kola_borehole",
       "cameraPreset": "kola_section",
       "characterAction": "idle",
@@ -433,7 +463,7 @@
       }
     },
     {
-      "id": "beat_15",
+      "id": "beat_16",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -461,7 +491,7 @@
       }
     },
     {
-      "id": "beat_16",
+      "id": "beat_17",
       "scene": "kola_borehole",
       "cameraPreset": "kola_deep",
       "characterAction": "look_down",
@@ -490,7 +520,7 @@
       }
     },
     {
-      "id": "beat_17",
+      "id": "beat_18",
       "scene": "kola_borehole",
       "cameraPreset": "kola_section",
       "characterAction": "idle",
@@ -519,7 +549,7 @@
       }
     },
     {
-      "id": "beat_18",
+      "id": "beat_19",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -546,7 +576,7 @@
       }
     },
     {
-      "id": "beat_19_like",
+      "id": "beat_20_like",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "idle_wave",
@@ -573,7 +603,7 @@
       }
     },
     {
-      "id": "beat_20",
+      "id": "beat_21",
       "scene": "underground_tunnel",
       "cameraPreset": "tunnel_follow",
       "characterAction": "freefall_float",
@@ -599,7 +629,7 @@
       }
     },
     {
-      "id": "beat_21",
+      "id": "beat_22",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -627,7 +657,7 @@
       }
     },
     {
-      "id": "beat_22",
+      "id": "beat_23",
       "scene": "kola_borehole",
       "cameraPreset": "kola_deep",
       "characterAction": "idle",
@@ -656,7 +686,7 @@
       }
     },
     {
-      "id": "beat_23",
+      "id": "beat_24",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -683,7 +713,7 @@
       }
     },
     {
-      "id": "beat_24",
+      "id": "beat_25",
       "scene": "kola_borehole",
       "cameraPreset": "kola_section",
       "characterAction": "idle",
@@ -711,7 +741,7 @@
       }
     },
     {
-      "id": "beat_25",
+      "id": "beat_26",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -753,7 +783,7 @@
       }
     },
     {
-      "id": "beat_26",
+      "id": "beat_27",
       "scene": "sky_mountain",
       "cameraPreset": "mt_wide",
       "characterAction": "idle",
@@ -778,7 +808,7 @@
       }
     },
     {
-      "id": "beat_27",
+      "id": "beat_28",
       "scene": "deep_sea",
       "cameraPreset": "sea_wide",
       "characterAction": "freefall_float",
@@ -803,7 +833,7 @@
       }
     },
     {
-      "id": "beat_28",
+      "id": "beat_29",
       "scene": "kola_borehole",
       "cameraPreset": "kola_section",
       "characterAction": "point_explain",
@@ -832,7 +862,7 @@
       }
     },
     {
-      "id": "beat_29",
+      "id": "beat_30",
       "scene": "earth_cutaway",
       "cameraPreset": "cut_side",
       "characterAction": "idle",
@@ -857,7 +887,7 @@
       }
     },
     {
-      "id": "beat_30",
+      "id": "beat_31",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -884,7 +914,7 @@
       }
     },
     {
-      "id": "beat_31",
+      "id": "beat_32",
       "scene": "kola_borehole",
       "cameraPreset": "kola_cap",
       "characterAction": "shiver",
@@ -913,7 +943,7 @@
       }
     },
     {
-      "id": "beat_32",
+      "id": "beat_33",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -941,7 +971,7 @@
       }
     },
     {
-      "id": "beat_33",
+      "id": "beat_34",
       "scene": "stage_studio",
       "cameraPreset": "studio_front",
       "characterAction": "point_explain",
@@ -968,7 +998,7 @@
       }
     },
     {
-      "id": "beat_34",
+      "id": "beat_35",
       "scene": "kola_borehole",
       "cameraPreset": "kola_site",
       "characterAction": "look_down",
@@ -997,7 +1027,7 @@
       }
     },
     {
-      "id": "beat_35",
+      "id": "beat_36",
       "scene": "japanese_street",
       "cameraPreset": "front_medium",
       "characterAction": "look_down",
@@ -1087,7 +1117,7 @@
       "人類最深の穴・地下12kmには何があった？【3Dシミュレーション】",
       "直径23cm・深さ12km「コラ超深度掘削坑」を3Dで下りてみた【もしも検証】"
     ],
-    "description": "もしも、人類が掘ったいちばん深い穴に入ったら？\nロシア・コラ半島にある「コラ超深度掘削坑」は、深さ12,262m。直径わずか23cmの穴を、20年近くかけて掘り進めました。深さ6kmで見つかった微化石、予想外の岩の中の水、水素で泡立つ泥、そして予想の100℃を大きくこえる180℃の底。なぜ12kmで止まったのか、「地獄の井戸」のうわさは本当なのか、3Dで徹底検証しました！\n\n【目次】\n0:00 もしも人類最深の穴に入ったら\n0:23 コラ半島とソビエトの挑戦\n0:53 直径23cmの穴を3Dで下りる\n1:50 1979年 世界一の深さへ\n2:00 深さ6kmの微化石\n2:22 7kmの予想外：岩の中の水\n2:54 1983年 12km到達、そして事故\n3:15 🎁 サプライズ\n3:25 水素の泡と180℃の底\n3:56 なぜ12kmで止まったのか\n4:18 エベレスト・マリアナ海溝とくらべる\n4:53 地球のたった0.2%\n5:16 「地獄の井戸」のうわさ\n5:48 いまのコラの穴\n6:07 まとめ\n\n📌 この動画は公開されているデータをもとにした3Dシミュレーションです。数値には資料により幅があります。\n出典：ロシア科学アカデミー資料、ICDP（国際陸上科学掘削計画）、USGS ほか\n🔔 チャンネル登録・通知オンで、新しい「もしも検証」を続々とお届けします！\n\n#もしも検証ラボ #もしも #3Dアニメ #雑学 #コラ超深度掘削坑 #地球",
+    "description": "もしも、人類が掘ったいちばん深い穴に入ったら？\nロシア・コラ半島にある「コラ超深度掘削坑」は、深さ12,262m。直径わずか23cmの穴を、20年近くかけて掘り進めました。深さ6kmで見つかった微化石、予想外の岩の中の水、水素で泡立つ泥、そして予想の100℃を大きくこえる180℃の底。なぜ12kmで止まったのか、「地獄の井戸」のうわさは本当なのか、3Dで徹底検証しました！\n\n【目次】\n0:00 もしも人類最深の穴に入ったら\n0:23 コラ半島とソビエトの挑戦\n0:53 直径23cmの穴を3Dで下りる\n1:53 1979年 世界一の深さへ\n2:03 深さ6kmの微化石\n2:24 7kmの予想外：岩の中の水\n2:57 1983年 12km到達、そして事故\n3:18 🎁 サプライズ\n3:28 水素の泡と180℃の底\n3:58 なぜ12kmで止まったのか\n4:21 エベレスト・マリアナ海溝とくらべる\n4:56 地球のたった0.2%\n5:19 「地獄の井戸」のうわさ\n5:51 いまのコラの穴\n6:10 まとめ\n\n📌 この動画は公開されているデータをもとにした3Dシミュレーションです。数値には資料により幅があります。\n出典：ロシア科学アカデミー資料、ICDP（国際陸上科学掘削計画）、USGS ほか\n🔔 チャンネル登録・通知オンで、新しい「もしも検証」を続々とお届けします！\n\n#もしも検証ラボ #もしも #3Dアニメ #雑学 #コラ超深度掘削坑 #地球",
     "tags": [
       "もしも",
       "もしも検証ラボ",
