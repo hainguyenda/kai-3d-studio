@@ -1,0 +1,238 @@
+{
+  "title": "重力が2倍になったら、体重60kgの人は120kgに #shorts",
+  "aspect": "9:16",
+  "title_vi": "Trọng lực gấp đôi: người 60 kg nặng như 120 kg",
+  "thumbnailText": "重力2倍で 体重120kg！？",
+  "beats": [
+    {
+      "id": "beat_01",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_kai",
+      "characterAction": "idle",
+      "hideHud": true,
+      "emotion": "curious",
+      "caption": "重力が2倍に！？",
+      "grav": {
+        "g": 1
+      },
+      "vi_note": "Kai nặng 60 kg. Nếu sáng mai trọng lực Trái Đất bỗng tăng gấp đôi thì sao?",
+      "ja_narration": "体重60キロのカイ。もしも明日の朝、地球の重力が2倍になっていたら？",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_02",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_scale",
+      "characterAction": "heavy_crouch",
+      "hideHud": true,
+      "emotion": "shocked",
+      "grav": {
+        "gFrom": 1,
+        "g": 2
+      },
+      "vi_note": "Kim cân vọt lên 120 kg. Cơ thể nặng gấp đôi.",
+      "ja_narration": "体重計の数字は、一気に120キロへ。体の重さが、そっくり2倍になります。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_03",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "bar_compare",
+        "title": "重さはどうなる？",
+        "items": [
+          {
+            "label": "いまの体重",
+            "value": 60,
+            "unit": "kg",
+            "color": "#4ea8de"
+          },
+          {
+            "label": "重力2倍の体重",
+            "value": 120,
+            "unit": "kg",
+            "color": "#e67e22"
+          }
+        ]
+      },
+      "vi_note": "Cặp sách, chăn đệm, mọi thứ đều nặng gấp đôi. Chỉ đứng dậy thôi cũng mệt.",
+      "ja_narration": "ランドセルも布団も、みんな2倍の重さ。ベッドから起き上がるだけで、ひと苦労です。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_04",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_jump",
+      "characterAction": "jump_low",
+      "hideHud": true,
+      "emotion": "sweating",
+      "grav": {
+        "g": 2
+      },
+      "vi_note": "Nhảy hết sức cũng chỉ cao được một nửa so với bình thường.",
+      "ja_narration": "思いきりジャンプしても、とべる高さは、いつもの半分だけ。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_05",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "jump_ruler",
+        "title": "ジャンプの高さ",
+        "items": [
+          {
+            "label": "いま (1G)",
+            "value": 50,
+            "unit": "cm",
+            "color": "#4ea8de"
+          },
+          {
+            "label": "重力2倍 (2G)",
+            "value": 25,
+            "unit": "cm",
+            "color": "#e67e22"
+          }
+        ]
+      },
+      "vi_note": "Cùng một lực bật, trọng lực gấp đôi thì độ cao nhảy chỉ còn một nửa.",
+      "ja_narration": "同じ力でけっても、重力が2倍だと、高さは半分になってしまうんです。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_06",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_kai",
+      "characterAction": "heavy_crouch",
+      "hideHud": true,
+      "emotion": "sweating",
+      "grav": {
+        "g": 2,
+        "label": "体重120kg"
+      },
+      "vi_note": "Tim cũng phải bơm mạnh gấp đôi để đẩy máu lên đầu, dễ bị choáng khi đứng lên.",
+      "ja_narration": "心臓も、血を頭まで送るのに2倍の力が必要。立ち上がると、くらっとしやすくなります。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_outro_full",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_wide",
+      "characterAction": "heavy_crouch",
+      "hideHud": true,
+      "grav": {
+        "g": 2
+      },
+      "promo": {
+        "type": "full_video",
+        "text": "続きはフル動画で！",
+        "sub": "町・建物・鳥・飛行機まで…重力2倍の世界を本編で検証",
+        "at": 0.2
+      },
+      "vi_note": "Còn nhà cửa, cây cối, chim bay sẽ ra sao? Xem bản đầy đủ ở link bên dưới.",
+      "ja_narration": "では、家や木、空を飛ぶ鳥はどうなる…？続きはフル動画で！下のリンクからどうぞ。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    }
+  ],
+  "youtube": {
+    "titles": [
+      "重力が2倍になったら、体重60kgの人は120kgに #shorts",
+      "重力2倍の世界、ジャンプは半分 #shorts",
+      "明日、重力が2倍になったら？ #shorts"
+    ],
+    "description": "もしも明日の朝、地球の重力が2倍になっていたら？体重60kgの人は120kgに。立ち上がるだけで大変、ジャンプも半分の高さしか飛べません。\n\n▶ フル動画はこちら：（本編のURLを入れてください）\n▶ 画面下の「関連動画」からもどうぞ！\n\n📌 物理の計算をもとにした3Dシミュレーションです。\n🔔 チャンネル登録で、新しい「もしも検証」をお届けします！\n\n#もしも検証ラボ #もしも #Shorts #重力 #物理 #雑学",
+    "tags": [
+      "もしも",
+      "もしも検証ラボ",
+      "Shorts",
+      "重力2倍",
+      "重力",
+      "体重",
+      "物理",
+      "雑学",
+      "3Dアニメ"
+    ]
+  }
+}
