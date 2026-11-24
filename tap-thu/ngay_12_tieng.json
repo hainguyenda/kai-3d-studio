@@ -1,0 +1,1102 @@
+{
+  "title": "もしも1日が12時間になったら",
+  "title_vi": "Trái Đất quay nhanh gấp đôi, 1 ngày chỉ 12 tiếng",
+  "thumbnailText": "1日が12時間！？ 1年は730日",
+  "beats": [
+    {
+      "id": "beat_01",
+      "scene": "japanese_street",
+      "cameraPreset": "front_medium",
+      "characterAction": "idle_wave",
+      "caption": "1日が12時間に！？",
+      "env": {
+        "timeOfDay": "day",
+        "showHole": false
+      },
+      "emotion": "curious",
+      "hideHud": true,
+      "vi_note": "Nếu từ ngày mai, một ngày chỉ còn 12 tiếng? Sáng tới, 6 tiếng sau đã là đêm, rồi 6 tiếng sau lại sáng.",
+      "ja_narration": "もしも明日から、1日が12時間になったら？朝が来て、6時間たつともう夜。そしてまた6時間で朝がやってきます。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_intro",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "idle_wave",
+      "emotion": "excited",
+      "brandOverlay": {
+        "type": "intro_banner",
+        "channelName": "もしも検証ラボ",
+        "headline": "もしも1日が12時間になったら？",
+        "subline": "地球の自転が2倍速になった世界を3Dで検証"
+      },
+      "hideHud": true,
+      "vi_note": "Chào mừng đến もしも検証ラボ, mình là Kai! Hôm nay ta cho Trái Đất quay nhanh gấp đôi và xem chuyện gì xảy ra bằng 3D.",
+      "ja_narration": "もしも検証ラボへようこそ、案内役のカイです！今回は、地球の回るスピードを2倍にして、何が起きるのかを3Dで検証します！",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_02",
+      "scene": "earth_globe",
+      "cameraPreset": "globe_wide",
+      "characterAction": "idle",
+      "globe": {
+        "arrows": true
+      },
+      "hideHud": true,
+      "vi_note": "Hiện tại Trái Đất tự quay một vòng mất 24 tiếng. Giờ ta cho nó quay nhanh gấp đôi.",
+      "ja_narration": "地球はいま、24時間で1回まわっています。これを2倍の速さにすると、1回まわるのは12時間です。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_03",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "split_compare",
+        "leftTitle": "いま",
+        "leftSub": "昼12時間・夜12時間",
+        "rightTitle": "12時間の地球",
+        "rightSub": "昼6時間・夜6時間"
+      },
+      "hideHud": true,
+      "vi_note": "Ban ngày 6 tiếng, ban đêm 6 tiếng.",
+      "ja_narration": "昼が6時間、夜が6時間。いまの半分です。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_04",
+      "scene": "japanese_street",
+      "cameraPreset": "wide_street",
+      "characterAction": "idle",
+      "env": {
+        "timeOfDay": "day",
+        "showHole": false
+      },
+      "hideHud": true,
+      "vi_note": "Mặt Trời mọc lúc 6 giờ, đến 9 giờ đã đứng bóng, và 12 giờ trưa thì đã lặn.",
+      "ja_narration": "朝6時に日がのぼると、9時にはもうお昼の高さ。そして正午には、もう日がしずんでしまいます。",
+      "hudStart": {
+        "time": "09:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "09:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_05",
+      "scene": "japanese_street",
+      "cameraPreset": "front_medium",
+      "characterAction": "look_down",
+      "env": {
+        "timeOfDay": "sunset",
+        "showHole": false
+      },
+      "emotion": "shocked",
+      "hideHud": true,
+      "vi_note": "Vừa ăn trưa xong mà trời đã chạng vạng.",
+      "ja_narration": "お昼ごはんを食べたと思ったら、もう夕焼け。",
+      "hudStart": {
+        "time": "11:30:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "11:30:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_06",
+      "scene": "japanese_street",
+      "cameraPreset": "wide_street",
+      "characterAction": "idle",
+      "env": {
+        "timeOfDay": "night",
+        "showHole": false
+      },
+      "hideHud": true,
+      "vi_note": "Rồi đêm đến. Đêm chỉ dài 6 tiếng, ngủ một giấc dậy đã sáng.",
+      "ja_narration": "そして夜。夜も6時間しかないので、ぐっすりねむったら、もう朝です。",
+      "hudStart": {
+        "time": "15:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "15:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_07",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "fact_card",
+        "title": "時計の短い針",
+        "highlightText": "1日に1周",
+        "subText": "いまは1日に2周"
+      },
+      "hideHud": true,
+      "vi_note": "Đồng hồ thì sao? Kim giờ hiện quay một vòng trong 12 tiếng. Ở Trái Đất 12 tiếng, nó chỉ quay một vòng mỗi ngày.",
+      "ja_narration": "時計はどうなるでしょう？いまの時計の短い針は、12時間で1周。12時間の地球なら、1日にちょうど1周するだけになります。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_08",
+      "scene": "japanese_street",
+      "cameraPreset": "side_low",
+      "characterAction": "look_down",
+      "env": {
+        "timeOfDay": "day",
+        "showHole": false
+      },
+      "emotion": "curious",
+      "hideHud": true,
+      "vi_note": "Gà gáy buổi sáng, hoa bìm bìm nở buổi sáng... động vật và cây cũng sẽ bị rối nhịp.",
+      "ja_narration": "朝に鳴くニワトリや、朝に花を開くアサガオも、リズムが合わずに、とまどってしまうかもしれません。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_09",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "fact_card",
+        "title": "1年の日数",
+        "highlightText": "約730日",
+        "subText": "1年の長さは同じ・日数が2倍"
+      },
+      "hideHud": true,
+      "vi_note": "Một năm vẫn dài như cũ, vì Trái Đất vẫn đi quanh Mặt Trời cùng tốc độ. Nhưng một năm sẽ có khoảng 730 ngày.",
+      "ja_narration": "1年の長さは、いまと同じ。地球が太陽のまわりを回る速さは、変わらないからです。でも1年は、およそ730日になります。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_10",
+      "scene": "earth_globe",
+      "cameraPreset": "globe_focus",
+      "characterAction": "idle",
+      "globe": {
+        "focus": [
+          35.7,
+          139.7
+        ],
+        "arrows": true,
+        "marker": {
+          "at": [
+            35.7,
+            139.7
+          ],
+          "label": "東京 時速2720km"
+        }
+      },
+      "hideHud": true,
+      "vi_note": "Mặt đất cũng chuyển động nhanh gấp đôi. Ở Tokyo, mặt đất đang chạy khoảng 1.360 km/h, sẽ thành khoảng 2.720 km/h.",
+      "ja_narration": "地面の動くスピードも2倍に。東京の地面は、いま時速およそ1360キロ。これが時速2720キロになります。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_11",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "bar_compare",
+        "position": "right",
+        "title": "地面のスピード",
+        "items": [
+          {
+            "label": "新幹線",
+            "value": 320,
+            "unit": "km/h",
+            "color": "#3b7a75"
+          },
+          {
+            "label": "いまの赤道",
+            "value": 1670,
+            "unit": "km/h",
+            "color": "#4ea8de"
+          },
+          {
+            "label": "12時間の地球の赤道",
+            "value": 3340,
+            "unit": "km/h",
+            "color": "#e67e22"
+          }
+        ]
+      },
+      "hideHud": true,
+      "vi_note": "Ở xích đạo còn nhanh hơn: 3.340 km/h, nhanh gần gấp 3 lần âm thanh.",
+      "ja_narration": "赤道ではさらに速く、時速3340キロ。音の速さの、およそ3倍です。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_12",
+      "scene": "japanese_street",
+      "cameraPreset": "front_close",
+      "characterAction": "idle",
+      "env": {
+        "timeOfDay": "day",
+        "showHole": false
+      },
+      "emotion": "curious",
+      "hideHud": true,
+      "vi_note": "Vậy ta có bị văng đi không? Không. Ta, không khí và nhà cửa đều cùng chuyển động, nên không cảm thấy gì.",
+      "ja_narration": "それなら、ふき飛ばされる？いいえ。わたしたちも、空気も、建物も、みんな一緒に動いているので、スピードは感じません。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_13",
+      "scene": "earth_cutaway",
+      "cameraPreset": "cut_side",
+      "characterAction": "idle",
+      "cutaway": {
+        "overlay": "rotation",
+        "label": "遠心力 4倍",
+        "labelAt": "center",
+        "hideMarker": true
+      },
+      "hideHud": true,
+      "vi_note": "Nhưng có một lực thay đổi: lực ly tâm, lực muốn đẩy mọi thứ văng ra ngoài khi quay. Quay nhanh gấp đôi, lực này mạnh gấp 4.",
+      "ja_narration": "でも、ひとつ変わる力があります。回るものを外へおし出そうとする「遠心力」。回る速さが2倍になると、遠心力は4倍になるんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_14",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "bar_compare",
+        "position": "right",
+        "title": "赤道での体重（60kgの人）",
+        "items": [
+          {
+            "label": "いまの地球",
+            "value": 59.8,
+            "unit": "kg",
+            "color": "#4ea8de"
+          },
+          {
+            "label": "12時間の地球",
+            "value": 59.2,
+            "unit": "kg",
+            "color": "#e67e22"
+          }
+        ]
+      },
+      "hideHud": true,
+      "vi_note": "Người 60 kg ở xích đạo sẽ nhẹ đi khoảng 0,8 kg. Không nhiều, nhưng đo được.",
+      "ja_narration": "赤道に立つと、体重60キロの人は、およそ0.8キロ軽くなります。ほんの少しですが、はかればわかる差です。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_15",
+      "scene": "arctic_pole",
+      "cameraPreset": "pole_axis",
+      "characterAction": "idle",
+      "env": {
+        "showAxis": true
+      },
+      "hideHud": true,
+      "vi_note": "Còn ở Bắc Cực, nằm ngay trên trục quay, lực ly tâm gần như bằng 0, cân nặng không đổi.",
+      "ja_narration": "いっぽう北極は、回転の軸の真上。ここでは遠心力はほとんどゼロなので、体重は変わりません。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_16",
+      "scene": "earth_globe",
+      "cameraPreset": "globe_wide",
+      "characterAction": "idle",
+      "globe": {
+        "arrows": true
+      },
+      "hideHud": true,
+      "vi_note": "Hình dạng Trái Đất cũng đổi: xích đạo phình ra nhiều hơn, Trái Đất dẹt hơn.",
+      "ja_narration": "地球の形も変わります。赤道のあたりが外へふくらんで、いまより少し平べったい形になるんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_17",
+      "scene": "ocean_world",
+      "cameraPreset": "ow_wide",
+      "characterAction": "idle",
+      "world": {
+        "water": 1,
+        "showNames": false
+      },
+      "hideHud": true,
+      "vi_note": "Thứ thay đổi nhiều nhất là biển. Lực ly tâm đẩy nước biển dồn về phía xích đạo.",
+      "ja_narration": "いちばん大きく変わるのは、海です。遠心力におされて、海の水は赤道のほうへ集まっていきます。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_18",
+      "scene": "mega_tsunami_coast",
+      "cameraPreset": "tsunami_wide",
+      "characterAction": "look_down",
+      "env": {
+        "waveProgress": 0.4
+      },
+      "emotion": "shocked",
+      "hideHud": true,
+      "vi_note": "Các nước gần xích đạo có thể bị nước biển dâng, các thành phố ven biển bị ngập.",
+      "ja_narration": "赤道に近い国では海面が上がり、海ぞいの町が水につかってしまうおそれがあります。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_19",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "split_compare",
+        "leftTitle": "赤道のあたり",
+        "leftSub": "海面が上がる",
+        "rightTitle": "北や南",
+        "rightSub": "海面が下がる"
+      },
+      "hideHud": true,
+      "vi_note": "Ngược lại, ở vùng gần hai cực, biển rút xuống, lộ ra đất liền mới.",
+      "ja_narration": "反対に、北や南の海では水がへって、海だった場所が陸になるところも出てきます。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_20_like",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "idle_wave",
+      "emotion": "excited",
+      "promo": {
+        "type": "like_surprise",
+        "sub": "このあと… 台風がもっと強くなる！？🌀",
+        "at": 0.3
+      },
+      "hideHud": true,
+      "vi_note": "Thấy hay thì bấm Like ủng hộ Kai nhé! Tiếp theo: gió, bão và cả đồng hồ trong cơ thể ta sẽ ra sao?",
+      "ja_narration": "ここまで面白いと思ったら、高評価で応援してもらえるとうれしいです！このあとは、風や台風、そして体の中の時計がどうなるのかを見ていきます。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_21",
+      "scene": "wind_storm_street",
+      "cameraPreset": "storm_wide",
+      "characterAction": "blown_wind",
+      "env": {
+        "windStrength": 1.2
+      },
+      "hideHud": true,
+      "vi_note": "Gió cũng thay đổi. Trái Đất quay nhanh hơn thì lực Coriolis, lực làm gió bị bẻ cong, cũng mạnh hơn.",
+      "ja_narration": "風も変わります。地球の回転が速くなると、風の向きを曲げる「コリオリの力」も強くなります。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_22",
+      "scene": "typhoon_eye",
+      "cameraPreset": "ty_space",
+      "characterAction": "idle",
+      "typhoon": {
+        "label": "もっと強いうずに"
+      },
+      "hideHud": true,
+      "vi_note": "Các nhà khoa học cho rằng bão sẽ xoáy chặt hơn, nhỏ hơn nhưng dữ dội hơn.",
+      "ja_narration": "台風は、もっと小さく、きつく巻いた、はげしいうずになると考えられています。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_23",
+      "scene": "science_museum_pendulum",
+      "cameraPreset": "pendulum_wide",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "vi_note": "Con lắc Foucault ở bảo tàng là bằng chứng Trái Đất quay. Ở Tokyo hiện nay nó xoay hết một vòng trong khoảng 41 tiếng.",
+      "ja_narration": "博物館にあるフーコーの振り子は、地球が回っている証拠。東京では、振り子の向きが1周するのに、いまはおよそ41時間かかります。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_24",
+      "scene": "science_museum_pendulum",
+      "cameraPreset": "pendulum_close",
+      "characterAction": "idle",
+      "emotion": "excited",
+      "hideHud": true,
+      "vi_note": "Với ngày 12 tiếng, chỉ khoảng 20 tiếng là đủ một vòng, nhanh gấp đôi.",
+      "ja_narration": "12時間の地球なら、およそ20時間で1周。目で見てわかるほど、速く向きが変わります。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_25",
+      "scene": "extreme_climate_zone",
+      "cameraPreset": "climate_wide",
+      "characterAction": "idle",
+      "env": {
+        "climate": "twilight"
+      },
+      "hideHud": true,
+      "vi_note": "Đêm ngắn hơn nên mặt đất ít bị lạnh đi, chênh lệch nhiệt độ ngày và đêm sẽ nhỏ hơn.",
+      "ja_narration": "夜が短いので、地面が冷えきる前に朝が来ます。昼と夜の気温の差は、いまより小さくなると考えられています。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_26",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "split_compare",
+        "leftTitle": "体内時計",
+        "leftSub": "約24時間",
+        "rightTitle": "12時間の地球",
+        "rightSub": "ずっと時差ぼけ"
+      },
+      "hideHud": true,
+      "vi_note": "Cơ thể ta có đồng hồ sinh học khoảng 24 tiếng. Ngày 12 tiếng sẽ khiến ta như bị lệch múi giờ liên tục.",
+      "ja_narration": "わたしたちの体には、およそ24時間でひとまわりする「体内時計」があります。1日が12時間になると、ずっと時差ぼけのような状態になってしまうんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_27",
+      "scene": "japanese_street",
+      "cameraPreset": "front_medium",
+      "characterAction": "idle",
+      "env": {
+        "timeOfDay": "night",
+        "showHole": false
+      },
+      "emotion": "curious",
+      "hideHud": true,
+      "vi_note": "Có thể người ta sẽ ngủ vào một đêm, rồi thức xuyên qua đêm kế tiếp.",
+      "ja_narration": "もしかしたら人は、夜を1回ねて、次の夜は起きてすごす…そんな暮らし方になるかもしれません。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_28",
+      "scene": "space_iss_orbit",
+      "cameraPreset": "orbit_sat",
+      "characterAction": "idle",
+      "hideHud": true,
+      "vi_note": "Vệ tinh địa tĩnh, loại luôn đứng yên trên bầu trời, cũng phải dời chỗ.",
+      "ja_narration": "宇宙の人工衛星にも影響があります。空の同じ場所にとどまって見える「静止衛星」は、場所をうつさないといけません。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_29",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "bar_compare",
+        "position": "right",
+        "title": "静止衛星の高さ",
+        "items": [
+          {
+            "label": "いまの地球",
+            "value": 35786,
+            "unit": "km",
+            "color": "#4ea8de"
+          },
+          {
+            "label": "12時間の地球",
+            "value": 20200,
+            "unit": "km",
+            "color": "#e67e22"
+          }
+        ]
+      },
+      "hideHud": true,
+      "vi_note": "Hiện chúng ở độ cao 35.786 km. Với ngày 12 tiếng, độ cao cần là khoảng 20.200 km.",
+      "ja_narration": "いまは高さ3万5786キロ。でも1日が12時間なら、およそ2万200キロまで下りてこないと、地面と一緒に回れません。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_30",
+      "scene": "earth_moon_space",
+      "cameraPreset": "em_wide",
+      "characterAction": "idle",
+      "route": {
+        "tide": true,
+        "showNames": true
+      },
+      "hideHud": true,
+      "vi_note": "Thật ra Trái Đất ngày xưa từng quay nhanh hơn bây giờ. Mặt Trăng đã từ từ phanh nó lại.",
+      "ja_narration": "じつは、大昔の地球は、いまよりも速く回っていました。それを少しずつブレーキをかけてきたのが、月なんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_31",
+      "scene": "earth_moon_space",
+      "cameraPreset": "em_earth",
+      "characterAction": "idle",
+      "route": {
+        "tide": true
+      },
+      "hideHud": true,
+      "vi_note": "Lực hút của Mặt Trăng tạo ra thủy triều. Nước biển cọ xát với đáy biển làm Trái Đất quay chậm dần.",
+      "ja_narration": "月に引っぱられて、海はふくらみ、潮の満ち引きが起きます。この海の水が海底とこすれて、地球の回転は、ゆっくりおそくなっていくんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_32",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "bar_compare",
+        "position": "right",
+        "title": "1日の長さの変化",
+        "items": [
+          {
+            "label": "約14億年前",
+            "value": 18,
+            "unit": "時間",
+            "color": "#e67e22"
+          },
+          {
+            "label": "恐竜の時代",
+            "value": 23.5,
+            "unit": "時間",
+            "color": "#3b7a75"
+          },
+          {
+            "label": "いま",
+            "value": 24,
+            "unit": "時間",
+            "color": "#4ea8de"
+          }
+        ]
+      },
+      "hideHud": true,
+      "vi_note": "Khoảng 1,4 tỉ năm trước, một ngày chỉ dài khoảng 18 tiếng. Thời khủng long, khoảng 23 tiếng rưỡi.",
+      "ja_narration": "およそ14億年前、1日は18時間ほど。恐竜がいたころでも、1日は23時間半くらいだったと考えられています。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_33",
+      "scene": "earth_moon_space",
+      "cameraPreset": "em_moon",
+      "characterAction": "idle",
+      "route": {
+        "showNames": true
+      },
+      "hideHud": true,
+      "vi_note": "Mặt Trăng mỗi năm lùi xa khoảng 3,8 cm, còn ngày trên Trái Đất dài thêm một chút xíu.",
+      "ja_narration": "月はいまも1年に約3.8センチずつ遠ざかり、地球の1日は、ほんの少しずつ長くなっています。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_34",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "visual": {
+        "type": "fact_card",
+        "title": "1日の長さ",
+        "highlightText": "100年で約0.002秒",
+        "subText": "月のブレーキで ゆっくり長くなる"
+      },
+      "hideHud": true,
+      "vi_note": "Mỗi thế kỷ, một ngày dài thêm khoảng 2 phần nghìn giây.",
+      "ja_narration": "その差は、100年でおよそ1000分の2秒。とても小さいけれど、何億年もたつと大きな差になります。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_35",
+      "scene": "earth_globe",
+      "cameraPreset": "globe_wide",
+      "characterAction": "idle",
+      "globe": {
+        "arrows": true
+      },
+      "hideHud": true,
+      "vi_note": "Nên ngày 12 tiếng không phải chuyện viễn tưởng hoàn toàn. Nó giống Trái Đất của rất, rất lâu về trước.",
+      "ja_narration": "だから1日12時間の地球は、まったくの空想ではありません。ずっとずっと昔の地球に、少しだけ近い姿なんです。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_36",
+      "scene": "japanese_street",
+      "cameraPreset": "front_medium",
+      "characterAction": "look_down",
+      "env": {
+        "timeOfDay": "sunset",
+        "showHole": false
+      },
+      "hideHud": true,
+      "vi_note": "Hôm nay, ta có trọn 24 tiếng. Cảm ơn Mặt Trăng đã kéo dài ngày cho chúng ta.",
+      "ja_narration": "わたしたちが24時間の1日をすごせるのは、月がゆっくりブレーキをかけてくれたおかげなのかもしれません。",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_outro_recap",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "emotion": "curious",
+      "brandOverlay": {
+        "type": "outro_recap",
+        "channelName": "もしも検証ラボ",
+        "headline": "昼6時間・夜6時間・1年730日・赤道は時速3340km・海は赤道へ・月は地球のブレーキ",
+        "subline": "次の検証テーマをコメントで募集中！"
+      },
+      "hideHud": true,
+      "vi_note": "Tổng kết: ngày 6 tiếng, đêm 6 tiếng, một năm 730 ngày, xích đạo quay 3.340 km/h, biển dồn về xích đạo, bão mạnh hơn, và Mặt Trăng là cái phanh của Trái Đất. Bạn muốn sống ở Trái Đất 12 tiếng không? Comment nhé!",
+      "ja_narration": "今回のまとめ！昼6時間・夜6時間、1年は約730日。赤道は時速3340キロで回り、海は赤道へ集まり、台風はもっと強いうずに。そして月は、地球の回転のブレーキでした。あなたは12時間の地球で暮らしてみたいですか？次に検証してほしいテーマと一緒に、ぜひコメントで教えてください！",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_outro_cta",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "idle_wave",
+      "emotion": "excited",
+      "brandOverlay": {
+        "type": "outro_cta",
+        "channelName": "もしも検証ラボ",
+        "subline": "高評価・チャンネル登録・通知オンが励みになります！"
+      },
+      "hideHud": true,
+      "vi_note": "Thấy hay hãy bấm Like, Đăng ký kênh và bật chuông thông báo nhé!",
+      "ja_narration": "少しでも面白いと思ったら、高評価・チャンネル登録・通知オンをお願いします！皆さんの応援が動画作りの一番の励みになります。案内役のカイでした！",
+      "hudStart": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "12:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    }
+  ],
+  "youtube": {
+    "titles": [
+      "もしも1日が12時間になったら",
+      "地球の自転が2倍速になると、1年は730日に【3Dシミュレーション】",
+      "昼6時間・夜6時間の地球で暮らしてみたら"
+    ],
+    "description": "もしも地球の回るスピードが2倍になって、1日が12時間になったら？\n昼も夜も6時間、1年は約730日。赤道の地面は時速約3340kmで回り、遠心力は4倍に。海は赤道に集まり、台風はもっと強いうずに。静止衛星の高さや体内時計まで変わります。じつは大昔の地球は、1日がもっと短かったんです。月が少しずつ地球の回転にブレーキをかけてきた歴史まで、3Dで紹介します。\n\n【目次】\n0:00 もしも1日が12時間になったら\n0:26 昼6時間・夜6時間の暮らし\n1:04 1年は約730日\n1:14 地面のスピードは時速3340km\n1:37 遠心力は4倍・体重はどうなる？\n2:11 海が赤道へ集まる\n2:31 🎁 サプライズ\n2:42 風と台風が変わる\n2:56 フーコーの振り子\n3:21 体内時計はずっと時差ぼけ\n3:41 静止衛星の引っこし\n3:59 月が地球にブレーキをかけてきた\n5:00 まとめ\n\n📌 この動画は公開されている科学データをもとにした3Dシミュレーションです。\n出典：NASA、Meyers & Malinverno（2018, PNAS）ほか\n🔔 チャンネル登録・通知オンで、新しい「もしも検証」を続々とお届けします！\n\n#もしも検証ラボ #もしも #3Dアニメ #雑学 #地球 #自転",
+    "tags": [
+      "もしも",
+      "もしも検証ラボ",
+      "1日12時間",
+      "自転",
+      "地球の自転",
+      "1日の長さ",
+      "遠心力",
+      "コリオリの力",
+      "フーコーの振り子",
+      "静止衛星",
+      "月",
+      "3Dアニメ",
+      "科学",
+      "雑学",
+      "シミュレーション"
+    ]
+  }
+}
