@@ -1,0 +1,1225 @@
+{
+  "title": "もしも地球の重力が2倍になったら",
+  "title_vi": "Trọng lực Trái Đất tăng gấp đôi",
+  "thumbnailText": "重力が2倍に！？ 体重120kg",
+  "beats": [
+    {
+      "id": "beat_01",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_kai",
+      "characterAction": "idle",
+      "hideHud": true,
+      "emotion": "curious",
+      "caption": "重力が2倍に！？",
+      "grav": {
+        "g": 1
+      },
+      "vi_note": "Nếu sáng mai thức dậy, trọng lực Trái Đất đã tăng gấp đôi thì sao? Cơ thể, thành phố, bầu trời, cả vũ trụ sẽ thay đổi thế nào?",
+      "ja_narration": "もしも明日の朝、目がさめたら、地球の重力が2倍になっていたら？体は、町は、空は、そして宇宙はどうなるのでしょうか。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_intro",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "idle_wave",
+      "hideHud": true,
+      "emotion": "excited",
+      "brandOverlay": {
+        "type": "intro_banner",
+        "channelName": "もしも検証ラボ",
+        "headline": "もしも地球の重力が2倍になったら？",
+        "subline": "体重・ジャンプ・気圧・ロケットまで3Dで検証"
+      },
+      "vi_note": "Chào mừng đến もしも検証ラボ, mình là Kai! Hôm nay ta kiểm chứng thế giới trọng lực gấp đôi bằng 3D.",
+      "ja_narration": "もしも検証ラボへようこそ、案内役のカイです！今回は、重力が2倍になった世界を、体・町・空・宇宙の順に3Dで検証します！",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_02",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "fact_card",
+        "title": "今回の「もしも」",
+        "highlightText": "重力 2倍 (2G)",
+        "subText": "地球の大きさはそのまま 重さが2倍"
+      },
+      "vi_note": "Giả định: Trái Đất vẫn to như cũ, nhưng khối lượng tăng gấp đôi. Khi đó trọng lực trên mặt đất mạnh gấp đôi.",
+      "ja_narration": "今回は、地球の大きさはそのままで、重さだけが2倍になったと考えます。すると、地面の上の重力も、ちょうど2倍になります。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_03",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_scale",
+      "characterAction": "heavy_crouch",
+      "hideHud": true,
+      "emotion": "shocked",
+      "grav": {
+        "gFrom": 1,
+        "g": 2
+      },
+      "vi_note": "Bước lên cân: 120 kg. Khối lượng không đổi, nhưng lực Trái Đất kéo ta mạnh gấp đôi.",
+      "ja_narration": "体重計にのってみると…120キロ！体そのものは変わっていないのに、地球に引っぱられる力が2倍になったんです。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_04",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "bar_compare",
+        "position": "right",
+        "title": "重力2倍の重さ",
+        "items": [
+          {
+            "label": "ランドセル",
+            "value": 10,
+            "unit": "kg",
+            "color": "#3b7a75"
+          },
+          {
+            "label": "5kgのお米",
+            "value": 10,
+            "unit": "kg",
+            "color": "#4ea8de"
+          },
+          {
+            "label": "カイの体重",
+            "value": 120,
+            "unit": "kg",
+            "color": "#e67e22"
+          }
+        ]
+      },
+      "vi_note": "Mọi thứ đều nặng gấp đôi: cặp sách, nồi cơm, cả đứa em nhỏ ta bế.",
+      "ja_narration": "重くなるのは、体だけではありません。ランドセルも、なべも、だっこする小さな弟も、みんな2倍の重さです。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_05",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_kai",
+      "characterAction": "heavy_crouch",
+      "hideHud": true,
+      "emotion": "sweating",
+      "grav": {
+        "g": 2
+      },
+      "vi_note": "Ngồi dậy khỏi giường, leo cầu thang... như lúc nào cũng cõng thêm 60 kg trên lưng.",
+      "ja_narration": "ベッドから起き上がるのも、階段をのぼるのも、いつも60キロの荷物をせおっているような感じです。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_06",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_wide",
+      "characterAction": "heavy_crouch",
+      "hideHud": true,
+      "grav": {
+        "g": 2
+      },
+      "emotion": "sweating",
+      "vi_note": "Kể cả lúc ngủ: cơ thể lún sâu vào nệm, trở mình cũng mệt, nằm lâu dễ đau lưng.",
+      "ja_narration": "ねているときも大変です。体はふとんにぐっとしずみこみ、寝返りを打つのもひと苦労。朝起きると、背中や腰が痛くなりそうです。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_07",
+      "scene": "japanese_street",
+      "cameraPreset": "front_medium",
+      "characterAction": "heavy_crouch",
+      "hideHud": true,
+      "env": {
+        "timeOfDay": "day",
+        "showHole": false
+      },
+      "emotion": "sweating",
+      "vi_note": "Ra ngoài đường, con dốc quen thuộc bỗng thành như leo núi.",
+      "ja_narration": "外に出ると、いつもの通学路の坂道が、まるで山のぼりのよう。歩くだけで、すぐに息が切れてしまいます。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_08",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_jump",
+      "characterAction": "jump_low",
+      "hideHud": true,
+      "grav": {
+        "g": 2
+      },
+      "emotion": "sweating",
+      "vi_note": "Nhảy hết sức, cũng chỉ cao được một nửa.",
+      "ja_narration": "思いきりジャンプしても、とべる高さは、いつもの半分だけ。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_09",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "jump_ruler",
+        "title": "ジャンプの高さ",
+        "items": [
+          {
+            "label": "いま (1G)",
+            "value": 50,
+            "unit": "cm",
+            "color": "#4ea8de"
+          },
+          {
+            "label": "重力2倍 (2G)",
+            "value": 25,
+            "unit": "cm",
+            "color": "#e67e22"
+          }
+        ]
+      },
+      "vi_note": "Cùng một lực bật, trọng lực gấp đôi thì độ cao chỉ còn một nửa. Vận động viên nhảy cao 2,4 m chỉ còn 1,2 m.",
+      "ja_narration": "同じ力でけっても、重力が2倍なら、高さは半分。2メートル40をとぶ走り高とびの選手も、1メートル20がやっとです。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_10",
+      "scene": "japanese_street",
+      "cameraPreset": "side_low",
+      "characterAction": "look_down",
+      "hideHud": true,
+      "env": {
+        "timeOfDay": "day",
+        "showHole": false
+      },
+      "emotion": "shocked",
+      "vi_note": "Té ngã cũng nguy hiểm hơn: rơi từ cùng độ cao, tốc độ chạm đất nhanh gấp 1,4 lần, lực va đập gấp đôi.",
+      "ja_narration": "転ぶのも危険です。同じ高さから落ちても、地面にぶつかる速さは約1.4倍、ぶつかる勢いは2倍になってしまいます。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_11",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "bar_compare",
+        "position": "right",
+        "title": "ホームランの飛きょり",
+        "items": [
+          {
+            "label": "いま (1G)",
+            "value": 120,
+            "unit": "m",
+            "color": "#4ea8de"
+          },
+          {
+            "label": "重力2倍 (2G)",
+            "value": 60,
+            "unit": "m",
+            "color": "#e67e22"
+          }
+        ]
+      },
+      "vi_note": "Ném bóng cũng chỉ bay được một nửa. Cú home run 120 m chỉ còn 60 m.",
+      "ja_narration": "ボールも遠くへ飛びません。同じように投げても、飛ぶきょりは半分。120メートルのホームランは、60メートルで落ちてしまいます。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_12",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_kai",
+      "characterAction": "idle",
+      "hideHud": true,
+      "emotion": "sweating",
+      "grav": {
+        "g": 2,
+        "label": "心臓は2倍の力"
+      },
+      "vi_note": "Tim phải bơm máu lên đầu mạnh gấp đôi. Đứng dậy nhanh là dễ choáng.",
+      "ja_narration": "体の中でも大変なことが。心臓は、血を頭まで送るのに2倍の力が必要です。急に立ち上がると、くらっとしやすくなります。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_13",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "split_compare",
+        "leftTitle": "パイロット",
+        "leftSub": "強い力に 数秒〜数十秒",
+        "rightTitle": "重力2倍の世界",
+        "rightSub": "2Gが 一日中ずっと"
+      },
+      "vi_note": "Phi công chiến đấu chịu được lực lớn hơn nhiều trong thời gian ngắn nhờ bộ đồ đặc biệt. Nhưng 2G cả ngày lẫn đêm thì cơ thể chưa từng trải qua.",
+      "ja_narration": "戦闘機のパイロットは、特別なスーツで、もっと強い力に短い時間だけたえています。でも、2倍の重力がずっと続くのは、人の体にとって初めての体験です。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_14",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "fact_card",
+        "title": "長く暮らすと…",
+        "highlightText": "骨と筋肉が 太く強く",
+        "subText": "宇宙飛行士とは 反対の変化"
+      },
+      "vi_note": "Sống lâu trong trọng lực lớn, xương và cơ có thể to và chắc hơn, như phi hành gia thì ngược lại.",
+      "ja_narration": "長く暮らすうちに、骨や筋肉は太く、強くなっていくと考えられます。宇宙飛行士の骨が、宇宙で弱くなるのとは反対です。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_15",
+      "scene": "japanese_street",
+      "cameraPreset": "wide_street",
+      "characterAction": "idle",
+      "hideHud": true,
+      "env": {
+        "timeOfDay": "day",
+        "showHole": false
+      },
+      "vi_note": "Thành phố cũng vậy. Nhà cửa, cột điện, cầu... tất cả đều nặng gấp đôi.",
+      "ja_narration": "次は、町を見てみましょう。家も、電柱も、橋も、すべての重さが2倍。建物は、自分の重さを支えるだけで大変です。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_16",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "split_compare",
+        "leftTitle": "低い家",
+        "leftSub": "なんとか 持ちこたえる",
+        "rightTitle": "高いビル・長い橋",
+        "rightSub": "2倍の強さが 必要"
+      },
+      "vi_note": "Nhà gỗ thấp có thể trụ được, nhưng nhà cao tầng và cầu cần khung chắc gấp đôi.",
+      "ja_narration": "低い木の家なら、なんとか持ちこたえられるかもしれません。でも高いビルや長い橋は、柱やケーブルを2倍強くしないと、たえられません。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_17",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_wide",
+      "characterAction": "idle",
+      "hideHud": true,
+      "grav": {
+        "gFrom": 1,
+        "g": 2
+      },
+      "vi_note": "Cây cối cũng vậy: cành và lá rủ xuống, cây cao khó mọc cao như bây giờ.",
+      "ja_narration": "植物も重さに負けます。枝や葉はたれ下がり、背の高い木は、いまほど高く育ちにくくなると考えられます。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_18",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "bar_compare",
+        "position": "right",
+        "title": "ふん水の高さ（同じポンプ）",
+        "items": [
+          {
+            "label": "いま (1G)",
+            "value": 10,
+            "unit": "m",
+            "color": "#4ea8de"
+          },
+          {
+            "label": "重力2倍 (2G)",
+            "value": 5,
+            "unit": "m",
+            "color": "#e67e22"
+          }
+        ]
+      },
+      "vi_note": "Đài phun nước với cùng một máy bơm sẽ chỉ phun cao được một nửa.",
+      "ja_narration": "公園のふん水も、同じポンプでは、水がとどく高さは半分。水を高いところへ運ぶのも、2倍の力が必要になります。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_19",
+      "scene": "science_museum_pendulum",
+      "cameraPreset": "pendulum_wide",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "vi_note": "Con lắc cũng đung đưa nhanh hơn, khoảng 1,4 lần. Đồng hồ quả lắc sẽ chạy nhanh.",
+      "ja_narration": "ふり子も、はやくゆれるようになります。その速さは約1.4倍。ふり子時計は、どんどん進んでしまいます。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_20",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "fact_card",
+        "title": "ふり子時計",
+        "highlightText": "1秒 → 約0.7秒",
+        "subText": "1時間で 約25分も進む"
+      },
+      "vi_note": "Một con lắc đang đung đưa 1 giây một lần sẽ chỉ còn khoảng 0,7 giây.",
+      "ja_narration": "1秒に1回ゆれていたふり子は、およそ0.7秒に1回。1時間で、25分ほども進んでしまう計算です。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_21",
+      "scene": "mega_tsunami_coast",
+      "cameraPreset": "tsunami_wide",
+      "characterAction": "look_down",
+      "hideHud": true,
+      "env": {
+        "waveProgress": 0.3
+      },
+      "vi_note": "Sóng biển cũng di chuyển nhanh hơn khoảng 1,4 lần, kể cả sóng thần.",
+      "ja_narration": "海の波も、約1.4倍の速さで進むようになります。津波も、いまより速く海岸へやってきます。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_22",
+      "scene": "deep_sea",
+      "cameraPreset": "sea_close",
+      "characterAction": "freefall_float",
+      "hideHud": true,
+      "sea": {
+        "depthM": 10
+      },
+      "spacesuit": false,
+      "vi_note": "Lặn xuống biển, áp suất nước cũng gấp đôi: lặn 10 m giống như lặn 20 m bây giờ.",
+      "ja_narration": "海にもぐると、水圧も2倍。たった10メートルもぐるだけで、いまの20メートルと同じくらい、体がぎゅっとおされます。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_23",
+      "scene": "sky_mountain",
+      "cameraPreset": "mt_wide",
+      "characterAction": "idle",
+      "hideHud": true,
+      "sky": {
+        "mountain": "everest",
+        "clouds": true
+      },
+      "vi_note": "Núi cao thì sao? Núi quá cao sẽ tự sụp vì sức nặng của chính nó. Giới hạn có thể chỉ còn khoảng một nửa.",
+      "ja_narration": "高い山はどうでしょう。山は、自分の重さで下の岩がつぶれないくらいの高さまでしか高くなれません。重力が2倍なら、その限界は半分くらいになると考えられます。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_24_like",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "idle_wave",
+      "hideHud": true,
+      "emotion": "excited",
+      "promo": {
+        "type": "like_surprise",
+        "sub": "このあと… お湯が120℃でわく！？♨️",
+        "at": 0.3
+      },
+      "vi_note": "Thấy hay thì bấm Like ủng hộ Kai nhé! Tiếp theo là bầu trời: nước sôi ở bao nhiêu độ?",
+      "ja_narration": "ここまで面白いと思ったら、高評価で応援してもらえるとうれしいです！このあとは空と宇宙へ。お湯がわく温度まで変わってしまいます！",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_25",
+      "scene": "sky_mountain",
+      "cameraPreset": "mt_summit",
+      "characterAction": "idle",
+      "hideHud": true,
+      "sky": {
+        "mountain": "everest",
+        "clouds": true
+      },
+      "vi_note": "Không khí cũng bị Trái Đất kéo mạnh gấp đôi. Áp suất khí quyển ở mặt đất tăng lên khoảng 2 lần.",
+      "ja_narration": "空気も、地球に2倍の力で引っぱられます。そのため、地面の上の気圧は、およそ2倍になります。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_26",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "gauge",
+        "title": "お湯がわく温度",
+        "fromValue": 100,
+        "toValue": 120,
+        "unit": "℃"
+      },
+      "vi_note": "Áp suất gấp đôi thì nước sôi ở khoảng 120°C thay vì 100°C.",
+      "ja_narration": "気圧が2倍になると、お湯がわく温度も上がります。100度ではわかず、およそ120度でやっとわくんです。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_27",
+      "scene": "gravity_room",
+      "cameraPreset": "grav_wide",
+      "characterAction": "idle",
+      "hideHud": true,
+      "grav": {
+        "g": 2
+      },
+      "emotion": "excited",
+      "vi_note": "Nấu ăn giống như dùng nồi áp suất: rau củ, cơm chín nhanh hơn.",
+      "ja_narration": "台所は、まるで家じゅうが圧力なべ。煮物やごはんは、いまより早く、やわらかく仕上がります。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_28",
+      "scene": "sky_mountain",
+      "cameraPreset": "mt_summit",
+      "characterAction": "shiver",
+      "hideHud": true,
+      "sky": {
+        "mountain": "everest",
+        "clouds": true,
+        "altitudeM": 8849
+      },
+      "emotion": "sweating",
+      "vi_note": "Nhưng không khí mỏng đi nhanh hơn khi lên cao. Trên đỉnh Everest còn khó thở hơn bây giờ.",
+      "ja_narration": "でも、空気は高いところほど、急にうすくなります。エベレストの頂上は、いまよりもさらに息苦しい場所になります。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_29",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "bar_compare",
+        "position": "right",
+        "title": "エベレスト頂上の気圧",
+        "items": [
+          {
+            "label": "いま",
+            "value": 0.33,
+            "unit": "気圧",
+            "color": "#4ea8de"
+          },
+          {
+            "label": "重力2倍",
+            "value": 0.25,
+            "unit": "気圧",
+            "color": "#e67e22"
+          }
+        ]
+      },
+      "vi_note": "Áp suất trên đỉnh Everest: hiện khoảng 0,33 atm, trọng lực gấp đôi chỉ còn khoảng 0,25 atm.",
+      "ja_narration": "エベレストの頂上の気圧は、いまは地上のおよそ3分の1。重力が2倍の世界では、4分の1ほどしかありません。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_30",
+      "scene": "earth_globe",
+      "cameraPreset": "globe_close",
+      "characterAction": "idle",
+      "hideHud": true,
+      "globe": {
+        "arrows": false
+      },
+      "vi_note": "Nhìn từ vũ trụ, lớp khí quyển bị nén lại, mỏng chỉ bằng khoảng một nửa so với bây giờ.",
+      "ja_narration": "宇宙から見ると、地球をつつむ空気の層は、ぎゅっとおしちぢめられて、いまの半分くらいのうすさになります。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_31",
+      "scene": "japanese_street",
+      "cameraPreset": "front_medium",
+      "characterAction": "idle",
+      "hideHud": true,
+      "env": {
+        "timeOfDay": "day",
+        "weather": "heavy_rain",
+        "showHole": false
+      },
+      "emotion": "shocked",
+      "vi_note": "Hạt mưa cũng rơi nhanh hơn khoảng 1,4 lần. Mưa rào sẽ đau rát hơn.",
+      "ja_narration": "雨つぶも、約1.4倍の速さで落ちてきます。夕立は、いまより強く、肌に当たるようになります。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_32",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "split_compare",
+        "leftTitle": "小さな生き物",
+        "leftSub": "アリ・ネコ ほぼ平気",
+        "rightTitle": "大きな動物",
+        "rightSub": "ゾウ・キリン 大変"
+      },
+      "vi_note": "Động vật nhỏ như kiến gần như không sao. Nhưng voi, hươu cao cổ thì rất vất vả: con vật càng to càng khổ.",
+      "ja_narration": "動物はどうでしょう。アリのように小さな生き物は、ほとんど平気。でもゾウやキリンのような大きな動物ほど、自分の重さに苦しみます。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_33",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "fact_card",
+        "title": "飛行機",
+        "highlightText": "離陸スピード 約1.4倍",
+        "subText": "または もっと大きなつばさ"
+      },
+      "vi_note": "Máy bay cần lực nâng gấp đôi: phải cất cánh nhanh hơn khoảng 1,4 lần, hoặc có cánh to hơn nhiều.",
+      "ja_narration": "飛行機も、2倍の重さをうかせなければなりません。離陸のスピードを約1.4倍にするか、もっと大きなつばさが必要です。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_34",
+      "scene": "space_iss_orbit",
+      "cameraPreset": "orbit_wide",
+      "characterAction": "freefall_float",
+      "hideHud": true,
+      "vi_note": "Cuối cùng là vũ trụ. Thoát khỏi Trái Đất sẽ khó hơn rất nhiều.",
+      "ja_narration": "最後は、宇宙です。重力が2倍になると、地球からぬけ出すのは、ずっとむずかしくなります。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_35",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "bar_compare",
+        "position": "right",
+        "title": "地球をぬけ出すスピード",
+        "items": [
+          {
+            "label": "いま",
+            "value": 11.2,
+            "unit": "km/s",
+            "color": "#4ea8de"
+          },
+          {
+            "label": "重力2倍",
+            "value": 15.8,
+            "unit": "km/s",
+            "color": "#e67e22"
+          }
+        ]
+      },
+      "vi_note": "Tốc độ thoát ly từ 11,2 km/s tăng lên khoảng 15,8 km/s. Tên lửa cần nhiều nhiên liệu hơn rất nhiều.",
+      "ja_narration": "地球の重力をふり切るスピードは、いまは秒速11.2キロ。これが秒速15.8キロに。ロケットは、何倍もの燃料が必要になります。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_36",
+      "scene": "space_iss_orbit",
+      "cameraPreset": "orbit_iss",
+      "characterAction": "idle",
+      "hideHud": true,
+      "vi_note": "Trạm ISS cũng phải bay nhanh hơn để không rơi xuống: từ 7,7 lên khoảng 10,9 km/s.",
+      "ja_narration": "国際宇宙ステーションも、落ちないためには、もっと速く回らなければなりません。秒速7.7キロから、およそ10.9キロへ。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_37",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "visual": {
+        "type": "fact_card",
+        "title": "人工衛星",
+        "highlightText": "打ち上げが ずっと大変",
+        "subText": "天気予報・地図アプリにも影響"
+      },
+      "vi_note": "Phóng vệ tinh khó và tốn kém hơn rất nhiều, nên dự báo thời tiết hay GPS cũng khó có được như ngày nay.",
+      "ja_narration": "人工衛星を打ち上げるのも、ずっと大変でお金がかかります。天気予報や地図アプリをささえる衛星も、いまほど気軽には打ち上げられないかもしれません。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_38",
+      "scene": "earth_moon_space",
+      "cameraPreset": "em_wide",
+      "characterAction": "idle",
+      "hideHud": true,
+      "route": {
+        "showNames": true
+      },
+      "vi_note": "Mặt Trăng bị kéo mạnh hơn nên quay quanh Trái Đất nhanh hơn: một vòng chỉ còn khoảng 19 ngày.",
+      "ja_narration": "月も、地球に強く引っぱられて、速く回るようになります。地球のまわりを1周するのは、27日から、およそ19日に。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_39",
+      "scene": "earth_globe",
+      "cameraPreset": "globe_wide",
+      "characterAction": "idle",
+      "hideHud": true,
+      "globe": {
+        "arrows": false
+      },
+      "vi_note": "Trọng lực không nhìn thấy được, nhưng nó định hình mọi thứ: cơ thể, nhà cửa, bầu trời, cả đường đi tới vũ trụ.",
+      "ja_narration": "重力は目に見えません。でも、わたしたちの体も、町も、空も、宇宙への道も、すべて重力の大きさに合わせてできているんです。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_40",
+      "scene": "japanese_street",
+      "cameraPreset": "front_medium",
+      "characterAction": "jump_low",
+      "hideHud": true,
+      "env": {
+        "timeOfDay": "sunset",
+        "showHole": false
+      },
+      "emotion": "excited",
+      "vi_note": "Nhảy thử một cái... trọng lực bình thường thật nhẹ nhàng!",
+      "ja_narration": "ためしに、ジャンプ！…いつもの重力って、こんなに体が軽かったんですね。",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_outro_recap",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "point_explain",
+      "hideHud": true,
+      "emotion": "curious",
+      "brandOverlay": {
+        "type": "outro_recap",
+        "channelName": "もしも検証ラボ",
+        "headline": "体重2倍・ジャンプ半分・お湯は120℃・山は低く・ロケットは秒速15.8km",
+        "subline": "次の検証テーマをコメントで募集中！"
+      },
+      "vi_note": "Tổng kết: cân nặng gấp đôi, nhảy còn nửa, té ngã nguy hiểm, nước sôi 120°C, núi thấp hơn, động vật to khổ hơn, tên lửa cần 15,8 km/s. Bạn muốn thử sống ở trọng lực bao nhiêu? Comment nhé!",
+      "ja_narration": "今回のまとめ！体重は2倍、ジャンプは半分、転ぶと危険。気圧は2倍でお湯は120度、山は低く、大きな動物ほど大変、ロケットは秒速15.8キロが必要でした。あなたなら、重力何倍の世界まで暮らせそうですか？次に検証してほしいテーマと一緒に、ぜひコメントで教えてください！",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    },
+    {
+      "id": "beat_outro_cta",
+      "scene": "stage_studio",
+      "cameraPreset": "studio_front",
+      "characterAction": "idle_wave",
+      "hideHud": true,
+      "emotion": "excited",
+      "brandOverlay": {
+        "type": "outro_cta",
+        "channelName": "もしも検証ラボ",
+        "subline": "高評価・チャンネル登録・通知オンが励みになります！"
+      },
+      "vi_note": "Thấy hay hãy bấm Like, Đăng ký kênh và bật chuông thông báo nhé!",
+      "ja_narration": "少しでも面白いと思ったら、高評価・チャンネル登録・通知オンをお願いします！皆さんの応援が動画作りの一番の励みになります。案内役のカイでした！",
+      "hudStart": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      },
+      "hudEnd": {
+        "time": "07:00:00",
+        "depthKm": 0,
+        "speedKmh": 0,
+        "progress": 0
+      }
+    }
+  ],
+  "youtube": {
+    "titles": [
+      "もしも地球の重力が2倍になったら",
+      "重力が2倍になると、体重60kgが120kgに。体と町はどうなる？【3Dシミュレーション】",
+      "重力2倍の世界では、お湯が120℃でわく"
+    ],
+    "description": "もしも明日の朝、地球の重力が2倍になっていたら？\n体重は2倍、ジャンプは半分、転ぶと危険。気圧も2倍になり、お湯は約120℃でわきます。\n大きな動物ほど苦しく、ロケットで宇宙へ行くのも難しく…。重力2倍の世界を、体・町・空・宇宙の順に3Dで検証しました。\n\n【目次】\n0:00 もしも重力が2倍になったら\n0:29 体重は120kgに\n1:11 ジャンプは半分・転ぶと危険\n1:45 心臓と骨はどうなる？\n2:15 町と建物\n2:34 植物・ふん水・ふり子時計\n3:07 波と海の中\n3:24 山の高さの限界\n3:36 🎁 サプライズ\n3:47 気圧2倍・お湯は120℃\n4:10 山の上と雨つぶ\n4:43 動物と飛行機\n5:03 宇宙へ行くのは大変\n6:06 まとめ\n\n📌 この動画は公開されている科学データをもとにした3Dシミュレーションです。\n出典：NASA、水の蒸気表、二乗三乗の法則 ほか\n🔔 チャンネル登録・通知オンで、新しい「もしも検証」を続々とお届けします！\n\n#もしも検証ラボ #もしも #3Dアニメ #雑学 #重力 #物理",
+    "tags": [
+      "もしも",
+      "もしも検証ラボ",
+      "重力2倍",
+      "重力",
+      "体重",
+      "気圧",
+      "沸点",
+      "ロケット",
+      "3Dアニメ",
+      "物理",
+      "雑学",
+      "シミュレーション"
+    ]
+  }
+}
