@@ -161,7 +161,7 @@
       "id": "beat_06",
       "scene": "kola_borehole",
       "cameraPreset": "kola_deep",
-      "characterAction": "sweating",
+      "characterAction": "idle",
       "kola": {
         "label": "約180℃"
       },

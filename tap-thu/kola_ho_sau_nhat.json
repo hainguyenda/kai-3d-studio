@@ -218,7 +218,7 @@
       "id": "beat_07",
       "scene": "underground_tunnel",
       "cameraPreset": "tunnel_follow",
-      "characterAction": "jump_in",
+      "characterAction": "freefall_float",
       "emotion": "excited",
       "vi_note": "Bắt đầu đi xuống! Cả cái hố được khoan xuyên qua đá cứng, gần như không có đất mềm.",
       "ja_narration": "それでは出発！この穴は、やわらかい土ではなく、ほとんどがかたい岩の中を、まっすぐ下へ掘り進められています。",
@@ -352,7 +352,7 @@
       "id": "beat_12",
       "scene": "kola_borehole",
       "cameraPreset": "kola_deep",
-      "characterAction": "shocked",
+      "characterAction": "idle",
       "kola": {
         "label": "微化石を発見"
       },
@@ -493,7 +493,7 @@
       "id": "beat_17",
       "scene": "kola_borehole",
       "cameraPreset": "kola_section",
-      "characterAction": "shocked",
+      "characterAction": "idle",
       "kola": {
         "label": "1983年 12km"
       },
@@ -576,7 +576,7 @@
       "id": "beat_20",
       "scene": "underground_tunnel",
       "cameraPreset": "tunnel_follow",
-      "characterAction": "sweating",
+      "characterAction": "freefall_float",
       "emotion": "sweating",
       "vi_note": "Càng xuống càng nóng. Bùn khoan trào lên sủi bọt vì khí hydro, như đang sôi.",
       "ja_narration": "下へ行くほど、どんどん暑くなっていきます。地上にもどってきた泥水は、水素のガスでぶくぶくと泡だち、まるでわいているようでした。",
@@ -630,7 +630,7 @@
       "id": "beat_22",
       "scene": "kola_borehole",
       "cameraPreset": "kola_deep",
-      "characterAction": "shocked",
+      "characterAction": "idle",
       "kola": {
         "label": "12,262m 到達！"
       },
