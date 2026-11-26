@@ -1,943 +1,1050 @@
 {
-  "title": "もしも東京の地面が透明になったら、足の下に何が見える？",
-  "title_vi": "Mặt đất Tokyo trong suốt: dưới chân có gì?",
-  "thumbnailText": "東京の足の下 全部見せます",
-  "beats": [
+ "title": "東京の地面が透明になったら…地下1500mに温泉がわいてた！？",
+ "title_vi": "Mặt đất Tokyo trong suốt: dưới chân có gì?",
+ "thumbnailText": "東京の足の下 全部見せます",
+ "beats": [
+  {
+   "id": "beat_00_onsen1",
+   "scene": "onsen_bath",
+   "cameraPreset": "onsen_kai",
+   "characterAction": "idle",
+   "emotion": "excited",
+   "hideHud": true,
+   "onsen": {
+    "sign": "♨ ？？？の湯"
+   },
+   "sfx": [
     {
-      "id": "beat_01",
-      "scene": "japanese_street",
-      "cameraPreset": "front_medium",
-      "characterAction": "idle_wave",
-      "vi_note": "Mỗi ngày bạn đi trên mặt đất Tokyo. Nếu mặt đất bỗng trong suốt như kính, dưới chân bạn sẽ thấy gì?",
-      "ja_narration": "毎日歩いている東京の地面。もしもこの地面が、ガラスのように突然透明になったら、足の下には何が見えるでしょうか？",
-      "caption": "東京の地面が透明に？",
-      "env": {
-        "timeOfDay": "day",
-        "showHole": false
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
+     "text": "チャポン♪",
+     "at": 0.2,
+     "color": "#ffd27a"
     },
     {
-      "id": "beat_intro",
-      "scene": "stage_studio",
-      "cameraPreset": "studio_front",
-      "characterAction": "idle_wave",
-      "emotion": "excited",
-      "hideHud": true,
-      "brandOverlay": {
-        "type": "intro_banner",
-        "channelName": "もしも検証ラボ",
-        "headline": "もしも東京の地面が透明になったら？",
-        "subline": "水道管・地下鉄・温泉・プレートまで3Dで検証"
-      },
-      "vi_note": "Chào mừng đến もしも検証ラボ, mình là Kai! Hôm nay ta dùng 3D nhìn xuyên mặt đất Tokyo, từ vài mét tới hàng chục km.",
-      "ja_narration": "もしも検証ラボへようこそ、案内役のカイです！今回は、東京の地面をすけすけにして、足の下を3Dで本気検証します！",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0,
-        "speedKmh": 0,
-        "progress": 0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0,
-        "speedKmh": 0,
-        "progress": 0
-      }
-    },
-    {
-      "id": "beat_02",
-      "scene": "tokyo_glass_street",
-      "cameraPreset": "glass_wide",
-      "characterAction": "look_down",
-      "vi_note": "Hôm nay ta nhìn thẳng xuống, từ vài mét đến hàng chục km.",
-      "ja_narration": "今日は、足の下を数メートルから数十キロまで、まっすぐ見ていきます。",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_03",
-      "scene": "tokyo_glass_street",
-      "cameraPreset": "glass_close",
-      "characterAction": "point_explain",
-      "vi_note": "Mặt đường nhựa chỉ dày khoảng vài chục cm. Ngay dưới là cả một thành phố ngầm.",
-      "ja_narration": "アスファルトの厚さは、わずか数十センチ。そのすぐ下には、もうひとつの街が広がっています。",
-      "emotion": "curious",
-      "env": {
-        "timeOfDay": "day",
-        "showHole": false
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_04",
-      "scene": "tokyo_glass_street",
-      "cameraPreset": "glass_under",
-      "characterAction": "look_down",
-      "vi_note": "Đầu tiên là ống nước, ống ga, cáp điện, cáp quang chằng chịt ngay dưới chân.",
-      "ja_narration": "まず見えてくるのは、水道管、ガス管、電線、そして光ファイバー。足元のすぐ下に、びっしりと並んでいます。",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.002,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_05",
-      "scene": "stage_studio",
-      "cameraPreset": "studio_front",
-      "characterAction": "point_explain",
-      "vi_note": "Đường ống nước của Tokyo dài khoảng 27.000 km, đủ đi hơn nửa vòng Trái Đất.",
-      "ja_narration": "東京の水道管をすべてつなぐと、長さは約2万7千キロ。地球を半周以上できる長さです。",
-      "visual": {
-        "type": "fact_card",
-        "title": "東京の水道管",
-        "highlightText": "約27,000km",
-        "subText": "地球半周以上の長さ"
-      },
-      "note": "出典：東京都水道局",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.002,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.002,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_06",
-      "scene": "tokyo_glass_street",
-      "cameraPreset": "glass_close",
-      "characterAction": "idle",
-      "vi_note": "Vì vậy đào đường ở Tokyo phải rất cẩn thận, chỉ lệch một chút là đứt ống.",
-      "ja_narration": "だから東京で道路を掘るときは、とても慎重。少しずれるだけで、管を傷つけてしまうからです。",
-      "emotion": "sweating",
-      "env": {
-        "timeOfDay": "day",
-        "showHole": false
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.002,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.003,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_07",
-      "scene": "tokyo_glass_street",
-      "cameraPreset": "glass_wide",
-      "characterAction": "look_down",
-      "vi_note": "Xuống khoảng 10 m: những đường hầm tàu điện ngầm đầu tiên hiện ra.",
-      "ja_narration": "深さ10メートルほどまで見ていくと、地下鉄のトンネルがあらわれます。",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.003,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.01,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_08",
-      "scene": "stage_studio",
-      "cameraPreset": "studio_front",
-      "characterAction": "point_explain",
-      "vi_note": "Tuyến Ginza mở năm 1927, tàu điện ngầm đầu tiên ở châu Á, chạy rất nông ngay dưới đường.",
-      "ja_narration": "1927年に開業した銀座線は、アジアで最初の地下鉄。道路のすぐ下の、浅いところを走っています。",
-      "visual": {
-        "type": "fact_card",
-        "title": "銀座線",
-        "highlightText": "1927年開業",
-        "subText": "アジア最初の地下鉄"
-      },
-      "note": "出典：東京メトロ",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.01,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.01,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_09",
-      "scene": "stage_studio",
-      "cameraPreset": "studio_front",
-      "characterAction": "point_explain",
-      "vi_note": "Tuyến mới hơn phải chui sâu hơn, vì phía trên đã kín chỗ.",
-      "ja_narration": "あとからできた路線ほど、深いところを通ります。上の方は、もう場所がいっぱいだからです。",
-      "emotion": "curious",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.01,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.02,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_10",
-      "scene": "tokyo_deep_infra",
-      "cameraPreset": "infra_follow",
-      "characterAction": "freefall_float",
-      "vi_note": "Ga Kokkai-gijidomae tuyến Chiyoda sâu khoảng 37,9 m.",
-      "ja_narration": "千代田線の国会議事堂前駅は、深さ約37.9メートル。",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.02,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.038,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_11",
-      "scene": "tokyo_deep_infra",
-      "cameraPreset": "infra_follow",
-      "characterAction": "freefall_float",
-      "vi_note": "Và ga sâu nhất Tokyo: Roppongi tuyến Oedo, 42,3 m – bằng tòa nhà khoảng 14 tầng.",
-      "ja_narration": "そして東京でいちばん深い駅は、大江戸線の六本木駅。深さ42.3メートル、14階建てのビルがすっぽり入る深さです。",
-      "caption": "地下42.3m",
-      "note": "出典：東京都交通局",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.038,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.0423,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_12",
-      "scene": "stage_studio",
-      "cameraPreset": "studio_front",
-      "characterAction": "point_explain",
-      "vi_note": "So sánh độ sâu các ga.",
-      "ja_narration": "地面から駅のホームまで、比べてみるとこうなります。",
-      "visual": {
-        "type": "depth_scale",
-        "title": "駅の深さ",
-        "items": [
-          {
-            "label": "銀座線（浅い区間）",
-            "value": 8,
-            "unit": "m"
-          },
-          {
-            "label": "千代田線 国会議事堂前",
-            "value": 38,
-            "unit": "m"
-          },
-          {
-            "label": "大江戸線 六本木",
-            "value": 42,
-            "unit": "m"
-          }
-        ]
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.0423,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.0423,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_13",
-      "scene": "tokyo_deep_infra",
-      "cameraPreset": "infra_kai",
-      "characterAction": "idle",
-      "vi_note": "Đi thang cuốn từ mặt đất xuống sân ga Roppongi mất vài phút.",
-      "ja_narration": "六本木駅では、地上からホームまで、長いエスカレーターを何本も乗りついで、数分かかります。",
-      "emotion": "sweating",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.0423,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.0423,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_14",
-      "scene": "tokyo_deep_infra",
-      "cameraPreset": "infra_wide",
-      "characterAction": "look_down",
-      "vi_note": "Dưới đường vành đai 7 có một thứ khổng lồ: hồ điều tiết nước ngầm.",
-      "ja_narration": "環状七号線の地下には、巨大なものが隠れています。地下調節池です。",
-      "env": {
-        "timeOfDay": "day",
-        "showHole": true
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.0423,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.045,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_15",
-      "scene": "tokyo_deep_infra",
-      "cameraPreset": "infra_wide",
-      "characterAction": "freefall_float",
-      "vi_note": "Đó là đường hầm đường kính 12,5 m, chứa nước mưa khi có bão để Tokyo không ngập.",
-      "ja_narration": "直径12.5メートルの大きなトンネル。台風や大雨のとき、川からあふれそうな水をここにためて、街を洪水から守ります。",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.045,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.05,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_16",
-      "scene": "stage_studio",
-      "cameraPreset": "studio_front",
-      "characterAction": "point_explain",
-      "vi_note": "Hồ này chứa được 540.000 m³ nước, khoảng 1.500 bể bơi 25 m.",
-      "ja_narration": "ためられる水の量は、約54万立方メートル。25メートルプール、およそ1500杯分です。",
-      "visual": {
-        "type": "fact_card",
-        "title": "環七地下調節池",
-        "highlightText": "約54万m³",
-        "subText": "25mプール 約1500杯分"
-      },
-      "note": "出典：東京都建設局",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.05,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.05,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_17",
-      "scene": "tokyo_deep_infra",
-      "cameraPreset": "infra_wide",
-      "characterAction": "idle",
-      "vi_note": "Bình thường nó trống rỗng, chỉ khi mưa lớn mới đầy nước.",
-      "ja_narration": "ふだんは空っぽ。大雨の日だけ、ここが水でいっぱいになります。",
-      "emotion": "excited",
-      "env": {
-        "weather": "heavy_rain"
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.046,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.046,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_18",
-      "scene": "stage_studio",
-      "cameraPreset": "studio_front",
-      "characterAction": "point_explain",
-      "vi_note": "Sâu hơn 40 m là 'đại thâm độ' theo luật: đất ở đó có thể dùng mà không cần mua quyền từ chủ đất bên trên.",
-      "ja_narration": "深さ40メートルより下は、法律で「大深度地下」と呼ばれます。ここは、ふつう上の土地の持ち主に関係なく、公共の工事に使えるんです。",
-      "visual": {
-        "type": "split_compare",
-        "leftTitle": "40mより上",
-        "leftSub": "土地の持ち主の空間",
-        "rightTitle": "40mより下",
-        "rightSub": "大深度地下 公共の工事に使える"
-      },
-      "note": "大深度地下の公共的使用に関する特別措置法",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.05,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.05,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_19",
-      "scene": "tokyo_deep_infra",
-      "cameraPreset": "infra_wide",
-      "characterAction": "freefall_float",
-      "vi_note": "Tàu đệm từ Linear Chuo Shinkansen sẽ chạy trong đại thâm độ dưới Tokyo.",
-      "ja_narration": "リニア中央新幹線も、東京の地下では、この大深度地下を走る計画です。",
-      "note": "出典：JR東海",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.05,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.07,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_19_like",
-      "scene": "stage_studio",
-      "cameraPreset": "studio_front",
-      "characterAction": "idle_wave",
-      "emotion": "excited",
-      "vi_note": "Thấy hay thì bấm Like nhé! Bất ngờ dành cho bạn: lát nữa ta sẽ tìm thấy suối nước nóng ngay dưới lòng Tokyo.",
-      "ja_narration": "ここまで面白いと思ったら、高評価をポチッとお願いします！押してくれたあなたに、ちょっとしたサプライズ。このあと、東京のまん中の地下で、なんと温泉が見つかります。",
-      "promo": {
-        "type": "like_surprise",
-        "text": "高評価で サプライズ解禁！",
-        "sub": "このあと… 東京の地下1500mで 温泉が見つかる♨️",
-        "at": 0.4
-      },
-      "hideHud": true,
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.07,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.07,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_20",
-      "scene": "tokyo_strata_onsen",
-      "cameraPreset": "strata_top",
-      "characterAction": "freefall_float",
-      "vi_note": "Dưới các công trình là các lớp đất: đất đỏ Kanto, sỏi, cát – do núi lửa và biển để lại.",
-      "ja_narration": "建物やトンネルのまわりは、関東ローム層と呼ばれる赤土、そして砂や小石の層。昔の火山灰と海が残したものです。",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.07,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.1,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_21",
-      "scene": "tokyo_strata_onsen",
-      "cameraPreset": "strata_follow",
-      "characterAction": "freefall_float",
-      "vi_note": "Giữa các lớp đó có nước ngầm chảy chậm.",
-      "ja_narration": "その層のすき間には、地下水がゆっくり流れています。",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.1,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.2,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_22",
-      "scene": "tokyo_strata_onsen",
-      "cameraPreset": "strata_follow",
-      "characterAction": "freefall_float",
-      "vi_note": "Xuống 1.000–1.500 m: nước nóng. Tokyo có suối nước nóng thật, hút lên từ độ sâu này.",
-      "ja_narration": "さらに1000メートルから1500メートル。ここには温かい水があります。東京の温泉の多くは、この深さからくみ上げているんです。",
-      "caption": "東京にも温泉",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.2,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 1.5,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_23",
-      "scene": "stage_studio",
-      "cameraPreset": "studio_front",
-      "characterAction": "point_explain",
-      "vi_note": "Cứ xuống sâu 100 m, nhiệt độ tăng khoảng 3°C.",
-      "ja_narration": "地面の下は、100メートル深くなるごとに、温度がおよそ3℃ずつ上がっていきます。",
-      "visual": {
-        "type": "gauge",
-        "title": "深さ1500mの地温",
-        "fromValue": 15,
-        "toValue": 60,
-        "unit": "℃"
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 1.5,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 1.5,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_24",
-      "scene": "japanese_street",
-      "cameraPreset": "front_close",
-      "characterAction": "idle",
-      "vi_note": "Có thể ngâm suối nóng ngay giữa thành phố là nhờ vậy.",
-      "ja_narration": "都会のまん中で温泉に入れるのは、このおかげなんですね。",
-      "emotion": "excited",
-      "env": {
-        "timeOfDay": "day",
-        "showHole": false
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 1.5,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 1.5,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_25",
-      "scene": "tokyo_strata_onsen",
-      "cameraPreset": "strata_follow",
-      "characterAction": "freefall_float",
-      "vi_note": "Toàn bộ những gì ta vừa thấy nằm trên lớp trầm tích mềm, rất dày.",
-      "ja_narration": "ここまで見てきたものは、すべて、やわらかい地層の上にのっています。この地層がとても厚いんです。",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 1.5,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 2.5,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_26",
-      "scene": "tokyo_strata_onsen",
-      "cameraPreset": "strata_wide",
-      "characterAction": "freefall_float",
-      "vi_note": "Phải xuống khoảng 2–3 km mới chạm lớp đá cứng (đá gốc địa chấn).",
-      "ja_narration": "かたい岩盤、「地震基盤」まで届くのは、深さ2キロから3キロほど。",
-      "note": "出典：防災科学技術研究所（NIED）",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 2.5,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 3.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_27",
-      "scene": "stage_studio",
-      "cameraPreset": "studio_front",
-      "characterAction": "point_explain",
-      "vi_note": "Lớp đất mềm dày làm rung lắc khi động đất mạnh hơn, như thạch trên đĩa.",
-      "ja_narration": "やわらかい地層が厚いと、地震のゆれは大きく、長くなりやすい。お皿の上のゼリーのように、ゆさゆさゆれるのです。",
-      "visual": {
-        "type": "split_compare",
-        "leftTitle": "かたい岩盤",
-        "leftSub": "ゆれが小さい",
-        "rightTitle": "厚いやわらかい地層",
-        "rightSub": "ゆれが大きく長い"
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 3.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 3.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_28",
-      "scene": "underground_tunnel",
-      "cameraPreset": "tunnel_follow",
-      "characterAction": "freefall_float",
-      "vi_note": "Xuống tiếp: khoảng 20–30 km là mảng Philippine chui dưới Tokyo.",
-      "ja_narration": "さらに深く。深さ20キロから30キロあたりには、フィリピン海プレートが、東京の下にもぐりこんでいます。",
-      "platform": true,
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 3.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 25.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_29",
-      "scene": "earth_cutaway",
-      "cameraPreset": "cut_front",
-      "characterAction": "idle",
-      "vi_note": "Và sâu hơn nữa, khoảng 70–100 km, là mảng Thái Bình Dương.",
-      "ja_narration": "そのさらに下、70キロから100キロほどには、太平洋プレート。",
-      "cutaway": {
-        "overlay": "seismic",
-        "label": "太平洋プレート",
-        "labelAt": "home"
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 25.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 80.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_30",
-      "scene": "earth_cutaway",
-      "cameraPreset": "cut_side",
-      "characterAction": "idle",
-      "vi_note": "Ba mảng chồng lên nhau ngay dưới Tokyo – hiếm nơi nào như vậy.",
-      "ja_narration": "東京の真下では、3つのプレートが重なり合っています。世界でもとてもめずらしい場所です。",
-      "cutaway": {
-        "overlay": "seismic",
-        "label": "3つのプレート",
-        "labelAt": "home"
-      },
-      "note": "出典：防災科学技術研究所（NIED）",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 80.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 80.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_31",
-      "scene": "tokyo_deep_infra",
-      "cameraPreset": "infra_wide",
-      "characterAction": "point_explain",
-      "vi_note": "Vì thế Tokyo nhiều động đất, nhưng cũng là nơi nghiên cứu và chuẩn bị kỹ nhất.",
-      "ja_narration": "だから東京は地震が多い。でもそのぶん、世界でいちばん研究され、そなえが進んでいる街でもあります。",
-      "visual": {
-        "type": "bar_compare",
-        "title": "東京の真下にあるもの",
-        "items": [
-          {
-            "label": "大江戸線 六本木駅",
-            "value": 42,
-            "unit": "m"
-          },
-          {
-            "label": "温泉の井戸",
-            "value": 1500,
-            "unit": "m"
-          },
-          {
-            "label": "地震基盤",
-            "value": 3000,
-            "unit": "m"
-          }
-        ]
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 80.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 80.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_32",
-      "scene": "japanese_street",
-      "cameraPreset": "hole_topdown",
-      "characterAction": "look_down",
-      "vi_note": "Tóm lại: vài mét là ống nước, vài chục mét là tàu điện và hồ chứa, 1,5 km là suối nóng, 3 km là đá gốc.",
-      "ja_narration": "まとめると、数メートル下には水道管、数十メートル下には地下鉄と調節池、1500メートルで温泉、そして3キロで岩盤です。",
-      "env": {
-        "timeOfDay": "sunset",
-        "showHole": true
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_33",
-      "scene": "japanese_street",
-      "cameraPreset": "front_medium",
-      "characterAction": "idle",
-      "vi_note": "Mặt đất ta bước mỗi ngày là lớp vỏ mỏng của cả một thế giới.",
-      "ja_narration": "毎日歩いている地面は、見えない世界の、うすいふたのようなものなんですね。",
-      "env": {
-        "timeOfDay": "sunset",
-        "showHole": false
-      },
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0.0,
-        "speedKmh": 0,
-        "progress": 0.0
-      }
-    },
-    {
-      "id": "beat_outro_recap",
-      "scene": "stage_studio",
-      "cameraPreset": "studio_front",
-      "characterAction": "point_explain",
-      "emotion": "curious",
-      "hideHud": true,
-      "brandOverlay": {
-        "type": "outro_recap",
-        "channelName": "もしも検証ラボ",
-        "headline": "水道管・地下鉄42.3m・地下調節池・温泉1500m・岩盤3km・3つのプレート",
-        "subline": "次の検証テーマをコメントで募集中！"
-      },
-      "vi_note": "Tổng kết: ống nước vài mét, ga tàu sâu 42,3 m, hồ điều tiết ngầm, suối nóng 1.500 m, nền đá 3 km và 3 mảng kiến tạo. Dưới nhà bạn có đường hầm nào? Comment kèm chủ đề muốn xem tiếp nhé!",
-      "ja_narration": "今回のまとめ！数メートル下の水道管、深さ42.3メートルの六本木駅、巨大な地下調節池、1500メートルの温泉、3キロの岩盤、そして3つのプレートでした。あなたの家の下には、どんなトンネルが通っていると思いますか？次に検証してほしいテーマと一緒に、ぜひコメントで教えてください！",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0,
-        "speedKmh": 0,
-        "progress": 0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0,
-        "speedKmh": 0,
-        "progress": 0
-      }
-    },
-    {
-      "id": "beat_outro_cta",
-      "scene": "stage_studio",
-      "cameraPreset": "studio_front",
-      "characterAction": "idle_wave",
-      "emotion": "excited",
-      "hideHud": true,
-      "brandOverlay": {
-        "type": "outro_cta",
-        "channelName": "もしも検証ラボ",
-        "subline": "高評価・チャンネル登録・通知オンが励みになります！"
-      },
-      "vi_note": "Thấy hay hãy bấm Like, Đăng ký kênh và bật chuông thông báo nhé! Sự ủng hộ của mọi người là động lực lớn nhất cho Kai. Hẹn gặp lại tập sau!",
-      "ja_narration": "少しでも面白いと思ったら、高評価・チャンネル登録・通知オンをお願いします！皆さんの応援が動画作りの一番の励みになります。また次回の検証でお会いしましょう、案内役のカイでした！",
-      "hudStart": {
-        "time": "12:00:00",
-        "depthKm": 0,
-        "speedKmh": 0,
-        "progress": 0
-      },
-      "hudEnd": {
-        "time": "12:00:00",
-        "depthKm": 0,
-        "speedKmh": 0,
-        "progress": 0
-      }
+     "text": "ふぅ〜〜",
+     "at": 1.6,
+     "color": "#ffffff"
     }
-  ],
-  "youtube": {
-    "titles": [
-      "もしも東京の地面が透明になったら、足の下に何が見える？",
-      "東京の地下42.3m、その下には何がある？【3Dシミュレーション】",
-      "東京の足の下を3キロまでのぞいてみた【もしも検証】"
-    ],
-    "description": "もしも東京の地面が、ガラスのように透明になったら？\n水道管・ガス管がびっしり並ぶ数メートル下、深さ42.3mの六本木駅、台風から街を守る巨大な地下調節池、大深度地下を走るリニア、地下1500mの温泉、そして3キロ下の岩盤と、東京の真下で重なる3つのプレートまで。ふだん歩いている地面の下を、3Dで徹底検証しました！\n\n【目次】\n0:00 もしも東京の地面が透明になったら\n0:24 アスファルトのすぐ下：水道管・ガス管\n0:54 地下鉄のトンネルと深い駅\n1:40 巨大な地下調節池\n2:07 大深度地下とリニア\n2:23 🎁 サプライズ\n2:36 関東ローム層と地下水\n2:49 地下1500mの温泉\n3:11 地震基盤とやわらかい地層\n3:33 3つのプレートが重なる東京\n4:02 まとめ\n\n📌 この動画は公開されているデータをもとにした3Dシミュレーションです。\n出典：東京都交通局、東京メトロ、東京都水道局、東京都建設局、JR東海、防災科学技術研究所（NIED）\n🔔 チャンネル登録・通知オンで、新しい「もしも検証」を続々とお届けします！\n\n#もしも検証ラボ #もしも #3Dアニメ #雑学 #東京 #地下",
-    "tags": [
-      "もしも",
-      "もしも検証ラボ",
-      "東京",
-      "地下",
-      "地面が透明",
-      "地下鉄",
-      "六本木駅",
-      "大江戸線",
-      "地下調節池",
-      "大深度地下",
-      "温泉",
-      "プレート",
-      "3Dアニメ",
-      "雑学",
-      "シミュレーション"
+   ],
+   "vi_note": "Phù~ nước ấm quá đã! Đúng là ngâm suối nóng là nhất.",
+   "ja_narration": "ふぅ〜〜、いいお湯〜。温泉、最高〜！",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_00_onsen2",
+   "scene": "onsen_bath",
+   "cameraPreset": "onsen_wide",
+   "characterAction": "idle_wave",
+   "emotion": "excited",
+   "hideHud": true,
+   "onsen": {
+    "sign": "♨ ？？？の湯"
+   },
+   "brandOverlay": {
+    "type": "intro_banner",
+    "channelName": "もしも検証ラボ",
+    "headline": "この温泉、どこにある？",
+    "subline": "東京の足の下を3Dで検証"
+   },
+   "vi_note": "À, chào mọi người! Mình là Kai, người dẫn đường của もしも検証ラボ. Hả? Hỏi đây là suối nóng ở đâu à?",
+   "ja_narration": "あ、どうも！もしも検証ラボの案内役、カイです！え？ここはどこの温泉かって？",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_00_onsen3",
+   "scene": "onsen_bath",
+   "cameraPreset": "onsen_top",
+   "characterAction": "idle",
+   "emotion": "curious",
+   "hideHud": true,
+   "onsen": {
+    "sign": "♨ ？？？の湯",
+    "label": "東京のど真ん中！"
+   },
+   "caption": "山奥じゃなくて…東京！？",
+   "vi_note": "Thật ra đây không phải trong núi sâu đâu. Ngay giữa Tokyo! Và nước này phun lên từ độ sâu 1.500 m dưới lòng đất.",
+   "ja_narration": "じつはここ、山奥じゃないんです。東京のど真ん中！しかもこのお湯、地下1500メートルからわいているんです。",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_00_onsen4",
+   "scene": "onsen_bath",
+   "cameraPreset": "onsen_kai",
+   "characterAction": "idle",
+   "emotion": "excited",
+   "hideHud": true,
+   "onsen": {
+    "sign": "♨ 地下1500mの湯"
+   },
+   "sfx": [
+    {
+     "text": "ザバッ!",
+     "at": 1.4,
+     "color": "#7fd0ff"
+    }
+   ],
+   "vi_note": "Sâu vậy thì dưới đó ra sao? Được, hôm nay làm mặt đất Tokyo trong suốt để nhìn hết dưới chân!",
+   "ja_narration": "そんな深いところ、どうなってるの？よし、今日は東京の地面を透明にして、足の下をぜんぶのぞいてみましょう！",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_01",
+   "scene": "japanese_street",
+   "cameraPreset": "front_medium",
+   "characterAction": "idle",
+   "vi_note": "Nếu mặt đất Tokyo bỗng trong suốt như kính… dưới chân sẽ thấy gì?",
+   "ja_narration": "もしも東京の地面が、ガラスのように突然透明になったら…足の下には、何が見えるでしょうか？",
+   "caption": "東京の地面が透明に？",
+   "env": {
+    "timeOfDay": "day",
+    "showHole": false
+   },
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_02",
+   "scene": "tokyo_glass_street",
+   "cameraPreset": "glass_wide",
+   "characterAction": "look_down",
+   "vi_note": "Hôm nay ta nhìn thẳng xuống, từ vài mét đến hàng chục km.",
+   "ja_narration": "今日は、足の下を数メートルから数十キロまで、まっすぐ見ていきます。",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_03",
+   "scene": "tokyo_glass_street",
+   "cameraPreset": "glass_close",
+   "characterAction": "point_explain",
+   "vi_note": "Mặt đường nhựa chỉ dày khoảng vài chục cm. Ngay dưới là cả một thành phố ngầm.",
+   "ja_narration": "アスファルトの厚さは、わずか数十センチ。そのすぐ下には、もうひとつの街が広がっています。",
+   "emotion": "curious",
+   "env": {
+    "timeOfDay": "day",
+    "showHole": false
+   },
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_04",
+   "scene": "tokyo_glass_street",
+   "cameraPreset": "glass_under",
+   "characterAction": "look_down",
+   "vi_note": "Đầu tiên là ống nước, ống ga, cáp điện, cáp quang chằng chịt ngay dưới chân.",
+   "ja_narration": "まず見えてくるのは、水道管、ガス管、電線、そして光ファイバー。足元のすぐ下に、びっしりと並んでいます。",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.002,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_05",
+   "scene": "stage_studio",
+   "cameraPreset": "studio_front",
+   "characterAction": "point_explain",
+   "vi_note": "Đường ống nước của Tokyo dài khoảng 27.000 km, đủ đi hơn nửa vòng Trái Đất.",
+   "ja_narration": "東京の水道管をすべてつなぐと、長さは約2万7千キロ。地球を半周以上できる長さです。",
+   "visual": {
+    "type": "fact_card",
+    "title": "東京の水道管",
+    "highlightText": "約27,000km",
+    "subText": "地球半周以上の長さ"
+   },
+   "note": "出典：東京都水道局",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.002,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.002,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_06",
+   "scene": "tokyo_glass_street",
+   "cameraPreset": "glass_close",
+   "characterAction": "idle",
+   "vi_note": "Vì vậy đào đường ở Tokyo phải rất cẩn thận, chỉ lệch một chút là đứt ống.",
+   "ja_narration": "だから東京で道路を掘るときは、とても慎重。少しずれるだけで、管を傷つけてしまうからです。",
+   "emotion": "sweating",
+   "env": {
+    "timeOfDay": "day",
+    "showHole": false
+   },
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.002,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.003,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_07",
+   "scene": "tokyo_glass_street",
+   "cameraPreset": "glass_wide",
+   "characterAction": "look_down",
+   "vi_note": "Xuống khoảng 10 m: những đường hầm tàu điện ngầm đầu tiên hiện ra.",
+   "ja_narration": "深さ10メートルほどまで見ていくと、地下鉄のトンネルがあらわれます。",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.003,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.01,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_08",
+   "scene": "stage_studio",
+   "cameraPreset": "studio_front",
+   "characterAction": "point_explain",
+   "vi_note": "Tuyến Ginza mở năm 1927, tàu điện ngầm đầu tiên ở châu Á, chạy rất nông ngay dưới đường.",
+   "ja_narration": "1927年に開業した銀座線は、アジアで最初の地下鉄。道路のすぐ下の、浅いところを走っています。",
+   "visual": {
+    "type": "fact_card",
+    "title": "銀座線",
+    "highlightText": "1927年開業",
+    "subText": "アジア最初の地下鉄"
+   },
+   "note": "出典：東京メトロ",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.01,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.01,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_09",
+   "scene": "stage_studio",
+   "cameraPreset": "studio_front",
+   "characterAction": "point_explain",
+   "vi_note": "Tuyến mới hơn phải chui sâu hơn, vì phía trên đã kín chỗ.",
+   "ja_narration": "あとからできた路線ほど、深いところを通ります。上の方は、もう場所がいっぱいだからです。",
+   "emotion": "curious",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.01,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.02,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_10",
+   "scene": "tokyo_deep_infra",
+   "cameraPreset": "infra_follow",
+   "characterAction": "freefall_float",
+   "vi_note": "Ga Kokkai-gijidomae tuyến Chiyoda sâu khoảng 37,9 m.",
+   "ja_narration": "千代田線の国会議事堂前駅は、深さ約37.9メートル。",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.02,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.038,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_11",
+   "scene": "tokyo_deep_infra",
+   "cameraPreset": "infra_follow",
+   "characterAction": "freefall_float",
+   "vi_note": "Và ga sâu nhất Tokyo: Roppongi tuyến Oedo, 42,3 m – bằng tòa nhà khoảng 14 tầng.",
+   "ja_narration": "そして東京でいちばん深い駅は、大江戸線の六本木駅。深さ42.3メートル、14階建てのビルがすっぽり入る深さです。",
+   "caption": "地下42.3m",
+   "note": "出典：東京都交通局",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.038,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.0423,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_12",
+   "scene": "stage_studio",
+   "cameraPreset": "studio_front",
+   "characterAction": "point_explain",
+   "vi_note": "So sánh độ sâu các ga.",
+   "ja_narration": "地面から駅のホームまで、比べてみるとこうなります。",
+   "visual": {
+    "type": "depth_scale",
+    "title": "駅の深さ",
+    "items": [
+     {
+      "label": "銀座線（浅い区間）",
+      "value": 8,
+      "unit": "m"
+     },
+     {
+      "label": "千代田線 国会議事堂前",
+      "value": 38,
+      "unit": "m"
+     },
+     {
+      "label": "大江戸線 六本木",
+      "value": 42,
+      "unit": "m"
+     }
     ]
+   },
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.0423,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.0423,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_13",
+   "scene": "tokyo_deep_infra",
+   "cameraPreset": "infra_kai",
+   "characterAction": "idle",
+   "vi_note": "Đi thang cuốn từ mặt đất xuống sân ga Roppongi mất vài phút.",
+   "ja_narration": "六本木駅では、地上からホームまで、長いエスカレーターを何本も乗りついで、数分かかります。",
+   "emotion": "sweating",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.0423,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.0423,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_14",
+   "scene": "tokyo_deep_infra",
+   "cameraPreset": "infra_wide",
+   "characterAction": "look_down",
+   "vi_note": "Dưới đường vành đai 7 có một thứ khổng lồ: hồ điều tiết nước ngầm.",
+   "ja_narration": "環状七号線の地下には、巨大なものが隠れています。地下調節池です。",
+   "env": {
+    "timeOfDay": "day",
+    "showHole": true
+   },
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.0423,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.045,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_15",
+   "scene": "tokyo_deep_infra",
+   "cameraPreset": "infra_wide",
+   "characterAction": "freefall_float",
+   "vi_note": "Đó là đường hầm đường kính 12,5 m, chứa nước mưa khi có bão để Tokyo không ngập.",
+   "ja_narration": "直径12.5メートルの大きなトンネル。台風や大雨のとき、川からあふれそうな水をここにためて、街を洪水から守ります。",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.045,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.05,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_16",
+   "scene": "stage_studio",
+   "cameraPreset": "studio_front",
+   "characterAction": "point_explain",
+   "vi_note": "Hồ này chứa được 540.000 m³ nước, khoảng 1.500 bể bơi 25 m.",
+   "ja_narration": "ためられる水の量は、約54万立方メートル。25メートルプール、およそ1500杯分です。",
+   "visual": {
+    "type": "fact_card",
+    "title": "環七地下調節池",
+    "highlightText": "約54万m³",
+    "subText": "25mプール 約1500杯分"
+   },
+   "note": "出典：東京都建設局",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.05,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.05,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_17",
+   "scene": "tokyo_deep_infra",
+   "cameraPreset": "infra_wide",
+   "characterAction": "idle",
+   "vi_note": "Bình thường nó trống rỗng, chỉ khi mưa lớn mới đầy nước.",
+   "ja_narration": "ふだんは空っぽ。大雨の日だけ、ここが水でいっぱいになります。",
+   "emotion": "excited",
+   "env": {
+    "weather": "heavy_rain"
+   },
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.046,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.046,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_18",
+   "scene": "stage_studio",
+   "cameraPreset": "studio_front",
+   "characterAction": "point_explain",
+   "vi_note": "Sâu hơn 40 m là 'đại thâm độ' theo luật: đất ở đó có thể dùng mà không cần mua quyền từ chủ đất bên trên.",
+   "ja_narration": "深さ40メートルより下は、法律で「大深度地下」と呼ばれます。ここは、ふつう上の土地の持ち主に関係なく、公共の工事に使えるんです。",
+   "visual": {
+    "type": "split_compare",
+    "leftTitle": "40mより上",
+    "leftSub": "土地の持ち主の空間",
+    "rightTitle": "40mより下",
+    "rightSub": "大深度地下 公共の工事に使える"
+   },
+   "note": "大深度地下の公共的使用に関する特別措置法",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.05,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.05,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_19",
+   "scene": "tokyo_deep_infra",
+   "cameraPreset": "infra_wide",
+   "characterAction": "freefall_float",
+   "vi_note": "Tàu đệm từ Linear Chuo Shinkansen sẽ chạy trong đại thâm độ dưới Tokyo.",
+   "ja_narration": "リニア中央新幹線も、東京の地下では、この大深度地下を走る計画です。",
+   "note": "出典：JR東海",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.05,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.07,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_19_like",
+   "scene": "stage_studio",
+   "cameraPreset": "studio_front",
+   "characterAction": "idle_wave",
+   "emotion": "excited",
+   "vi_note": "Thấy hay thì bấm Like nhé! Bất ngờ cho bạn: lát nữa sẽ biết suối nóng Kai ngâm lúc đầu thật ra từ đâu ra.",
+   "ja_narration": "ここまで面白いと思ったら、高評価をポチッとお願いします！押してくれたあなたに、ちょっとしたサプライズ。このあと、さっきカイが入っていた温泉の、ほんとうの正体がわかります。",
+   "promo": {
+    "type": "like_surprise",
+    "text": "高評価で サプライズ解禁！",
+    "sub": "このあと… 冒頭の温泉の正体がわかる♨️",
+    "at": 0.4
+   },
+   "hideHud": true,
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.07,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.07,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_20",
+   "scene": "tokyo_strata_onsen",
+   "cameraPreset": "strata_top",
+   "characterAction": "freefall_float",
+   "vi_note": "Dưới các công trình là các lớp đất: đất đỏ Kanto, sỏi, cát – do núi lửa và biển để lại.",
+   "ja_narration": "建物やトンネルのまわりは、関東ローム層と呼ばれる赤土、そして砂や小石の層。昔の火山灰と海が残したものです。",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.07,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.1,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_21",
+   "scene": "tokyo_strata_onsen",
+   "cameraPreset": "strata_follow",
+   "characterAction": "freefall_float",
+   "vi_note": "Giữa các lớp đó có nước ngầm chảy chậm.",
+   "ja_narration": "その層のすき間には、地下水がゆっくり流れています。",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.1,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.2,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_22",
+   "scene": "tokyo_strata_onsen",
+   "cameraPreset": "strata_follow",
+   "characterAction": "freefall_float",
+   "vi_note": "Xuống 1.000–1.500 m: nước nóng. Tokyo có suối nước nóng thật, hút lên từ độ sâu này.",
+   "ja_narration": "さらに1000メートルから1500メートル。ここには温かい水があります。東京の温泉の多くは、この深さからくみ上げているんです。",
+   "caption": "東京にも温泉",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.2,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 1.5,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_23",
+   "scene": "stage_studio",
+   "cameraPreset": "studio_front",
+   "characterAction": "point_explain",
+   "vi_note": "Cứ xuống sâu 100 m, nhiệt độ tăng khoảng 3°C.",
+   "ja_narration": "地面の下は、100メートル深くなるごとに、温度がおよそ3℃ずつ上がっていきます。",
+   "visual": {
+    "type": "gauge",
+    "title": "深さ1500mの地温",
+    "fromValue": 15,
+    "toValue": 60,
+    "unit": "℃"
+   },
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 1.5,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 1.5,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_24",
+   "scene": "onsen_bath",
+   "cameraPreset": "onsen_kai",
+   "characterAction": "idle",
+   "vi_note": "Đúng vậy, suối nóng Kai ngâm lúc đầu chính là nước này. Nhờ vậy mà giữa thành phố vẫn ngâm suối nóng được. Phù~ sướng.",
+   "ja_narration": "そう、冒頭でカイが入っていた温泉は、このお湯だったんです。都会のまん中で温泉に入れるのは、このおかげなんですね。ふぅ〜、しあわせ。",
+   "emotion": "excited",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 1.5,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 1.5,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "onsen": {
+    "sign": "♨ 地下1500mの湯"
+   },
+   "caption": "冒頭の温泉の正体",
+   "sfx": [
+    {
+     "text": "チャポン♪",
+     "at": 0.3,
+     "color": "#ffd27a"
+    }
+   ]
+  },
+  {
+   "id": "beat_25",
+   "scene": "tokyo_strata_onsen",
+   "cameraPreset": "strata_follow",
+   "characterAction": "freefall_float",
+   "vi_note": "Toàn bộ những gì ta vừa thấy nằm trên lớp trầm tích mềm, rất dày.",
+   "ja_narration": "ここまで見てきたものは、すべて、やわらかい地層の上にのっています。この地層がとても厚いんです。",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 1.5,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 2.5,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_26",
+   "scene": "tokyo_strata_onsen",
+   "cameraPreset": "strata_wide",
+   "characterAction": "freefall_float",
+   "vi_note": "Phải xuống khoảng 2–3 km mới chạm lớp đá cứng (đá gốc địa chấn).",
+   "ja_narration": "かたい岩盤、「地震基盤」まで届くのは、深さ2キロから3キロほど。",
+   "note": "出典：防災科学技術研究所（NIED）",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 2.5,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 3.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_27",
+   "scene": "stage_studio",
+   "cameraPreset": "studio_front",
+   "characterAction": "point_explain",
+   "vi_note": "Lớp đất mềm dày làm rung lắc khi động đất mạnh hơn, như thạch trên đĩa.",
+   "ja_narration": "やわらかい地層が厚いと、地震のゆれは大きく、長くなりやすい。お皿の上のゼリーのように、ゆさゆさゆれるのです。",
+   "visual": {
+    "type": "split_compare",
+    "leftTitle": "かたい岩盤",
+    "leftSub": "ゆれが小さい",
+    "rightTitle": "厚いやわらかい地層",
+    "rightSub": "ゆれが大きく長い"
+   },
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 3.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 3.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_28",
+   "scene": "underground_tunnel",
+   "cameraPreset": "tunnel_follow",
+   "characterAction": "freefall_float",
+   "vi_note": "Xuống tiếp: khoảng 20–30 km là mảng Philippine chui dưới Tokyo.",
+   "ja_narration": "さらに深く。深さ20キロから30キロあたりには、フィリピン海プレートが、東京の下にもぐりこんでいます。",
+   "platform": true,
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 3.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 25.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_29",
+   "scene": "earth_cutaway",
+   "cameraPreset": "cut_front",
+   "characterAction": "idle",
+   "vi_note": "Và sâu hơn nữa, khoảng 70–100 km, là mảng Thái Bình Dương.",
+   "ja_narration": "そのさらに下、70キロから100キロほどには、太平洋プレート。",
+   "cutaway": {
+    "overlay": "seismic",
+    "label": "太平洋プレート",
+    "labelAt": "home"
+   },
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 25.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 80.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_30",
+   "scene": "earth_cutaway",
+   "cameraPreset": "cut_side",
+   "characterAction": "idle",
+   "vi_note": "Ba mảng chồng lên nhau ngay dưới Tokyo – hiếm nơi nào như vậy.",
+   "ja_narration": "東京の真下では、3つのプレートが重なり合っています。世界でもとてもめずらしい場所です。",
+   "cutaway": {
+    "overlay": "seismic",
+    "label": "3つのプレート",
+    "labelAt": "home"
+   },
+   "note": "出典：防災科学技術研究所（NIED）",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 80.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 80.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_31",
+   "scene": "tokyo_deep_infra",
+   "cameraPreset": "infra_wide",
+   "characterAction": "point_explain",
+   "vi_note": "Vì thế Tokyo nhiều động đất, nhưng cũng là nơi nghiên cứu và chuẩn bị kỹ nhất.",
+   "ja_narration": "だから東京は地震が多い。でもそのぶん、世界でいちばん研究され、そなえが進んでいる街でもあります。",
+   "visual": {
+    "type": "bar_compare",
+    "title": "東京の真下にあるもの",
+    "items": [
+     {
+      "label": "大江戸線 六本木駅",
+      "value": 42,
+      "unit": "m"
+     },
+     {
+      "label": "温泉の井戸",
+      "value": 1500,
+      "unit": "m"
+     },
+     {
+      "label": "地震基盤",
+      "value": 3000,
+      "unit": "m"
+     }
+    ]
+   },
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 80.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 80.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_32",
+   "scene": "japanese_street",
+   "cameraPreset": "hole_topdown",
+   "characterAction": "look_down",
+   "vi_note": "Tóm lại: vài mét là ống nước, vài chục mét là tàu điện và hồ chứa, 1,5 km là suối nóng, 3 km là đá gốc.",
+   "ja_narration": "まとめると、数メートル下には水道管、数十メートル下には地下鉄と調節池、1500メートルで温泉、そして3キロで岩盤です。",
+   "env": {
+    "timeOfDay": "sunset",
+    "showHole": true
+   },
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_33",
+   "scene": "japanese_street",
+   "cameraPreset": "front_medium",
+   "characterAction": "idle",
+   "vi_note": "Mặt đất ta bước mỗi ngày là lớp vỏ mỏng của cả một thế giới.",
+   "ja_narration": "毎日歩いている地面は、見えない世界の、うすいふたのようなものなんですね。",
+   "env": {
+    "timeOfDay": "sunset",
+    "showHole": false
+   },
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.0,
+    "speedKmh": 0,
+    "progress": 0.0
+   }
+  },
+  {
+   "id": "beat_outro_recap",
+   "scene": "stage_studio",
+   "cameraPreset": "studio_front",
+   "characterAction": "point_explain",
+   "emotion": "curious",
+   "hideHud": true,
+   "brandOverlay": {
+    "type": "outro_recap",
+    "channelName": "もしも検証ラボ",
+    "headline": "水道管・地下鉄42.3m・地下調節池・温泉1500m・岩盤3km・3つのプレート",
+    "subline": "次の検証テーマをコメントで募集中！"
+   },
+   "vi_note": "Tổng kết: ống nước vài mét, ga tàu sâu 42,3 m, hồ điều tiết ngầm, suối nóng 1.500 m, nền đá 3 km và 3 mảng kiến tạo. Dưới nhà bạn có đường hầm nào? Comment kèm chủ đề muốn xem tiếp nhé!",
+   "ja_narration": "今回のまとめ！数メートル下の水道管、深さ42.3メートルの六本木駅、巨大な地下調節池、1500メートルの温泉、3キロの岩盤、そして3つのプレートでした。あなたの家の下には、どんなトンネルが通っていると思いますか？次に検証してほしいテーマと一緒に、ぜひコメントで教えてください！",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_outro_cta",
+   "scene": "stage_studio",
+   "cameraPreset": "studio_front",
+   "characterAction": "idle_wave",
+   "emotion": "excited",
+   "hideHud": true,
+   "brandOverlay": {
+    "type": "outro_cta",
+    "channelName": "もしも検証ラボ",
+    "subline": "高評価・チャンネル登録・通知オンが励みになります！"
+   },
+   "vi_note": "Thấy hay hãy bấm Like, Đăng ký kênh và bật chuông thông báo nhé! Sự ủng hộ của mọi người là động lực lớn nhất cho Kai. Hẹn gặp lại tập sau!",
+   "ja_narration": "少しでも面白いと思ったら、高評価・チャンネル登録・通知オンをお願いします！皆さんの応援が動画作りの一番の励みになります。また次回の検証でお会いしましょう、案内役のカイでした！",
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
   }
+ ],
+ "youtube": {
+  "titles": [
+   "東京の地面が透明になったら…地下1500mに温泉がわいてた！？",
+   "もしも東京の地面が透明になったら、足の下に何が見える？",
+   "東京の地下42.3m、その下には何がある？【3Dシミュレーション】",
+   "東京の足の下を3キロまでのぞいてみた【もしも検証】"
+  ],
+  "description": "地下1500mに温泉！？もしも東京の地面が、ガラスのように透明になったら？\n水道管・ガス管がびっしり並ぶ数メートル下、深さ42.3mの六本木駅、台風から街を守る巨大な地下調節池、大深度地下を走るリニア、地下1500mの温泉、地震基盤、そして東京の真下で重なる3つのプレートまで。ふだん歩いている地面の下を、3Dで徹底検証しました！\n\n【目次】\n00:00 温泉に入っていたら…ここはどこ？\n0:31 もしも東京の地面が透明になったら\n0:46 アスファルトのすぐ下：水道管・ガス管\n1:21 地下鉄のトンネルと深い駅\n2:15 巨大な地下調節池\n2:47 大深度地下とリニア\n3:05 🎁 サプライズ\n3:21 関東ローム層と地下水\n3:36 地下1500mの温泉\n4:08 地震基盤とやわらかい地層\n4:34 3つのプレートが重なる東京\n5:08 まとめ\n\n📌 この動画は公開されているデータをもとにした3Dシミュレーションです。\n出典：東京都交通局、東京メトロ、東京都水道局、東京都建設局、JR東海、防災科学技術研究所（NIED）\n🔔 チャンネル登録・通知オンで、新しい「もしも検証」を続々とお届けします！\n\n#もしも検証ラボ #もしも #3Dアニメ #雑学 #東京 #地下 #温泉",
+  "tags": [
+   "もしも",
+   "もしも検証ラボ",
+   "東京",
+   "地下",
+   "地面が透明",
+   "地下鉄",
+   "六本木駅",
+   "大江戸線",
+   "地下調節池",
+   "大深度地下",
+   "温泉",
+   "プレート",
+   "3Dアニメ",
+   "雑学",
+   "シミュレーション"
+  ]
+ }
 }
