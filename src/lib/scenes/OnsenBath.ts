@@ -82,7 +82,7 @@ export class OnsenBath implements ScenePrefab {
     // nước 黒湯 (nâu hổ phách, đục)
     const waterTex = reg(canvasTex(256, 256, g => {
       const gr = g.createRadialGradient(128, 128, 10, 128, 128, 128); gr.addColorStop(0, "#8a5a2c"); gr.addColorStop(1, "#4a2e16"); g.fillStyle = gr; g.fillRect(0, 0, 256, 256);
-      g.strokeStyle = "rgba(255,220,170,0.18)"; g.lineWidth = 2; for (let i = 0; i < 9; i++) { g.beginPath(); g.arc(128, 128, 14 + i * 13, 0, 7); g.stroke(); }
+      g.strokeStyle = "rgba(255,220,170,0.06)"; g.lineWidth = 3; for (let i = 0; i < 5; i++) { g.beginPath(); g.arc(128 + i * 9, 120 - i * 5, 30 + i * 22, 0, 7); g.stroke(); }
     }));
     this.water = new THREE.Mesh(reg(new THREE.CircleGeometry(POOL_R, 48)), reg(new THREE.MeshStandardMaterial({ map: waterTex, roughness: 0.15, metalness: 0.1, transparent: true, opacity: 0.9, depthWrite: false })));
     this.water.rotation.x = -Math.PI / 2; this.water.position.y = WATER_Y; this.water.renderOrder = 3; this.root.add(this.water);
@@ -109,8 +109,8 @@ export class OnsenBath implements ScenePrefab {
     this.signCanvas.width = 512; this.signCanvas.height = 160;
     this.signTex = reg(new THREE.CanvasTexture(this.signCanvas)); this.signTex.colorSpace = THREE.SRGBColorSpace;
     const sign = new THREE.Mesh(reg(new THREE.PlaneGeometry(2.4, 0.75)), reg(new THREE.MeshStandardMaterial({ map: this.signTex, roughness: 0.9 })));
-    sign.position.set(1.6, WATER_Y + 2.35, -4.0); this.root.add(sign);
-    add(cyl, mat({ color: "#4a3824" }), [0.05, 1.6, 0.05], [0.55, WATER_Y + 1.6, -4.05]); add(cyl, mat({ color: "#4a3824" }), [0.05, 1.6, 0.05], [2.65, WATER_Y + 1.6, -4.05]);
+    sign.position.set(0, WATER_Y + 2.45, -4.0); this.root.add(sign);
+    add(cyl, mat({ color: "#4a3824" }), [0.05, 1.6, 0.05], [-1.05, WATER_Y + 1.6, -4.05]); add(cyl, mat({ color: "#4a3824" }), [0.05, 1.6, 0.05], [1.05, WATER_Y + 1.6, -4.05]);
 
     // chậu gỗ (桶) + vịt cao su trôi
     const okeM = mat({ color: "#c79a5e" });
@@ -173,8 +173,14 @@ export class OnsenBath implements ScenePrefab {
     character.root.visible = true;
     character.root.position.set(0, y, 0.3);
     character.root.rotation.set(0, 0, 0);
+    // khăn bám theo đỉnh đầu (lấy vị trí thật của đầu nhân vật trong thế giới)
     this.towel.visible = o.towel !== false;
-    this.towel.position.set(0.02, y + 2.08, 0.3 - 0.02);
+    const head = (character as unknown as { head?: THREE.Object3D }).head;
+    if (head) {
+      character.root.updateMatrixWorld(true);
+      const p = head.localToWorld(new THREE.Vector3(0, 0.67, -0.02));
+      this.root.worldToLocal(p); this.towel.position.copy(p);
+    } else this.towel.position.set(0.02, y + 2.08, 0.28);
     this.towel.rotation.set(0.05, 0, Math.sin(t * 1.4) * 0.04 - jumpK * 0.4);
 
     // nước gợn, sủi khi boil
