@@ -24,6 +24,7 @@ const SCENES: { id: SceneId; vi: string }[] = [
   { id: "gravity_train", vi: "Tàu trọng lực xuyên lòng đất (mới)" },
   { id: "kola_borehole", vi: "Giếng khoan siêu sâu Kola 12 km (mới)" },
   { id: "gravity_room", vi: "Phòng + cân: trọng lực thay đổi (mới)" },
+  { id: "onsen_bath", vi: "Bồn suối nóng lộ thiên, Kai ngâm mình (mới)" },
 ];
 const ACTIONS: { id: CharacterAction; vi: string }[] = [
   { id: "idle", vi: "Đứng yên" }, { id: "idle_wave", vi: "Vẫy tay" }, { id: "look_down", vi: "Nhìn xuống" },

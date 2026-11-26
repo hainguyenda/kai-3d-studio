@@ -1,6 +1,7 @@
 import type { GravityTrainOptions } from "./GravityTrain";
 import type { KolaOptions } from "./KolaBorehole";
 import type { GravityRoomOptions } from "./GravityRoom";
+import type { OnsenBathOptions } from "./OnsenBath";
 /* Dữ liệu 3 bối cảnh mới (NewScenes.ts): tên cảnh, góc máy, tuỳ chọn trong beat JSON.
    Tách riêng file này để cameraPresets.ts import được mà không bị vòng lặp import. */
 
@@ -8,7 +9,7 @@ export type NewSceneId = "moon_surface" | "earth_moon_space" | "deep_sea"
   | "tokyo_glass_street" | "tokyo_deep_infra" | "tokyo_strata_onsen"
   | "space_elevator" | "solar_system" | "sky_mountain" | "typhoon_eye"
   | "ocean_world" | "sea_level_city" | "whale_inside" | "space_stairs"
-  | "gravity_train" | "kola_borehole" | "gravity_room";
+  | "gravity_train" | "kola_borehole" | "gravity_room" | "onsen_bath";
 
 export type NewCameraPreset =
   | "moon_wide" | "moon_close" | "moon_earthrise"
@@ -27,7 +28,8 @@ export type NewCameraPreset =
   | "st_kai" | "st_wide" | "st_down" | "st_up"
   | "gt_wide" | "gt_tunnel" | "gt_follow"
   | "kola_site" | "kola_cap" | "kola_section" | "kola_deep"
-  | "grav_kai" | "grav_scale" | "grav_wide" | "grav_jump";
+  | "grav_kai" | "grav_scale" | "grav_wide" | "grav_jump"
+  | "onsen_kai" | "onsen_wide" | "onsen_top";
 
 /** tuỳ chọn trong beat JSON (thêm vào interface Beat) */
 export interface NewBeatFields {
@@ -92,6 +94,8 @@ export interface NewBeatFields {
   kola?: KolaOptions;
   /** gravity_room: phòng + cân; số kg = weightKg × g (g chạy gFrom → g) */
   grav?: GravityRoomOptions;
+  /** onsen_bath: bồn suối nóng lộ thiên, Kai ngâm mình (sign, towel, label, boil) */
+  onsen?: OnsenBathOptions;
 }
 
 type V3 = [number, number, number];
@@ -172,6 +176,10 @@ export const NEW_SHOTS: Record<NewCameraPreset, Shot> = {
   grav_scale: { from: [0.3, 1.45, 1.75], to: [0.15, 1.2, 1.45], look: [0, 0.12, 0.3], fov: 40 },
   grav_wide: { from: [2.6, 2.4, 6.2], to: [2.2, 2.2, 5.6], look: [-0.4, 1.1, -1], fov: 44 },
   grav_jump: { from: [2.2, 1.3, 3.0], to: [1.9, 1.2, 2.6], look: [-0.4, 1.0, 0], fov: 42 },
+  // bồn suối nóng: neo = chỗ Kai ngâm
+  onsen_kai: { from: [0.45, 1.75, 2.7], to: [0.3, 1.62, 2.15], look: [0, 1.25, 0], fov: 38 },
+  onsen_wide: { from: [2.6, 3.3, 6.8], to: [2.1, 3.0, 5.9], look: [0, 1.1, -1.2], fov: 44 },
+  onsen_top: { from: [0.05, 6.4, 1.6], to: [0.04, 5.6, 1.2], look: [0, 0.9, 0], fov: 46 },
   kola_deep: { from: [0.6, 0.6, 6.5], to: [0.3, 0.2, 5.2], look: [0, 0, 0], fov: 40 },
   st_up: { from: [0.9, 0.4, 1.3], to: [0.8, 0.5, 1.1], look: [-0.7, 30, 0], fov: 65 },
 };

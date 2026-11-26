@@ -1,0 +1,315 @@
+{
+ "title": "東京の地下1500mに温泉！？入ってみたらアツすぎた #shorts",
+ "aspect": "9:16",
+ "title_vi": "Dưới Tokyo 1.500 m có suối nóng!? Kai ngâm thử thì nóng muốn xỉu (bản hài)",
+ "thumbnailText": "地下1500mの温泉",
+ "youtube": {
+  "titles": [
+   "東京の地下1500mに温泉！？入ってみたらアツすぎた #shorts",
+   "東京の温泉が茶色い理由、知ってる？地下1500mの黒湯 #shorts",
+   "日本一深い駅のさらに下…地下1500mで温泉に入ってみた #shorts"
+  ],
+  "description": "東京の足の下、地下1500メートルには温泉があります！\n日本一深い駅（地下42.3m）よりずっと下。茶色い「黒湯」は大昔の植物がとけこんだ色。そして地面の下は100mごとに約3℃熱くなるので、計算だと…アッツ！\n\n▶ フル動画は、画面下の「関連動画」からどうぞ！\n📌 公開データをもとにした3Dシミュレーションです。温度は地温勾配（100mあたり約3℃）からの概算で、実際の源泉温度は場所によってちがいます。\n🔔 チャンネル登録で、新しい「もしも検証」をお届けします！\n\n#もしも検証ラボ #もしも #Shorts #東京 #温泉 #黒湯 #地下 #雑学",
+  "tags": [
+   "もしも",
+   "もしも検証ラボ",
+   "Shorts",
+   "東京",
+   "温泉",
+   "黒湯",
+   "地下",
+   "六本木駅",
+   "大江戸線",
+   "雑学",
+   "3Dアニメ"
+  ]
+ },
+ "beats": [
+  {
+   "id": "beat_01",
+   "scene": "japanese_street",
+   "cameraPreset": "front_medium",
+   "characterAction": "look_down",
+   "emotion": "curious",
+   "env": {
+    "timeOfDay": "day",
+    "weather": "clear",
+    "showHole": false
+   },
+   "caption": "東京の地下に温泉！？",
+   "sfx": [
+    {
+     "text": "ジーッ…",
+     "at": 0.6
+    }
+   ],
+   "vi_note": "Biết không, ngay dưới chân Tokyo có… suối nước nóng!",
+   "ja_narration": "知ってた？東京の足の下には…温泉があるんです！",
+   "hideHud": true,
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_02",
+   "scene": "tokyo_deep_infra",
+   "cameraPreset": "infra_kai",
+   "characterAction": "idle",
+   "emotion": "sweating",
+   "caption": "日本一深い駅 地下42.3m",
+   "sfx": [
+    {
+     "text": "ゼェ…ゼェ…",
+     "at": 1.2,
+     "color": "#7fd0ff"
+    }
+   ],
+   "vi_note": "Đầu tiên xuống ga sâu nhất Nhật Bản, 42,3 m. Thang cuốn dài muốn xỉu…",
+   "ja_narration": "まずは日本一深い駅、地下42.3メートル。エスカレーター、長すぎ…",
+   "hideHud": true,
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.0423,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0.0423,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_03",
+   "scene": "tokyo_strata_onsen",
+   "cameraPreset": "strata_follow",
+   "characterAction": "idle",
+   "caption": "さらに下へ…地下1500m",
+   "sfx": [
+    {
+     "text": "ヒュ〜〜ン",
+     "at": 0.4
+    }
+   ],
+   "vi_note": "Nhưng suối nóng còn sâu hơn nhiều: 1.500 m, sâu hơn 2 tháp Skytree chồng lên nhau.",
+   "ja_narration": "でも温泉は、もっともっと下。地下1500メートル！スカイツリー2本分より深いんです。",
+   "hideHud": true,
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0.05,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 1.5,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_04",
+   "scene": "onsen_bath",
+   "cameraPreset": "onsen_kai",
+   "characterAction": "idle",
+   "emotion": "excited",
+   "onsen": {
+    "sign": "♨ 地下1500mの湯"
+   },
+   "caption": "さっそく入浴",
+   "sfx": [
+    {
+     "text": "チャポン♪",
+     "at": 0.3,
+     "color": "#ffd27a"
+    },
+    {
+     "text": "ふぅ〜極楽",
+     "at": 2.0,
+     "color": "#ffffff"
+    }
+   ],
+   "vi_note": "Thế là… Kai xuống ngâm thử luôn. Phù~ sướng ghê.",
+   "ja_narration": "というわけで…入ってみました〜。ふぅ〜、極楽、極楽。",
+   "hideHud": true,
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_05",
+   "scene": "onsen_bath",
+   "cameraPreset": "onsen_top",
+   "characterAction": "idle",
+   "emotion": "curious",
+   "onsen": {
+    "label": "黒湯"
+   },
+   "caption": "茶色いお湯＝黒湯",
+   "vi_note": "Nước màu nâu là 'kuroyu' (nước đen) đặc trưng của Tokyo, màu từ thực vật cổ đại tan vào.",
+   "ja_narration": "お湯が茶色いのは、東京名物の黒湯。大昔の植物がとけこんだ色なんです。",
+   "hideHud": true,
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_06",
+   "scene": "onsen_bath",
+   "cameraPreset": "onsen_kai",
+   "characterAction": "idle",
+   "emotion": "neutral",
+   "onsen": {
+    "label": "100mごとに +約3℃"
+   },
+   "caption": "深いほど熱くなる",
+   "vi_note": "Mà dưới đất, cứ xuống 100 m thì nóng thêm khoảng 3°C. Vậy ở 1.500 m thì…",
+   "ja_narration": "ところで地面の下は、100メートルごとに約3℃ずつ熱くなります。1500メートルだと…",
+   "hideHud": true,
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_07",
+   "scene": "onsen_bath",
+   "cameraPreset": "onsen_kai",
+   "characterAction": "idle",
+   "emotion": "shocked",
+   "onsen": {
+    "boil": true,
+    "label": "計算上 約60℃！？"
+   },
+   "caption": "アツすぎ！！",
+   "sfx": [
+    {
+     "text": "アッツ!!",
+     "at": 0.45,
+     "color": "#ff4a2a",
+     "size": 1.3
+    },
+    {
+     "text": "ボコボコ",
+     "at": 1.2,
+     "color": "#ffb070"
+    }
+   ],
+   "vi_note": "NÓNG QUÁÁ! Tính ra tầm 60°C!",
+   "ja_narration": "アッツ！！計算だと60℃くらい！",
+   "hideHud": true,
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_08",
+   "scene": "onsen_bath",
+   "cameraPreset": "onsen_wide",
+   "characterAction": "idle",
+   "emotion": "sweating",
+   "onsen": {
+    "sign": "♨ 水でうめて適温"
+   },
+   "caption": "だから水でうめる",
+   "vi_note": "Vì vậy nhiều suối nóng phải pha thêm nước lạnh cho vừa người.",
+   "ja_narration": "だから温泉では、水でうめて、ちょうどいい温度にしているんですね。",
+   "hideHud": true,
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  },
+  {
+   "id": "beat_outro_full",
+   "scene": "onsen_bath",
+   "cameraPreset": "onsen_kai",
+   "characterAction": "idle_wave",
+   "emotion": "excited",
+   "onsen": {
+    "sign": "♨ 地下1500mの湯"
+   },
+   "sfx": [
+    {
+     "text": "チャプチャプ",
+     "at": 0.5,
+     "color": "#ffd27a"
+    }
+   ],
+   "promo": {
+    "type": "full_video",
+    "text": "続きはフル動画で！",
+    "sub": "日本一深い駅、巨大な地下トンネル…本編で検証",
+    "at": 1.8
+   },
+   "vi_note": "Dưới chân Tokyo còn nhiều bất ngờ lắm. Muốn xem hết thì xem bản đầy đủ ở video liên quan bên dưới nhé!",
+   "ja_narration": "東京の足の下には、まだまだびっくりがいっぱい。ぜんぶ見たい人は、フル動画で！画面下の関連動画からどうぞ。",
+   "hideHud": true,
+   "hudStart": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   },
+   "hudEnd": {
+    "time": "12:00:00",
+    "depthKm": 0,
+    "speedKmh": 0,
+    "progress": 0
+   }
+  }
+ ]
+}

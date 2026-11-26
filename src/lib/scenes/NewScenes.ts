@@ -11,6 +11,7 @@ import { createPlanScenes } from "./PlanScenes";
 import { GravityTrain } from "./GravityTrain";
 import { KolaBorehole } from "./KolaBorehole";
 import { GravityRoom } from "./GravityRoom";
+import { OnsenBath } from "./OnsenBath";
 
 /* =====================================================================
    3 BỐI CẢNH MỚI (bản ví dụ – chưa gắn vào app)
@@ -592,6 +593,7 @@ export const createNewScenes = (): Record<NewSceneId, ScenePrefab> => ({
   gravity_train: new GravityTrain(),
   kola_borehole: new KolaBorehole(),
   gravity_room: new GravityRoom(),
+  onsen_bath: new OnsenBath(),
   moon_surface: new MoonSurface(),
   earth_moon_space: new EarthMoonSpace(),
   deep_sea: new DeepSea(),
